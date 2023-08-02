@@ -1,0 +1,17 @@
+.tabs__item--active{
+    border-bottom-color: #ed164f;
+    color: #ed164f;
+    
+}
+.tabs {
+    color: #fff; 
+    font-family: "poppins";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.tabs__item{
+    padding: 5px;
+    margin-right: 10px;
+    border-bottom: none;
+}
