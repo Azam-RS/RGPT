@@ -79,7 +79,6 @@ const config = {
           // },
 
           // {to: '/blog', label: 'Blog', position: 'left'},
-
           {
             to: "#home",
             label: "Home",
