@@ -22,14 +22,20 @@ const Footer = () => {
             </a>
 
             <a href="#home" className="f-link-item">
+              Home
+            </a>
+            <a href="#about" className="f-link-item">
               About
             </a>
-            <a href="#pricing" className="f-link-item">
+            <a href="#features" className="f-link-item">
+              Features
+            </a>
+            {/* <a href="#pricing" className="f-link-item">
               Pricing
-            </a>
-            <a href="#faq" className="f-link-item">
+            </a> */}
+            {/* <a href="#faq" className="f-link-item">
               FAQ
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="col col--12">
