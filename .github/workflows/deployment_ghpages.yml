@@ -26,12 +26,11 @@ jobs:
               echo $GIT_USER
               npm install
               yarn deploy
-              ls -l
         env:
               GIT_USER: ${{ github.actor }}:${{ secrets.RGPT }}
       - name: move build/* to doc
         run: |
-              cp build/* docs
+              cp -rf build/* docs
               ls -l docs
       - name: Setup Pages
         id: pages
