@@ -1,12 +1,9 @@
 {
-  "name": "my-website",
+  "name": "RGPT",
   "version": "0.0.0",
-  "homepage": "https://azam-rs.github.io/RGPT",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
