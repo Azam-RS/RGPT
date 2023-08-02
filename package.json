@@ -1,7 +1,7 @@
 {
   "name": "RGPT",
   "version": "0.0.0",
-  "homepage": "https://azam-rs.github.io/docs",
+  "homepage": "https://azam-rs.github.io/RGPT",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
