@@ -22,11 +22,13 @@ jobs:
         run: |
               git config --global user.email "azam@rapidsilicon.com"
               git config --global user.name $GITHUB_ACTOR
-              export GIT_USER=$GITHUB_ACTOR
+              #export GIT_USER=$GITHUB_ACTOR
               echo $GIT_USER
               npm install
               yarn deploy
               ls -l
+        env:
+              GIT_USER: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
       - name: move build/* to doc
         run: |
               cp build/* docs
