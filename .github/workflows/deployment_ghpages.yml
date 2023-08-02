@@ -28,7 +28,7 @@ jobs:
               yarn deploy
               ls -l
         env:
-              GIT_USER: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+              GIT_USER: ${{ github.actor }}:${{ secrets.RGPT }}
       - name: move build/* to doc
         run: |
               cp build/* docs
