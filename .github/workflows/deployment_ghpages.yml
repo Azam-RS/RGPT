@@ -20,6 +20,8 @@ jobs:
           node-version: 18.16.0
       - name: npm install
         run: |
+              git config --global user.email "azam@rapidsilicon.com"
+              git config --global user.name $GITHUB_ACTOR
               export GIT_USER=$GITHUB_ACTOR
               echo $GIT_USER
               npm install
