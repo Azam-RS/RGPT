@@ -8,6 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel previous
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+            access_token: ${{ github.token }}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install Node.js, NPM and Yarn
@@ -16,6 +20,7 @@ jobs:
           node-version: 18.16.0
       - name: npm install
         run: |
+              export GIT_USER=${{ env.GITHUB_ACTOR }}
               npm install
               yarn deploy
               ls -l
