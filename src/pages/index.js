@@ -41,9 +41,9 @@ function HomepageHeader() {
                 <Link
                   // className="button button--secondary button--lg  btn-up" to="/docs/intro">
                   className="button button--lg  btn-default btn-doc"
-                  to="https://customerportal.rapidsilicon.com/hubfs/RapidGPT/RSAPP_VSCode/Latest/RSAPP-Using_RapidGPT_with_VSCode.pdf"
+                  to="#about"
                 >
-                  Explore the Docs
+                  Learn More
                 </Link>
               </div>
             </div>
