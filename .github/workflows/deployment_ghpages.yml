@@ -30,7 +30,7 @@ jobs:
               GIT_USER: ${{ github.actor }}:${{ secrets.RGPT }}
       - name: move build/* to doc
         run: |
-              cp -rf build/* docs
+              # cp -rf build/* docs
               ls -l docs
       - name: Setup Pages
         id: pages
@@ -38,7 +38,8 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./docs
+          # source: ./docs
+          source: build
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
