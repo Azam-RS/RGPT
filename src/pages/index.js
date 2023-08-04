@@ -8,7 +8,7 @@ import Layout from "@theme/Layout";
 import About from "../components/About/about";
 import Features from "../components/Features/Features";
 import Pricing from "../components/Pricing/pricing";
-// import FAQ from "../components/FAQ/faq";
+import FAQ from "../components/FAQ/faq";
 import Resources from "../components/Resources/Resources";
 import Footer from "../components/Footer/footer";
 import styles from "./index.module.css";
@@ -34,16 +34,16 @@ function HomepageHeader() {
               <div className={styles.buttons}>
                 <Link
                   className="button  button--lg btn-default"
-                  to="https://rapidgpt.rapidsilicon.com/User/SignUp"
+                  to="https://rapidgpt.rapidsilicon.com/user/login"
                 >
-                  Sign up
+                  Sign In
                 </Link>
-                {/* <Link
+                <Link
                   className="button button--lg  btn-default btn-doc"
-                  to="#about"
+                  to="/docs"
                 >
-                  Learn More
-                </Link> */}
+                  Explore The Docs
+                </Link>
               </div>
             </div>
           </div>
@@ -102,10 +102,10 @@ export default function Home() {
         <div className="bg-sec-3">
           <Pricing />
         </div>
-        {/* <div className="bg-sec-4">
-          <FAQ />
-        </div> */}
         <div className="bg-sec-4">
+          <FAQ />
+        </div>
+        <div className="bg-sec-5">
           <Resources />
         </div>
 

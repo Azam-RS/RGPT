@@ -176,7 +176,7 @@ body{
 }
 .bg-sec-4 {
   background: url('../../static/img/faq.png')center/cover no-repeat fixed;
-  /* height: 100vh; */
+  height: 100vh;
 }
 .navbar.navbar--fixed-top {
   background: transparent !important;
@@ -269,7 +269,10 @@ body{
   font-family: 'Poppins';
   padding-bottom: 10px;
 }
-
+.bg-sec-5{
+  height: auto;
+  background: #00182a;
+}
 
 
 /* price table */
@@ -462,6 +465,9 @@ color:#ed174f;
   }
 /* Docs Style */
 @media screen and (max-width:575px) {
+  .navbar-sidebar__brand div .clean-btn{
+    display: none !important;
+  }
   .menu__list-item:not(:first-child) {
     margin-top: 0.8rem !important;
   }
@@ -519,6 +525,7 @@ padding: 10px 22px;
 .sec-holder,.main-wrapper .heroBanner_qdFl,.bg-sec-1,.bg-sec-2,.bg-sec-3,.bg-sec-4 {
   height: auto;
 }
+
 .sec-holder,.bg-sec-1,.bg-sec-2,.bg-sec-3,.bg-sec-4 {
   background-position: 70% 0;
 }
@@ -598,20 +605,27 @@ border-radius: 10px;
 }
 .feature-holder {
   margin-bottom: 10px;
+  padding-right: 0px !important;
   background: rgb(6 20 31 / 52%);
 }
 .footer-btn{
   display: block;
 }
-
+.res-sec {
+  padding: 6rem 0 3rem 0 !important;
+}
+.copy-txt {
+  float: left !important;
+}
 
 }
 @media  only screen and (min-width:576px) and (max-width:767.98px){
+  .navbar-sidebar__brand div .clean-btn{
+    display: none !important;
+  }
   .heroBanner_src-pages-index-module {
     padding: 5rem 0rem 10rem !important;
-
-}
-
+  }
   .navbar__toggle {
     color: #fff;
     position: absolute;
@@ -725,12 +739,20 @@ border-radius: 10px;
 }
 .feature-holder {
   margin-bottom: 10px;
+  padding-right: 0px !important;
+
+}
+.res-sec {
+  padding: 6rem 0 3rem 0 !important;
 }
 .footer-btn{
   display: block;
 }
 }
 @media only screen and (min-width:768px) and (max-width:991.98px) {
+  .navbar-sidebar__brand div .clean-btn{
+    display: none !important;
+  }
   .heroBanner_src-pages-index-module {
     padding: 6rem 1rem 16rem !important;
 }
@@ -787,12 +809,19 @@ border-radius: 10px;
   width: 100%;
   overflow: auto;
 }
-.about-img {
+/* .about-img {
   height: 390px;
   width: 58em;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
+} */
+.about-img {
+  height: 400px;
+  width: 45em;
+  background-position: 50% 50%;
+  background-size: cover;
 }
+
 .faq-holder {
   margin-top: 80px;
 }
@@ -817,6 +846,11 @@ border-radius: 10px;
 }
 .feature-holder {
   margin-bottom: 10px;
+  padding-right: 0px !important;
+
+}
+.res-sec {
+  padding: 6rem 0 3rem 0 !important;
 }
 .footer-btn{
   display: block;

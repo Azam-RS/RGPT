@@ -1,5 +1,6 @@
 import React from "react";
-import TabsArea from "./Tabs";
+// import TabsArea from "./Tabs";
+import "./faq.css";
 
 const FAQ = () => {
   return (
@@ -9,7 +10,22 @@ const FAQ = () => {
           <div className="row">
             <div className="col col--6 faq-holder">
               <div className="contentTags">FAQs</div>
-              <TabsArea />
+              {/* <TabsArea /> */}
+              <p>
+                <a href="/docs/support" className="faq-link">
+                  Whast is RapidGPT Question 1 ?
+                </a>
+              </p>
+              <p>
+                <a href="/docs/support" className="faq-link">
+                  Whast is RapidGPT Question 2 ?
+                </a>
+              </p>
+              <p>
+                <a href="/docs/support" className="faq-link">
+                  Whast is RapidGPT Question 3 ?
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -41,15 +41,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/Azam-RS/RGPT/tree/main",
+          editUrl: "https://github.com/Azam-RS/RGPT/tree/main",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/Azam-RS/RGPT/tree/main",
+          editUrl: "https://github.com/Azam-RS/RGPT/tree/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -99,11 +97,11 @@ const config = {
             label: "Pricing",
             position: "right",
           },
-          // {
-          //   to: "#faq",
-          //   label: "FAQ",
-          //   position: "right",
-          // },
+          {
+            to: "#faq",
+            label: "FAQ",
+            position: "right",
+          },
           {
             to: "#resources",
             label: "Resources",
@@ -129,8 +127,8 @@ const config = {
 
       // routes: [
       //   {
-      //     path: "src/WhatisRGPT",
-      //     component: "src/WhatisRGPT/whatisrgpt.js", // Adjust the path to your Price component
+      //     path: "#docs",
+      //     component: "/docs", // Adjust the path to your Price component
       //     exact: true,
       //   },
       // ],
