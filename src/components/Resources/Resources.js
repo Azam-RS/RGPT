@@ -35,7 +35,6 @@ const Resources = () => {
                       For issues not disclosed above, get in touch with the
                       Rapid Silicon support team via Email:
                       <a href="mailto:support@rapidsilicon.com.hs-inbox.com">
-                        {" "}
                         support@rapidsilicon.com.hs-inbox.com
                       </a>
                     </p>

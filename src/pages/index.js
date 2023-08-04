@@ -15,7 +15,6 @@ import styles from "./index.module.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import "../../static/js/custom";
 
 library.add(faCheck);
 
