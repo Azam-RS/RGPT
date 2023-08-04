@@ -444,6 +444,17 @@ color:#ed174f;
    border:1px solid #ed174f;
 
   }
+  .table-of-contents__link{
+    color:#fff;
+  }
+  .table-of-contents__link--active{
+    color:#ed174f;
+  }
+  .table-of-contents__link:hover{
+    color:#ed174f;
+  } 
+
+
 /* Docs Style */
 @media screen and (max-width:575px) {
   .menu__list-item:not(:first-child) {
