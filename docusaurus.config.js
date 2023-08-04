@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/Azam-RS/RGPT/tree/main/src/docs",
+            "https://github.com/Azam-RS/RGPT/tree/main/src",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/Azam-RS/RGPT/tree/main/src/docs",
+            "https://github.com/Azam-RS/RGPT/tree/main/src",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
