@@ -30,6 +30,7 @@ jobs:
               GIT_USER: ${{ github.actor }}:${{ secrets.RGPT }}
       - name: move build/* to doc
         run: |
+              rm -rf docs/*
               # cp -rf build/* docs
               ls -l docs
       - name: Setup Pages
