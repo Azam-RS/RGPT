@@ -41,15 +41,15 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-         // editUrl:
-           // "https://github.com/Azam-RS/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl:
+            "https://github.com/Azam-RS/RGPT/tree/main/src/BackToTopButton.js",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-            //"https://github.com/Azam-RS/docusaurus/tree/main/packages/urus/templates/shared/",
+          editUrl:
+            "https://github.com/Azam-RS/RGPT/tree/main/src/BackToTopButton.js",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

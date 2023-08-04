@@ -21,25 +21,18 @@ jobs:
       - name: npm install
         run: |
               git config --global user.email "azam@rapidsilicon.com"
-              git config --global user.name $GITHUB_ACTOR
-              #export GIT_USER=$GITHUB_ACTOR
-              echo $GIT_USER
+              git config --global user.name $GITHUB_ACTOR             
               npm install
               yarn deploy
         env:
               GIT_USER: ${{ github.actor }}:${{ secrets.RGPT }}
-      - name: move build/* to doc
-        run: |
-              rm -rf docs/*
-              # cp -rf build/* docs
-              ls -l docs
+     
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
-        with:
-          # source: ./docs
+        with:         
           source: build
           destination: ./_site
       - name: Upload artifact
