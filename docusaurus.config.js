@@ -79,11 +79,11 @@ const config = {
           // },
 
           // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            to: "#home",
-            label: "Home",
-            position: "right",
-          },
+          // {
+          //   to: "#home",
+          //   label: "Home",
+          //   position: "right",
+          // },
           {
             to: "#about",
             label: "About",
@@ -99,19 +99,24 @@ const config = {
             label: "Pricing",
             position: "right",
           },
+          // {
+          //   to: "#faq",
+          //   label: "FAQ",
+          //   position: "right",
+          // },
           {
-            to: "#faq",
-            label: "FAQ",
+            to: "#resources",
+            label: "Resources",
             position: "right",
           },
 
           // {to: '/home/index', label: 'Home', position: 'left'},
           // {to: '/home/price&plan', label: 'Price and Plan', position: 'left'},
-          {
-            href: "https://customerportal.rapidsilicon.com/hubfs/RapidGPT/RSAPP_VSCode/Latest/RSAPP-Using_RapidGPT_with_VSCode.pdf",
-            label: "Get RapidGPT",
-            position: "right",
-          },
+          // {
+          //   href: "https://customerportal.rapidsilicon.com/hubfs/RapidGPT/RSAPP_VSCode/Latest/RSAPP-Using_RapidGPT_with_VSCode.pdf",
+          //   label: "Get RapidGPT",
+          //   position: "right",
+          // },
         ],
       },
 

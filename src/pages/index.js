@@ -6,9 +6,10 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 // import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import About from "../components/About/about";
-import WhyChooseRGPT from "../components/WhyChooseRGPT/WhyChooseRGPT";
+import Features from "../components/Features/Features";
 import Pricing from "../components/Pricing/pricing";
-import FAQ from "../components/FAQ/faq";
+// import FAQ from "../components/FAQ/faq";
+import Resources from "../components/Resources/Resources";
 import Footer from "../components/Footer/footer";
 import styles from "./index.module.css";
 
@@ -34,17 +35,16 @@ function HomepageHeader() {
               <div className={styles.buttons}>
                 <Link
                   className="button  button--lg btn-default"
-                  to="https://rapidgpt.rapidsilicon.com/user/Login"
+                  to="https://rapidgpt.rapidsilicon.com/User/SignUp"
                 >
                   Sign up
                 </Link>
-                <Link
-                  // className="button button--secondary button--lg  btn-up" to="/docs/intro">
+                {/* <Link
                   className="button button--lg  btn-default btn-doc"
                   to="#about"
                 >
                   Learn More
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -98,14 +98,18 @@ export default function Home() {
           <About />
         </div>
         <div className="bg-sec-2">
-          <WhyChooseRGPT />
+          <Features />
         </div>
         <div className="bg-sec-3">
           <Pricing />
         </div>
-        <div className="bg-sec-4">
+        {/* <div className="bg-sec-4">
           <FAQ />
+        </div> */}
+        <div className="bg-sec-4">
+          <Resources />
         </div>
+
         {/* <HomepageFeatures /> */}
       </main>
       <Footer />

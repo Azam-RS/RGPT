@@ -37,26 +37,26 @@ body{
 }
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #0D8AFD;
+  --ifm-color-primary-dark: #0D8AFD;
+  --ifm-color-primary-darker: #0D8AFD;
+  --ifm-color-primary-darkest: #0D8AFD;
+  --ifm-color-primary-light: #0D8AFD;
+  --ifm-color-primary-lighter: #0D8AFD;
+  --ifm-color-primary-lightest: #0D8AFD;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #0D8AFD;
+  --ifm-color-primary-dark: #0D8AFD;
+  --ifm-color-primary-darker: #0D8AFD;
+  --ifm-color-primary-darkest: #0D8AFD;
+  --ifm-color-primary-light: #0D8AFD;
+  --ifm-color-primary-lighter: #0D8AFD;
+  --ifm-color-primary-lightest: #0D8AFD;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 /* back to top btn */
@@ -102,7 +102,7 @@ body{
 .navbar__items--right .navbar__item:hover {
   color: #ed164f !important;
 }
-.navbar__items--right a:nth-child(6) {
+/* .navbar__items--right a:nth-child(6) {
   background: #ed164f !important;
   border-radius: 20px;
   margin-left: 25px;
@@ -111,7 +111,7 @@ body{
 .navbar__items--right a:nth-child(6):hover {
   background: #fff !important;
   color: #ed164f;
-}
+} */
 .desc-detail {
   margin-bottom: 20px;
 }
@@ -125,6 +125,7 @@ body{
   font-weight: normal;
   font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))) !important;
   line-height: calc(16px + (18 - 16) * ((100vw - 300px) / (1920 - 300))) !important;
+  padding: 8px 35px;
 }
 .btn-doc {
   background: #1c2337;
@@ -170,7 +171,7 @@ body{
 }
 .bg-sec-4 {
   background: url('../../static/img/faq.png')center/cover no-repeat fixed;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .navbar.navbar--fixed-top {
   background: transparent !important;
@@ -261,38 +262,8 @@ body{
   margin: 20px auto 30px;
   font-family: 'Poppins';
 }
-.m-top{
-  margin-top: 100px;
-}
-.feature-holder{
-  margin-bottom: 40px;
-}
-.feature-holder h3{
-  font-weight: 600;
-  padding-left: 15px;
-  text-transform: capitalize;
-  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1920 - 300))) !important;
-  line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1920 - 300))) !important;
-  font-family: 'Poppins';
-  position: relative;
-  margin-bottom: 20px;
-}
-.feature-holder h3:after{
-  content: '';
-  width: 6px;
-  min-height: 100%;
-  background: #ed164f;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  border-radius: 8px;
-}
-.feature-holder p{
-  font-weight: 300;
-  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))) !important;
-  line-height: calc(22px + (27 - 22) * ((100vw - 300px) / (1920 - 300))) !important;
-  font-family: 'Poppins';
-}
+
+
 
 /* price table */
 .loginbox form {

@@ -7,7 +7,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             <div className="col col--12">
-              <div className="contentTags">What is RapidGPT</div>
+              <div className="contentTags">About</div>
               <div className="text--center padding-horiz--md">
                 <h2 className="title-txt">
                   RapidGPT is the industry’s first AI-based pair-designer

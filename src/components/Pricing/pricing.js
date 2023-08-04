@@ -9,7 +9,7 @@ const Pricing = () => {
         <div className="container">
           <div className="row ">
             <div className="col col--12">
-              <div className="contentTags">Plan & Pricing</div>
+              <div className="contentTags">Pricing</div>
               <div className="">
                 <div className="loginbox plan-box">
                   <div className="">

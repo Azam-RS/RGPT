@@ -39,11 +39,15 @@
     color: #ed164f !important;
 
   }
+  .footer-logo{
+    float:left;
+  }
   .footer-logo a,  .footer-logo a:hover,   .footer-logo a:focus{
     outline: none;
     margin: 0;
   }
   .copy-txt{
+    float:right;
     margin-bottom: 0;
   }
 

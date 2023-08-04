@@ -1,13 +1,14 @@
 import React from "react";
+import "./feature.css";
 
-const WhyChooseRGPT = () => {
+const Features = () => {
   return (
     <div>
       <div id="features" className="fea-sec">
         <div className="container">
           <div className="row">
             <div className="col col--12">
-              <div className="contentTags">Why choose Rapid GPT</div>
+              <div className="contentTags">Features</div>
 
               <div className="row m-top">
                 <div className="col col--6">
@@ -42,7 +43,7 @@ const WhyChooseRGPT = () => {
                 </div>
                 <div className="col col--6">
                   <div className="feature-holder">
-                    <h3>UNLEASH THE POWER OF RAPID-GPT TODAY</h3>
+                    <h3>UNLEASH THE POWER OF RAPIDGPT TODAY</h3>
                     <p>
                       RapidGPT is the ultimate HDL from the future that empowers
                       FPGA designers to unleash their creativity and design
@@ -62,4 +63,4 @@ const WhyChooseRGPT = () => {
   );
 };
 
-export default WhyChooseRGPT;
+export default Features;
