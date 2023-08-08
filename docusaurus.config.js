@@ -17,7 +17,7 @@ const config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'RapidSilicon', // Usually your GitHub org/user name.
+    organizationName: 'Azam-RS', // Usually your GitHub org/user name.
     projectName: 'RGPT', // Usually your repo name.
 
     trailingSlash: false,
