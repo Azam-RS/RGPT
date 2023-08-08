@@ -40,7 +40,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: "https://github.com/RapidSilicon/rapidgpt-webapp-frontend/edit/main",
+                    editUrl: "https://github.com/Azam-RS/RGPT/edit/main",
                 },
                 blog: {
                     showReadingTime: true,
