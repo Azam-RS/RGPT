@@ -13,12 +13,12 @@ const config = {
     url: "https://rapidsilicon.github.io/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "rapidgpt-webapp-frontend/",
+    baseUrl: "/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'RapidSilicon', // Usually your GitHub org/user name.
-    projectName: 'rapidgpt-webapp-frontend', // Usually your repo name.
+    projectName: 'RGPT', // Usually your repo name.
 
     trailingSlash: false,
 
