@@ -1,5 +1,8 @@
 
-.site-footer {
+  .social-icons{
+    margin-top: 10px;
+  }
+  .site-footer {
     background-color: #1c2337;
     color: #fff;
     padding:80px;
@@ -7,41 +10,27 @@
   .m-bottom{
     margin-bottom: 20px;
   }
-  
-  .footer-btn{
+  /* .footer-btn{
     background:#ed164f;
     color: #fff;
     border-radius: 20px;
     font-family: "poppins";
     float: left;
   }
-  
   .footer-btn:hover{
     background:#fff  !important;
     color: #ed164f;
-
-  }
+  } */
   .site-footer .f-link{
     text-align: right;
-    margin-bottom: 10px;
   }
   .site-footer .link-holder{
     overflow: hidden;
-    width: 100%;
-    
+    width: 100%;    
     border-bottom: 1px solid #fff;
   }
-
-  .site-footer .f-link-item{
-    color: #fff !important;
-    margin-left:20px;
-  }
-  .site-footer .f-link-item:hover{
-    color: #ed164f !important;
-
-  }
   .footer-logo{
-    float:left;
+    display: inline-block;
   }
   .footer-logo a,  .footer-logo a:hover,   .footer-logo a:focus{
     outline: none;
@@ -54,17 +43,53 @@
   }
 
   @media screen and (max-width:575px) {
+  
     .site-footer {
       padding: 50px 15px;
    }
-   .site-footer .f-link-item {
-     margin-left: 10px;
-     font-size: 14px;
-   }
-   .footer-btn {
-    font-size: 14px;
+   .footer-logo{
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+   .site-footer .f-link {
+      text-align: center;
+      margin-bottom: 15px;
   }
   .copy-txt {
     font-size: 14px;
+    float: none;
+    text-align: center;
+  }
+  
 }
+@media  only screen and (min-width:576px) and (max-width:996.98px){
+  .social-icons {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ .footer-logo{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .site-footer .f-link {
+    text-align: center;
+    /* margin-bottom: 15px; */
+  }
+  .copy-txt {
+    font-size: 14px;
+    float: none;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width:997px) and (max-width:1599.98px){
+  /* footer-logo{
+
+  } */
+  /* .site-footer .f-link{
+    margin-bottom: 0;
+  } */
 }

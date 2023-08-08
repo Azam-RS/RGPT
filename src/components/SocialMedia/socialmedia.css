@@ -1,0 +1,30 @@
+/* .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 7px;
+    text-decoration: none;
+    line-height: 26px;
+  } */
+  .social-icons a {
+    color: white;
+    margin: 0px 7px 0px;
+    text-decoration: none;
+    /* background: orange; */
+    width: 28px;
+    display: inline-block;
+    height: 28px;
+    padding: 0px 0 0 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.social-icons a:hover{
+    background: #fff;
+}
+.social-icons a:hover svg path{
+    fill: #ed174f !important;
+  }
+  .svg-inline--fa {
+    height: 32px;
+    vertical-align: top;
+    margin: -2px 0 0 0px;
+}
