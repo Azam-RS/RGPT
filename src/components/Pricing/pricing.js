@@ -34,13 +34,8 @@ const Pricing = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="form-group text--center">
-                            <button
-                              type="submit"
-                              className="button  button--lg"
-                            >
-                              Choose Plan
-                            </button>
+                          <div className="form-group text--center">                           
+                            <a href="https://rapidgpt.rapidsilicon.com/User/SignUp"  className="button  button--lg">Choose Plan</a>
                           </div>
                         </div>
                       </div>
