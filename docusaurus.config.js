@@ -13,12 +13,12 @@ const config = {
     url: "https://rapidsilicon.github.io/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "/",
+    baseUrl: "rapidgpt-webapp-frontend/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'Azam-RS', // Usually your GitHub org/user name.
-    projectName: 'RGPT', // Usually your repo name.
+    organizationName: 'RapidSilicon', // Usually your GitHub org/user name.
+    projectName: 'rapidgpt-webapp-frontend', // Usually your repo name.
 
     trailingSlash: false,
 
@@ -40,7 +40,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: "https://github.com/Azam-RS/RGPT/edit/main",
+                    editUrl: "https://github.com/RapidSilicon/rapidgpt-webapp-frontend/edit/main",
                 },
                 blog: {
                     showReadingTime: true,

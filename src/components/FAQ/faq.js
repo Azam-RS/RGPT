@@ -12,17 +12,17 @@ const FAQ = () => {
                             <div className="contentTags">FAQs</div>
                             <TabsArea />
                             {/* <p>
-                                <a href="/RGPT/docs/support" className="faq-link">
+                                <a href="/rapidgpt-webapp-frontend/docs/support" className="faq-link">
                                     Whast is RapidGPT Question 1 ?
                                 </a>
                             </p>
                             <p>
-                                <a href="/RGPT/docs/support" className="faq-link">
+                                <a href="/rapidgpt-webapp-frontend/docs/support" className="faq-link">
                                     Whast is RapidGPT Question 2 ?
                                 </a>
                             </p>
                             <p>
-                                <a href="/RGPT/docs/support" className="faq-link">
+                                <a href="/rapidgpt-webapp-frontend/docs/support" className="faq-link">
                                     Whast is RapidGPT Question 3 ?
                                 </a>
                             </p> */}

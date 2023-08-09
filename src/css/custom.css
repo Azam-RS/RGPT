@@ -463,7 +463,17 @@ color:#ed174f;
   code{
     background: transparent;
   }
+ 
 /* Docs Style */
+@media only screen and (min-width:320px) and (max-width:1600px){
+  .docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article,
+  .docItemContainer_Djhp{
+    margin-top: 60px !important;
+  }
+  .menu_SIkG {
+     padding-top: 0.8rem !important;
+  }
+}
 @media screen and (max-width:575px) {
   .navbar-sidebar__brand div .clean-btn{
     display: none !important;
@@ -614,13 +624,6 @@ border-radius: 10px;
 .res-sec {
   padding: 6rem 0 3rem 0 !important;
 }
-.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-  margin-top: 65px !important;
-}
-.theme-doc-sidebar-container .menu__list {
-  margin: 9px 0 0 0 !important;
-}
-
 }
 @media  only screen and (min-width:576px) and (max-width:767.98px){
   .navbar-sidebar__brand div .clean-btn{
@@ -750,12 +753,6 @@ border-radius: 10px;
 .footer-btn{
   display: block;
 }
-.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-  margin-top: 65px !important;
-}
-.theme-doc-sidebar-container .menu__list {
-  margin: 9px 0 0 0 !important;
-}
 }
 @media only screen and (min-width:768px) and (max-width:991.98px) {
   .navbar-sidebar__brand div .clean-btn{
@@ -859,12 +856,6 @@ border-radius: 10px;
 .sec-holder,.main-wrapper .heroBanner_qdFl,.bg-sec-1,.bg-sec-2,.bg-sec-3,.bg-sec-4 {
   height: auto;
 }
-.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-  margin-top: 65px !important;
-}
-.theme-doc-sidebar-container .menu__list {
-  margin: 9px 0 0 0 !important;
-}
 }
 @media only screen and (min-width:992px) and (max-width:1023.98px) {
   .navbar__toggle {
@@ -947,12 +938,6 @@ border-radius: 10px;
 .pri-sec{
   padding-top: 80px;
 }
-.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-  margin-top: 65px !important;
-}
-.theme-doc-sidebar-container .menu__list {
-  margin: 9px 0 0 0 !important;
-}
 }
 
 @media only screen and (min-width:1024px) and (max-width:1199.98px) {
@@ -995,14 +980,7 @@ border-radius: 10px;
 }
 .pri-sec{
   padding-top: 82px;
-}
-.docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-  margin-top: 65px !important;
-}
-.theme-doc-sidebar-container .menu__list {
-  margin: 9px 0 0 0 !important;
-}
-}
+}}
 @media only screen and (min-width:1200px) and (max-width:1365.98px) {
   .navbar.navbar--fixed-top {
     background: #06141F !important;
@@ -1040,12 +1018,6 @@ border-radius: 10px;
   .faq-holder {
     margin-top: 20px;
   }
-  .docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-    margin-top: 65px !important;
-  }
-  .theme-doc-sidebar-container .menu__list {
-    margin: 9px 0 0 0 !important;
-  }
 }
 @media only screen and (min-width:1366px) and (max-width:1599.98px) {
   .navbar.navbar--fixed-top {
@@ -1068,12 +1040,6 @@ border-radius: 10px;
   }
   .plan-box .form-area .fld-holder {
     padding: 40px 40px;
-  }
-  .docItemContainer_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module article > *:first-child {
-    margin-top: 65px !important;
-  }
-  .theme-doc-sidebar-container .menu__list {
-    margin: 9px 0 0 0 !important;
   }
 }
 @media only screen and (min-width:1601px) and (max-width:1899.98px) {
