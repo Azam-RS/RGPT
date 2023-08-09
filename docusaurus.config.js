@@ -10,14 +10,14 @@ const config = {
     favicon: "/img/favicon.png",
 
     // Set the production url of your site here
-    url: "https://rapidsilicon.github.io/",
+    url: "https://Azam-RS.github.io/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "RGPT/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'RapidSilicon', // Usually your GitHub org/user name.
+    organizationName: 'Azam-RS', // Usually your GitHub org/user name.
     projectName: 'RGPT', // Usually your repo name.
 
     trailingSlash: false,
