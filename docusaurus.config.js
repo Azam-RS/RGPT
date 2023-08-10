@@ -13,7 +13,7 @@ const config = {
     url: "https://Azam-RS.github.io/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "RGPT/",
+    baseUrl: "/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -40,7 +40,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl: "https://github.com/RapidSilicon/RGPT/edit/main",
+                    editUrl: "https://github.com/Azam-RS/RGPT/edit/main",
                 },
                 blog: {
                     showReadingTime: true,
