@@ -4,12 +4,10 @@ import "./feature.css";
 const Features = () => {
   return (
     <div>
-      <div id="features" className="fea-sec">
+      <div className="fea-sec">
         <div className="container">
           <div className="row">
             <div className="col col--12">
-              <div className="contentTags">Features</div>
-
               <div className="row m-top">
                 <div className="col col--6">
                   <div className="feature-holder">

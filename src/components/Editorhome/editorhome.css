@@ -1,0 +1,74 @@
+/* custom Tabs */
+.btn-reply {
+  background: #67eae9 !important;
+  border-radius: 20px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-family: "poppins";
+  font-size: 14px;
+  color: #171810 !important;
+  padding: 4px 22px;
+}
+.btn-reply:hover {
+  background: #fff !important;
+  color: #171810 !important;
+  cursor: pointer;
+}
+.bg-editor {
+  background: #061c2f;
+}
+.ed-tab {
+  background: #24292f;
+  border: 1px solid #30363d;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  text-align: left;
+  position: relative;
+  height: 520px;
+  margin: 0 auto 50px;
+  max-width: 65em;
+  width: 100%;
+}
+.ed-tab ul {
+  background: #161b22 !important;
+  padding: 8px 0 0 6px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.ed-tab ul .tabs__item {
+  background: #161b22;
+  padding: 10px 6px;
+  margin-right: 1px;
+  color: #7a8390;
+}
+.ed-tab ul .tabs__item--active {
+  background: #24292f !important;
+  border: 1px solid #30363d;
+  border-bottom: 0px;
+  color: #fff !important;
+}
+.ed-tab .margin-top--md {
+  margin-top: 0 !important;
+  padding: 20px;
+}
+.ed-tab .accord-holder pre {
+  background: transparent;
+}
+.pl-k {
+  color: #ff7b72;
+}
+.pl-s,
+.pl-pds,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sre,
+.pl-sr .pl-sra {
+  color: #a5d6ff;
+}
+.pl-e,
+.pl-en {
+  color: #d2a8ff;
+}
+/* Cutome Tabs */

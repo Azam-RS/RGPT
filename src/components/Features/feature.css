@@ -1,35 +1,78 @@
-.m-top{
-    margin-top: 30px;
+.m-top {
+  margin-top: 30px;
+}
+.feature-holder {
+  margin-bottom: 40px;
+  padding: 25px;
+  text-align: justify;
+  background: rgb(6 20 31 / 52%);
+}
+.feature-holder h3 {
+  font-weight: 600;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: calc(
+    20px + (26 - 20) * ((100vw - 300px) / (1920 - 300))
+  ) !important;
+  line-height: calc(
+    24px + (28 - 24) * ((100vw - 300px) / (1920 - 300))
+  ) !important;
+  font-family: "Poppins";
+  position: relative;
+  margin-bottom: 28px;
+  text-align: left;
+}
+.feature-holder h3:after {
+  content: "";
+  width: 6px;
+  min-height: 100%;
+  background: #67eae9;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 8px;
+}
+.feature-holder p {
+  font-weight: 300;
+  font-size: calc(
+    14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))
+  ) !important;
+  line-height: calc(
+    22px + (30 - 22) * ((100vw - 300px) / (1920 - 300))
+  ) !important;
+  font-family: "Poppins";
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1365.98px) {
+  .feature-holder {
+    margin-bottom: 20px !important;
+    padding: 15px 20px;
   }
-.feature-holder{
-    margin-bottom: 40px;
-    padding-right: 60px;
-    text-align: justify;
+  .feature-holder h3 {
+    font-size: 18px !important;
+    line-height: 20px;
+    margin-bottom: 10px !important;
   }
-  .feature-holder h3{
-    font-weight: 600;
-    padding-left: 15px;
-    text-transform: uppercase;
-    font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1920 - 300))) !important;
-    line-height: calc(24px + (28 - 24) * ((100vw - 300px) / (1920 - 300))) !important;
-    font-family: 'Poppins';
-    position: relative;
-    margin-bottom: 28px;
+  .feature-holder p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin-bottom: 0px !important;
   }
-  .feature-holder h3:after{
-    content: '';
-    width: 6px;
-    min-height: 100%;
-    background: #ed164f;
-    position: absolute;
-    left: 0;
-    top: 2px;
-    border-radius: 8px;
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599.98px) {
+  .feature-holder {
+    margin-bottom: 20px !important;
+    padding: 15px 20px;
   }
-  .feature-holder p{
-    font-weight: 300;
-    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))) !important;
-    line-height: calc(22px + (30 - 22) * ((100vw - 300px) / (1920 - 300))) !important;
-    font-family: 'Poppins';
-    margin-bottom: 60px;
+  .feature-holder h3 {
+    font-size: 22px !important;
+    line-height: 24px;
+    margin-bottom: 10px !important;
   }
+  .feature-holder p {
+    font-size: 16px !important;
+    line-height: 28px !important;
+    margin-bottom: 0px !important;
+  }
+}

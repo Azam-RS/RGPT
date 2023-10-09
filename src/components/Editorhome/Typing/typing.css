@@ -1,0 +1,65 @@
+.keywords {
+  color: rgb(127, 219, 202);
+}
+.punctuations {
+  color: rgb(199, 146, 234);
+}
+.plain {
+  color: rgb(214, 222, 235);
+}
+.accord-holder .r-space {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.accord-holder .r-space pre {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* animation */
+.cmnt {
+  color: rgb(99, 119, 119);
+}
+.cmntTxt {
+  color: rgb(99, 119, 119);
+  font-style: italic;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typings 1s steps(24, end), blink-carets 0.5s step-end infinite !important;
+  display: inline-block;
+}
+/* .delaytxt {
+    color: #fff;
+    animation: delays 2s 2s forwards !important;
+    max-width: 0;
+    visibility: hidden;
+  } */
+
+/* Keyframes for the typing animation */
+
+@keyframes typings {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+/* @keyframes delays {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+} */
+@keyframes blink-carets {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+/* animation */

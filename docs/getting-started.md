@@ -4,6 +4,18 @@ sidebar_position: 2
 
 # Getting Started
 
+:::tip Notice of Publisher Change
+
+Please note that RapidGPT is now released by PrimisAI. If you are currently using an older version of RapidGPT (i.e., older than v1.31.x), please uninstall it before downloading the new version from PrimisAI. Users who already signed up on `rapidgpt.rapidsilicon.com` can continue using their API key and credentials on [`primis.ai`](https://getrapidgpt.primis.ai/).
+
+:::
+
+:::warning Warning
+
+RapidGPT is currently in the pre-production phase. While we strive for accuracy, please note that the answers provided may contain errors. We recommend double-checking the information for your specific needs and requirements.
+
+:::
+
 ## Installation
 
 RapidGPT is available through a convenient and user-friendly extension for Microsoft Visual Studio Code.
@@ -19,11 +31,11 @@ RapidGPT is available through a convenient and user-friendly extension for Micro
 
 ### Obtain a Valid API Key
 
-Sign-up on [RapidGPT's website](https://rapidgpt.rapidsilicon.com/) via email/password, or simply by using one of the available social login buttons. Once your account is activated, head over to your [Account Information page](https://rapidgpt.rapidsilicon.com/Home/AccountInformation) and copy the API key.
+Sign-up on [RapidGPT's website](https://getrapidgpt.primis.ai/) via email/password. Once your account is activated, head over to your [Account Information page](https://getrapidgpt.primis.ai/Home/AccountInformation) and copy the API key.
 
 :::caution
 
-Currently, Rapid Silicon does not offer paid licenses for RapidGPT. However, a unique RapidGPT API key is still necessary.
+Currently, PrimisAI does not offer paid licenses for RapidGPT. However, a unique RapidGPT API key is still necessary.
 
 :::
 
@@ -41,5 +53,5 @@ Now you're ready to start interacting with RapidGPT! You can ask questions, requ
 
 Once RapidGPT is installed, you can begin leveraging its power to enhance your hardware design process. Check out the following resources to get started:
 
-<!-- - [FAQs](/faqs): Find answers to commonly asked questions about RapidGPT.
-- [Support](/support): If you encounter any issues or need assistance, our support team is here to help. -->
+- [FAQs](/#faqs): Find answers to commonly asked questions about RapidGPT.
+- [Support](/docs/support): If you encounter any issues or need assistance, our support team is here to help.
