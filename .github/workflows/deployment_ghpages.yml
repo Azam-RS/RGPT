@@ -20,7 +20,7 @@ jobs:
           node-version: 18.16.0
       - name: npm install
         run: |
-              git config --global user.email "azam@primis.ai"
+              git config --global user.email "azam@rapidsilicon.com"
               git config --global user.name $GITHUB_ACTOR             
               npm install
               yarn deploy
