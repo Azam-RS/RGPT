@@ -4,36 +4,39 @@ import "./resources.css";
 
 const Resources = () => {
   return (
-    <div>
-      <div id="resources" className="res-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col col--12">
-              <div className="contentTags">Resources</div>
-
-              <div className="row R-top">
-                <div className="col col--6">
-                  <div className="resour-holder">
-                    <h3>UNLOCK THE FULL POTENTIAL OF RAPIDGPT</h3>
-                    <p>
-                      Discover the full potential of RapidGPT with our
-                      comprehensive documentation. Get access to step-by-step
-                      tutorials, time-saving shortcuts, and troubleshooting
-                      tips.
-                    </p>
-                    <p>
-                      <Link
-                        className="button  button--lg btn-default"
-                        to="/docs"
-                      >
-                        Read the Documentation
-                      </Link>
-                    </p>
-                    <p>
-                      For any issues, please contact us at:{" "}
-                      <a href="mailto:support@primis.ai">support@primis.ai</a>
-                    </p>
+    <div id="resources" className="res-sec">
+      <div className="container">
+        <div className="row">
+          <div className="col col--12">
+            <div className="g-holder">
+              <div className="row">
+                <div className="col col--6 text--center">
+                  <div className="chat-bg">
+                    <img src="img/chat.png" alt="img" />
                   </div>
+                </div>
+                <div className="col col--6">
+                  <div className="txt-box">
+                    <h2>
+                      Embark on Your HDL
+                      <br /> Pair-Designing Journey
+                      <br /> with the Ultimate Tool.
+                    </h2>
+                    <div className="logo-holder">
+                      {/* <img src="img/logo-white.png" alt="logo" /> */}
+                    </div>
+                    <div>
+                      <Link
+                        className="button  button--lg btn-g"
+                        to="https://rgptstaging.rapidsilicon.com/"
+                      >
+                        Sign up Now
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <div className="outer_circle">
+                  <div className="inner_circle"></div>
                 </div>
               </div>
             </div>

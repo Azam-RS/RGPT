@@ -1,0 +1,53 @@
+.c-holder {
+  width: 100%;
+  max-width: 78em;
+  margin: 0 auto;
+}
+.slick-slider {
+  background: rgba(18, 37, 75, 0.4);
+  padding: 10px;
+  cursor: pointer;
+}
+.c-holder h2 {
+  font-family: "Poppins-SemiBold";
+  font-size: calc(
+    26px + (30 - 26) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    28px + (46 - 28) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .c-holder {
+    width: 100%;
+    max-width: 78em;
+    margin: 0 auto 50px;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 0 35px;
+    box-sizing: border-box;
+  }
+  .slick-slide div {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .c-holder {
+    max-width: 43em;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .c-holder {
+    max-width: 56em;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
+  .c-holder {
+    max-width: 59em;
+  }
+}

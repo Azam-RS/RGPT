@@ -1,0 +1,66 @@
+.news-holder {
+  padding: 100px 15px;
+  background: #f6f9fe;
+  color: rgba(24, 50, 101, 1);
+}
+.news-holder h1 {
+  font-size: 46px;
+  line-height: 70px;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  word-wrap: break-word;
+  text-align: center;
+  color: rgba(15, 48, 113, 1);
+}
+
+.news-holder p {
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.news-holder .bld-txt {
+  font-size: 20px;
+  font-weight: 600;
+}
+.green-txt {
+  color: rgba(103, 234, 233, 1);
+  padding: 0 5em;
+  text-shadow: 0 0px 1px rgba(0, 0, 0, 0.5);
+}
+.n-link {
+  color: rgba(24, 50, 101, 1);
+  text-decoration: underline;
+}
+.n-link:hover,
+.n-link:active,
+.n-link:focus {
+  color: rgba(103, 234, 233, 1);
+}
+.news-holder h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.regds h4,
+.regds p {
+  margin-bottom: 0;
+}
+.regds p:first-child {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023.98px) {
+  .news-holder {
+    padding: 0 0 50px 0;
+  }
+  .news-holder h1 {
+    text-align: left;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 60px 0;
+  }
+  .green-txt {
+    padding: 0;
+  }
+}

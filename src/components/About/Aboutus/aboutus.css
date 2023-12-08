@@ -1,135 +1,223 @@
 .bg-sec-01 {
-    background: url("/img/aboutus.jpg") center/cover no-repeat fixed;
-    height: 100vh;
+  background: url("/img/bg-sec/bg2.png") no-repeat;
+  background-size: cover;
+  background-position: 0 110px;
 }
-
-.m-top {
-    margin-top: 30px;
+.line-holder {
+  padding: 16.8em 0 7em;
 }
+.cht-box {
+  min-height: 550px;
+  position: relative;
+}
+.c-area {
+  width: 100%;
+  min-height: 452px;
+  text-align: left;
+  position: relative;
+  border-radius: 20px;
+  border: 15px solid #1d1d1d;
+  background: #2d2d2d;
+  margin-bottom: 20px;
+}
+.cht-box:before {
+  content: "";
+  background: url("/static/img/bg-lines/slice1.png") no-repeat;
+  width: 642px;
+  height: 270px;
+  position: absolute;
+  top: -268.5px;
+  left: 40px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.c-area:after {
+  content: "";
+  background: url("/static/img/bg-lines/slice2.png") no-repeat;
+  width: 642px;
+  height: 270px;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.c-area p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 15px;
+}
+.usermsg {
+  width: 80%;
+  min-height: 56px;
+  background: #30414e;
+  margin: 40px 15px 40px 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  animation: delays 1s 1s forwards !important;
+  visibility: hidden;
+}
+.user_msg1 {
+  float: right;
+}
+.user_msg2 {
+  float: left;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  margin: 40px 5px 40px 15px;
+}
+.show_msg1 {
+  animation: delays 2s 2s forwards !important;
+}
+.show_msg2 {
+  animation: delays 3s 3s forwards !important;
+}
+.show_msg3 {
+  animation: delays 4s 4s forwards !important;
+}
+.inputchat {
+  background: #333;
+  width: 100%;
+  text-align: left;
+  min-height: 50px;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.inputchat .typemsg {
+  color: #fff;
+  font-size: calc(
+    13px + (28 - 13) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    24px + (34 - 24) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins";
+  display: inline-block;
+  vertical-align: middle;
 
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typings 2s steps(24, end), blink-carets 0.5s step-end infinite !important;
+}
+.inputchat i {
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+}
 .aboutus-holder {
-    margin-bottom: 40px;
-    padding: 25px;
-    text-align: left;
-    background: transparent;
+  margin-bottom: 40px;
+  padding: 0 95px 25px;
+  text-align: left;
+  background: transparent;
 }
 
 .aboutus-holder h3 {
-    font-weight: 600;
-    padding-left: 15px;
-    text-transform: uppercase;
-    font-size: calc(26px + (36 - 26) * ((100vw - 300px) / (1920 - 300))) !important;
-    line-height: calc(24px + (34 - 24) * ((100vw - 300px) / (1920 - 300))) !important;
-    font-family: "Poppins";
-    position: relative;
-    margin-bottom: 28px;
-    text-align: left;
-}
-
-.aboutus-holder h3:after {
-    content: "";
-    width: 6px;
-    min-height: 100%;
-    background: #67eae9;
-    position: absolute;
-    left: 0;
-    top: 2px;
-    border-radius: 8px;
+  color: #fff;
+  font-family: "Poppins-SemiBold";
+  text-transform: capitalize;
+  font-size: calc(
+    30px + (48 - 30) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    32px + (62 - 32) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  position: relative;
+  margin-bottom: 28px;
+  text-align: left;
 }
 
 .aboutus-holder p {
-    font-weight: 300;
-    font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300))) !important;
-    line-height: calc(22px + (30 - 22) * ((100vw - 300px) / (1920 - 300))) !important;
-    font-family: "Poppins";
-    margin-bottom: 0px;
+  font-weight: 300;
+  font-size: calc(
+    15px + (18 - 15) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    22px + (30 - 22) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.g-box {
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to right, #153a40, #fff, #020c15) 1;
-}
+/* animation */
 
-.g-box p {
-    color: #67eae9;
+@keyframes typings {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+@keyframes delays {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes blink-carets {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .c-area p {
     font-size: 14px;
-    font-family: Poppins;
-    font-weight: 400;
-    line-height: 25.76px;
-    word-wrap: break-word;
-    margin: 0;
-    padding: 30px;
-    text-align: left;
+  }
+  .usermsg {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .btn-reply {
+    top: 44px;
+    font-size: 12px;
+    padding: 2px 12px;
+  }
+  .ed-tab .margin-top--md {
+    padding: 30px 20px 0;
+  }
+  .cht-box:before {
+    display: none;
+  }
+  .c-area:after {
+    display: none;
+  }
+  .aboutus-holder {
+    padding: 50px 0px !important;
+  }
 }
-
-@media screen and (max-width: 575px) {
-    .aboutus-holder {
-        padding: 25px 0px !important;
-    }
-
-    .brainimg video {
-        width: 100% !important;
-    }
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .cht-box:before {
+    display: none;
+  }
+  .aboutus-holder {
+    padding: 100px 0px 0px !important;
+  }
 }
-
-@media only screen and (min-width: 992px) and (max-width: 1023.98px) {
-    .aboutus-holder {
-        margin-bottom: 20px;
-        padding: 5px;
-    }
-
-    .brainimg video {
-        width: 100% !important;
-    }
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .aboutus-holder {
+    padding: 170px 0px 0px !important;
+  }
 }
-
 @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
-    .brainimg video {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1365.98px) {
-    .aboutus-holder {
-        margin-bottom: 20px !important;
-        padding: 15px 20px;
-    }
-
-    .aboutus-holder h3 {
-        font-size: 18px !important;
-        line-height: 20px;
-        margin-bottom: 10px !important;
-    }
-
-    .aboutus-holder p {
-        font-size: 14px !important;
-        line-height: 22px !important;
-        margin-bottom: 0px !important;
-    }
-
-    .brainimg video {
-        width: 100% !important;
-    }
-}
-
-@media only screen and (min-width: 1366px) and (max-width: 1599.98px) {
-    .aboutus-holder {
-        margin-bottom: 30px !important;
-        padding: 15px 20px;
-    }
-
-    .aboutus-holder h3 {
-        font-size: 22px !important;
-        line-height: 24px;
-        margin-bottom: 10px !important;
-    }
-
-    .aboutus-holder p {
-        font-size: 16px !important;
-        line-height: 28px !important;
-        margin-bottom: 0px !important;
-    }
+  .usermsg {
+    margin-bottom: 20px;
+  }
 }

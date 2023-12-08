@@ -1,135 +1,186 @@
 import React from "react";
+import "./pricing.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Pricing = () => {
-    return (
-        <div>
-            <div id="pricing" className="pri-sec ">
-                <div className="container">
-                    <div className="row ">
-                        <div className="col col--12">
-                            <div className="contentTags">Pricing</div>
-                            <div className="">
-                                <div className="loginbox plan-box">
-                                    <div className="">
-                                        <div className="form-area">
-                                            <div className="plnfld blubox">
-                                                <div className="fld-holder blubox">
-                                                    <h1>$0 / month</h1>
-                                                    <p className="eb-txt">Free</p>
-                                                    <p className="plandesc" style={{marginTop: -75 + "px", color: "white", fontWeight: "bold"}}>
-                                                        Early release. Outputs are not guaranteed to be accurate.
-                                                    </p>
-                                                    <div className="mb-3 planlist">
-                                                        <ul>
-                                                            <li>
-                                                                <FontAwesomeIcon icon="check" />
-                                                                <span>Unlimited Messages</span>
-                                                            </li>
-                                                            <li>
-                                                                <FontAwesomeIcon icon="check" />
-                                                                <span>Unlimited Projects</span>
-                                                            </li>
-                                                            <li>
-                                                                <FontAwesomeIcon icon="check" />
-                                                                <span>Unlimited Chat Sessions</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div className="form-group text--center">
-                                                        <a href="https://getrapidgpt.primis.ai/User/SignUp" className="button  button--lg">Choose Plan</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="form-area form-disable">
-                                            <div className="fld-holder plnfld">
-                                                <h1>
-                                                    {/* <span className="light-blur"> </span> */}
-                                                    <span className="full-blur">$ /month</span>
-                                                </h1>
-                                                {/* <h2 style={"color:#c4c3c3"}>Professional</h2> */}
-                                                <h2 className="full-blur">Professional</h2>
-                                                <p className="plandesc blur-text">
-                                                    Advanced tools to take your work to the next level.
-                                                </p>
-                                                <div className="mb-3 planlist blur-list">
-                                                    <ul>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Unlimited Questions Zaps</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Unlimited Premium Apps</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>50 Users team</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Shared Workspace</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="form-group text--center">
-                                                    <button type="submit" className="button  button--lg">
-                                                        Coming Soon
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="form-area form-disable">
-                                            <div className="fld-holder plnfld">
-                                                <h1>
-                                                    <span className="full-blur">$ /month</span>
-                                                </h1>
-                                                <h2 className="full-blur">Premium</h2>
-                                                <p className="plandesc blur-text">
-                                                    Automation plus enterprise-grade features.
-                                                </p>
-                                                <div className="mb-3 planlist blur-list">
-                                                    <ul>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Unlimited Questions</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Unlimited Premium</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Unlimited Users team</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Advanced Admin</span>
-                                                        </li>
-                                                        <li>
-                                                            <FontAwesomeIcon icon="check" />
-                                                            <span>Custom Data Retention</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="form-group text--center">
-                                                    <button type="submit" className="button  button--lg">
-                                                        Coming Soon
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div id="pricing" className="pri-sec">
+      <div className="container">
+        <div className="row ">
+          <div className="col col--9 text--center mx-auto">
+            <div className="price-title">
+              <h1>Plans & Pricing</h1>
+              <p>
+                Experience the power of RapidGPT and streamline your hardware
+                design process like never before!
+              </p>
+              <p>
+                This powerful tool aims to revolutionize the hardware design
+                process by providing contextual suggestions and unparalleled
+                language-to-HDL capabilities.
+              </p>
             </div>
+          </div>
+          <div className="col col--12">
+            <div className="plan-box">
+              <div className="">
+                <div className="form-area">
+                  <div className="plnfld">
+                    <div className="fld-holder">
+                      <p className="eb-txt">Free</p>
+                      <p className="plandesc fplan">Early Bird Subscription</p>
+                      <div className="mb-3 planlist">
+                        <ul>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Messages</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Projects</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Chat Sessions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="elipse-bg"></div>
+                      <div className="form-group text--center btnplan">
+                        <a
+                          href="https://getrapidgpt.primis.ai/User/SignUp"
+                          className="button  button--lg"
+                        >
+                          Choose Plan
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-area">
+                  <div className="plnfld">
+                    <div className="fld-holder">
+                      <p className="eb-txt">PRO</p>
+                      <h1>
+                        $39 <span className="small-txt"> / month</span>
+                      </h1>
+                      <p className="plandesc" style={{ visibility: "hidden" }}>
+                        Early Bird Subscription
+                      </p>
+                      <div className="mb-3 planlist">
+                        <ul>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Messages</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Projects</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Chat Sessions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="elipse-bg"></div>
+
+                      <div className="form-group text--center btnplan">
+                        <a
+                          href="https://getrapidgpt.primis.ai/User/SignUp"
+                          className="button  button--lg"
+                        >
+                          Choose Plan
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-area">
+                  <div className="plnfld">
+                    <div className="fld-holder">
+                      <p className="eb-txt">Corporate</p>
+                      <h1>
+                        $100 <span className="small-txt"> / month</span>
+                      </h1>
+
+                      <p className="plandesc" style={{ visibility: "hidden" }}>
+                        Early Bird Subscription
+                      </p>
+                      <div className="mb-3 planlist">
+                        <ul>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>40 Members</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Projects</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Unlimited Chat Sessions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="elipse-bg"></div>
+
+                      <div className="form-group text--center btnplan">
+                        <a
+                          href="https://getrapidgpt.primis.ai/User/SignUp"
+                          className="button  button--lg"
+                        >
+                          Choose Plan
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-area">
+                  <div className="plnfld">
+                    <div className="fld-holder">
+                      <p className="eb-txt">Enterprise</p>
+                      <p className="plandesc fplan">
+                        For organization
+                        <br /> Seeking enterprise
+                      </p>
+                      <div className="mb-3 planlist">
+                        <ul>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Security</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Enterprise Scale</span>
+                          </li>
+                          <li>
+                            <FontAwesomeIcon icon="check" />
+                            <span>Multilevel permissions</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="elipse-bg"></div>
+
+                      <div className="form-group text--center btnplan">
+                        <a
+                          href="https://getrapidgpt.primis.ai/User/SignUp"
+                          className="button  button--lg"
+                        >
+                          Contact Us
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Pricing;

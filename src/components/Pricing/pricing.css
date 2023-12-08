@@ -1,0 +1,401 @@
+.loginbox .form-area.login-h {
+  height: 440px;
+}
+.plan-box {
+  position: relative;
+}
+.plan-box:before {
+  content: "";
+  background: url("/static/img/bg-lines/slice4.png") no-repeat;
+  width: 100%;
+  height: 996px;
+  position: absolute;
+  top: -625px;
+  left: -20px;
+  z-index: -1;
+  background-size: contain;
+  opacity: 0.4;
+}
+.plan-box:after {
+  content: "";
+  background: url("/static/img/bg-lines/slice5.png") no-repeat;
+  width: 409px;
+  height: 504px;
+  position: absolute;
+  top: 329px;
+  left: 4px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.plan-box .form-area {
+  float: left;
+  width: 25%;
+  padding: 0px 15px 0;
+  min-height: 450px;
+  margin-top: 0px;
+  position: relative;
+  background: transparent;
+  box-sizing: border-box;
+}
+.plan-box .form-area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.form-area .fld-holder {
+  padding: 40px 0px 20px;
+  border-radius: 15px;
+  background: linear-gradient(
+    165deg,
+    rgba(18, 37, 75, 0.7) 5.65%,
+    rgba(54, 123, 254, 0) 79.54%
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(250, 250, 250, 1);
+}
+
+.pri-sec {
+  padding-top: 100px;
+  color: white;
+  position: relative;
+  padding-bottom: 100px;
+  background: url("/static/img/bg-lines/sphere.png") no-repeat;
+  background-position: center 100px;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+.price-title {
+  margin-bottom: 100px;
+}
+.price-title h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: calc(
+    30px + (60 - 30) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    32px + (90 - 32) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  text-transform: capitalize;
+  font-family: "Poppins-SemiBold";
+}
+.price-title p {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.eb-txt {
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 0 5px 0 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)));
+  line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
+}
+.plnfld {
+  min-height: 430px;
+}
+.plnfld h1 {
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins-SemiBold";
+  padding: 0 5px 0 40px;
+  display: inline-block;
+  position: relative;
+  font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (3500 - 300)));
+  line-height: calc(26px + (34 - 26) * ((100vw - 300px) / (3500 - 300)));
+}
+.small-txt {
+  font-size: 16px;
+}
+.plnfld h2 {
+  font-weight: 500;
+  font-family: "poppins";
+  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)));
+  line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
+}
+.planlist {
+  min-height: 175px;
+  padding: 0 5px 0 40px;
+}
+.planlist ul {
+  margin: 0;
+  padding: 0;
+}
+.planlist ul li {
+  list-style: none;
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.planlist ul li svg {
+  color: #67eae9;
+  width: 15px;
+  height: 15px;
+  background: rgba(103, 234, 233, 0.15);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 10px;
+  padding: 3px;
+  vertical-align: middle;
+  border: 1px solid #67eae9;
+}
+.elipse-bg {
+  background: url("/static/img/ellipse.png") no-repeat;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 100%;
+  height: 50px;
+  display: none;
+}
+.plandesc {
+  min-height: 48px;
+  color: white;
+  font-weight: bold;
+  padding: 0 5px 0 40px;
+}
+.fplan {
+  color: white;
+  font-weight: bold;
+  min-height: 98px;
+  padding: 0 5px 0 40px;
+}
+.lgn-container {
+  overflow: inherit;
+}
+.lgn-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.form-area:hover .fld-holder {
+  border: 3px solid #347ceb;
+  background: #fff;
+  height: 383px;
+  margin-top: -30px;
+}
+.form-area:hover .planlist {
+  min-height: 131px;
+}
+.form-area:hover .eb-txt,
+.form-area:hover .fplan,
+.form-area:hover .planlist ul li span,
+.form-area:hover h1 {
+  color: #367bfe !important;
+}
+.plnfld:hover .eb-txt,
+.plnfld:hover .fplan,
+.plnfld:hover .planlist ul li span,
+.plnfld:hover h1 {
+  color: #367bfe !important;
+}
+.form-area:hover .elipse-bg {
+  display: block;
+}
+.form-area:hover .btnplan {
+  margin-top: 24px;
+}
+.form-area:hover .planlist ul li svg {
+  border: 1px solid #367bfe;
+}
+.form-area:hover .planlist ul li {
+  text-shadow: none;
+}
+.form-area:hover .plandesc {
+  color: #367bfe !important;
+}
+.button {
+  background: #57595c;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  width: max-contentrgb(199, 224, 224);
+  font-weight: normal;
+}
+.plnfld .button {
+  background: transparent !important;
+  color: #fff !important;
+  border: 1px solid #fff;
+}
+.plnfld .button:hover {
+  font-weight: normal !important;
+}
+.form-area:hover .fld-holder .button {
+  background: #fff !important;
+  color: #367bfe !important;
+}
+
+@media screen and (max-width: 575px) {
+  .plan-box:before {
+    display: none;
+  }
+  .plan-box:after {
+    display: none;
+  }
+
+  .pri-sec {
+    padding: 50px 0 0;
+  }
+  .outer_circle {
+    height: 100% !important;
+  }
+  .elipse-bg {
+    background: url("/static/img/ellipse-tab.png") no-repeat !important;
+    background-size: contain !important;
+  }
+  .form-area:hover .fld-holder {
+    height: 365px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .plan-box:after {
+    display: none;
+  }
+  .pri-sec {
+    padding-top: 0 !important;
+    padding-bottom: 0px !important;
+  }
+  .res-sec {
+    padding-top: 0 !important;
+  }
+  .plan-box .form-area {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .plan-box .form-area {
+    min-height: 460px;
+  }
+  .outer_circle {
+    height: 100% !important;
+  }
+  .elipse-bg {
+    background: url("/static/img/ellipse-tab.png") no-repeat !important;
+    background-size: contain !important;
+  }
+  .form-area:hover .fld-holder {
+    height: 356px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .plan-box:before {
+    background: url("/static/img/bg-lines/lines-tab.png") no-repeat !important;
+    top: -320px;
+    left: -10px;
+    height: 1430px;
+  }
+  .plan-box:after {
+    display: none;
+  }
+  .pri-sec {
+    padding-top: 0;
+    background: none;
+    padding-bottom: 0px;
+  }
+  .res-sec {
+    padding-top: 0 !important;
+  }
+  .price-title {
+    padding: 0 55px 0;
+  }
+  .e-title {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .elipse-bg {
+    background: url("/static/img/ellipse-tab.png") no-repeat !important;
+    background-size: contain !important;
+  }
+  .form-area:hover .planlist {
+    min-height: 129px;
+  }
+  .form-area:hover .fld-holder {
+    height: 368px;
+  }
+  .plan-box .form-area {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .plan-box .form-area {
+    min-height: 460px;
+  }
+  .outer_circle {
+    height: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1023.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding: 0 5px 0 15px;
+  }
+  .planlist ul li {
+    font-size: 14px;
+  }
+  .plan-box:before {
+    left: 0;
+    top: -542px;
+  }
+  .pri-sec {
+    background: none;
+    padding-top: 50px;
+  }
+  .price-title h1 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding: 0 5px 0 15px;
+  }
+  .pri-sec {
+    padding-top: 0;
+    background-position: center 20px;
+  }
+  .plan-box:before {
+    left: 0;
+    top: -588px;
+  }
+  .plan-box:after {
+    top: 256px;
+    left: 3px;
+  }
+  .price-title h1 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding: 0 5px 0 30px;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding: 0 5px 0 30px;
+  }
+}

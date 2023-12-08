@@ -34,21 +34,31 @@ In order to maintain a comprehensive chat history and enable seamless continuati
 
 Once the project is created, open the chat panel and write a prompt that outlines the conversation. The image below shows the initial two interactions.
 
-<div className="chat1">
+<div>
+<div className="chat1" id="chat1">
     <div className="card chat-area-doc">
+    <button type="button" className="btn-rep-c rewrite" onClick={() => {     
+        chatDoc("chat1");        
+        }}>Replay</button>
       <div className="card-body">
         <div className="message">
           <div className="userA cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
-              i'd like to elaborate a set of functional specifications for a
+            <p className="animateText">
+              I'd like to elaborate a set of functional specifications for a
               system. Can you help me with that?
             </p>
             <p className="datetxt">01/09/2023 00:10:06</p>
@@ -56,25 +66,33 @@ Once the project is created, open the chat panel and write a prompt that outline
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (4.848 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (4.848 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>Of course! I can assist You inelaborating functional specifications for your system. Please provide me with the necessary details and requirements, and I will help you create the specifications.</p>
+            <p className="animateText">
+            Of course! I can assist You inelaborating functional specifications for your system. Please provide me with the necessary details and requirements, and I will help you create the specifications.
+            </p>
             <p className="datetxt">01/09/2023 00:10:11</p>
           </div>
           <div className="userA cbox">
             <p className="icon-holder">
                        <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
+            <p className="animateText">
               These are my partial specifications for my module: (1) it takes a 32-bit bus as input that container data to be latched at every rising edge of a clock signal named "clik", (2) it must have a 8-bit ouput that latches the byte recived by the input at every 100 bytes, What else am I missing?
             </p>
             <p className="datetxt">01/09/2023 00:18:06</p>
@@ -82,19 +100,27 @@ Once the project is created, open the chat panel and write a prompt that outline
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (4.848 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (4.848 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-              <p>Based on the partial specfications you provided, here are some additional details you may want to consider including in your module's functional specifications:</p><p>1. Reset functionality: Specify whether the module should have a reset input signal and define its behavior. For example, you could specify that when the reset signal is asserted, the module should reset its internal state and output.</p><p>2. Clock domain crossing: If the input bus is coming from a different clock domain than the "clk" signal. you may need to speify how the module handles the synchronization of the input data.</p><p>3. Output behavior: Clarify what the ouput should do when it is not latching a new byte. Should it hols the previous latched byte or be a definied state?</p><p>4. Error handling: Define how the module should handling any errors or invalid input conditions. For example, if the input bus contains invalid data, should the module ignore it or raise an error signal?</p><p>5. Timing requirements: Specify any timing constraints or requirements for the module, such as setup and hold items for the input and output signals.</p><p>6. Power and area constraints: if there are specific power or area constraints for the module, make sure to include them in the specifications.</p><p>Remember to provide clear and consice descriptions for each specification to ensure a complete and accurate understanding  of the module's functionality.</p>
+              <p className="animateText">Based on the partial specfications you provided, here are some additional details you may want to consider including in your module's functional specifications:</p>
+              <p className="animateText">1. Reset functionality: Specify whether the module should have a reset input signal and define its behavior. For example, you could specify that when the reset signal is asserted, the module should reset its internal state and output.</p>
+              <p className="animateText">2. Clock domain crossing: If the input bus is coming from a different clock domain than the "clk" signal. you may need to speify how the module handles the synchronization of the input data.</p>
+              <p className="animateText">3. Output behavior: Clarify what the ouput should do when it is not latching a new byte. Should it hols the previous latched byte or be a definied state?</p>
+              <p className="animateText">4. Error handling: Define how the module should handling any errors or invalid input conditions. For example, if the input bus contains invalid data, should the module ignore it or raise an error signal?</p>
+              <p className="animateText">5. Timing requirements: Specify any timing constraints or requirements for the module, such as setup and hold items for the input and output signals.</p>
+              <p className="animateText">6. Power and area constraints: if there are specific power or area constraints for the module, make sure to include them in the specifications.</p>
+              <p className="animateText">Remember to provide clear and consice descriptions for each specification to ensure a complete and accurate understanding  of the module's functionality.</p>
             <p className="datetxt">01/09/2023 00:18:14</p>
           </div>
         </div>
       </div>
     </div>
 
+</div>
 </div>
 
 <!-- ![](/img/docs/tutorials/data-latching/interaction-1_700.png) -->
@@ -109,20 +135,30 @@ In the next iteration of our conversation (see image below), we provide feedback
 
 <!-- ![](/img/docs/tutorials/data-latching/interaction-2_700.png) -->
 
-<div className="chat1">
+<div>
+<div className="chat1" id="chat2">
     <div className="card chat-area-doc">
+          <button type="button" className="btn-rep-c rewrite" onClick={() => {     
+        chatDoc("chat2");        
+        }}>Replay</button>
       <div className="card-body">
         <div className="message">
           <div className="userA cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
+            <p className="animateText">
               Thanks! Indeed i need to have a reset signal as well. If asserted, the module should simply reset its current state. For the output behavior, when the module is not latching, it should hold the previous latched byte. Finally, for incoming invalid data the module should simply ignor it. For now, let's ignore points 2,5 and 6 in the list above. Please update the functional specifications.
             </p>
             <p className="datetxt">01/09/2023 00:29:04</p>
@@ -130,23 +166,23 @@ In the next iteration of our conversation (see image below), we provide feedback
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (4.848 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (4.848 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>Certainly! Based on the additional inforamtion you provided, here is an update version of the functional specifications for your module:</p>
-            <div className="doccbox">
-              <pre>
+            <p className="animateText">Certainly! Based on the additional inforamtion you provided, here is an update version of the functional specifications for your module:</p>
+            <div className="doccbox ">
+              <pre cbox>
                 <code>
                   <span className="delaytxt">
                   <p className="btnchat">
                   <img src="/img/btns.png" width="" alt="icon"/>
                   </p>
                   <span className="txt-black">
-                  Module Functional Specifications:
-                </span><br />
+                    Module Functional Specifications:
+                  </span><br />
                     <span className="txt-pink">1. </span>
                     <span className="txt-black">Inputs: </span><br/>
                     <span className="txt-orange">- </span>
@@ -243,7 +279,7 @@ In the next iteration of our conversation (see image below), we provide feedback
                 </code>
               </pre>
             </div>
-            <p>
+            <p className="animateText">
             Please note that this is a general outline, and you may need to further refine or add more details based on your specific requirements.
             </p>
             <p className="datetxt">01/09/2023 00:29:13</p>
@@ -251,27 +287,36 @@ In the next iteration of our conversation (see image below), we provide feedback
         </div>
       </div>
     </div>
-
+</div>
 </div>
 
 In response, RapidGPT provides a first version of the functional specifications that incorporates all the details. It includes the reset functionality, clarifies the output behavior, and adds a section on handling invalid data. Based on this response, we continue by asking RapidGPT to generate a pseudocode for our module (see next image).
 
 <!-- ![](/img/docs/tutorials/data-latching/interaction-3_700.png) -->
-
-<div className="chat1">
+<div>
+<div className="chat1" id="chat3">
     <div className="card chat-area-doc">
+          <button type="button" className="btn-rep-c rewrite" onClick={() => {     
+        chatDoc("chat3");        
+        }}>Replay</button>
       <div className="card-body">
         <div className="message">
           <div className="userA cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
+            <p className="animateText">
               Great Now could please provide me the pseudo-code of my module based on the specifications above?
             </p>
             <p className="datetxt">01/09/2023 00:34:17</p>
@@ -279,15 +324,15 @@ In response, RapidGPT provides a first version of the functional specifications 
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (7.839 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (7.839 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>Certainly! Here's the pseudo-code for your module based on the provided specifications:</p>
+            <p className="animateText">Certainly! Here's the pseudo-code for your module based on the provided specifications:</p>
             <div className="doccbox">
-              <pre>
+              <pre className="cbox">
                 <code>
                   <span className="delaytxt">
                   <p className="btnchat">
@@ -359,7 +404,7 @@ In response, RapidGPT provides a first version of the functional specifications 
                 </code>
               </pre>
             </div>
-            <p>
+            <p className="animateText">
             Please note that this is pseudo-code and note actual Verilog code. It provides a high-level representation of the module's behavior based on the specifications. You will nedd to convert it to actual Verilog code to use it in your design.
             </p>
             <p className="datetxt">01/09/2023 00:34:25</p>
@@ -369,27 +414,37 @@ In response, RapidGPT provides a first version of the functional specifications 
     </div>
 
 </div>
+</div>
 
 ### Step 4: Review and Refine
 
 Based on its previous response, RapidGPT appears to have overlooked a specific aspect of the initial requirements. The provided pseudocode includes an increment operation on the `byte_count` state variable during each clock cycle, which contradicts our request to count 100 bytes. To address this issue, we easily rectify the mistake by bringing it to RapidGPT's attention, as depicted in the following image.
 
 <!-- ![](/img/docs/tutorials/data-latching/interaction-4_700.png) -->
-
-<div className="chat1">
+<div>     
+<div className="chat1" id="chat4">
     <div className="card chat-area-doc">
+          <button type="button" className="btn-rep-c rewrite" onClick={() => {     
+        chatDoc("chat4");        
+        }}>Replay</button>
       <div className="card-body">
         <div className="message">
           <div className="userA cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
+            <p className="animateText">
               Based on the pseudo-code, I belive the byte_counter is not correctly specified. If the input bus is 32 bits, then we have 4 bytes at each clock cycle, not one. What do you think?
             </p>
             <p className="datetxt">01/09/2023 00:44:10</p>
@@ -397,15 +452,15 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (6.598 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (6.598 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>You are correct, I apologize for the oversight. Since the input bus is 32 bits, it represents 4 bytes at each clock cycle. Therefore , the byte counter should be incremented by 4 insted of1. here's the corrected version of the pseudo-code:</p>
+            <p className="animateText">You are correct, I apologize for the oversight. Since the input bus is 32 bits, it represents 4 bytes at each clock cycle. Therefore , the byte counter should be incremented by 4 insted of1. here's the corrected version of the pseudo-code:</p>
             <div className="doccbox">
-              <pre>
+              <pre className="cbox">
                 <code>
                   <span className="delaytxt">
                   <p className="btnchat">
@@ -477,7 +532,7 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
                 </code>
               </pre>
             </div>
-            <p>
+            <p className="animateText"> 
             I apologize for any confusion caused. Please let me know if you have any further questions or if there's anything else i can assist you with!
             </p>
             <p className="datetxt">01/09/2023 00:44:17</p>
@@ -485,7 +540,7 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
         </div>
       </div>
     </div>
-
+</div>
 </div>
 
 :::tip Pro Tip
@@ -493,21 +548,30 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
 Are you unsatisfied with the style of the pseudocode provided by RapidGPT? You can easily instruct it to rewrite the pseudocode to your liking.
 
 <!-- ![](/img/docs/tutorials/data-latching/pro-tip_700.png) -->
-
-<div className="chat1">
+<div>
+<div className="chat1" id="chat5">
     <div className="card chat-area-doc">
+          <button type="button" className="btn-rep-c rewrite" onClick={() => {     
+        chatDoc("chat5");        
+        }}>Replay</button>
       <div className="card-body">
         <div className="message">
           <div className="userA cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
+            <p className="animateText">
             Could you please rewrite the pseud-code in such a way that it doesn't look too similar to Verilog?
             </p>
             <p className="datetxt">02/09/2023 01:36:38</p>
@@ -515,15 +579,15 @@ Are you unsatisfied with the style of the pseudocode provided by RapidGPT? You c
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (6.326 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (6.326 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>Certainly! Here's an alternative version of the pseudo-code that is more generic and does't resemble Verilog syntax:</p>
+            <p className="animateText">Certainly! Here's an alternative version of the pseudo-code that is more generic and does't resemble Verilog syntax:</p>
             <div className="doccbox">
-              <pre>
+              <pre className="cbox">
                 <code>
                   <span className="delaytxt">
                   <p className="btnchat">
@@ -596,16 +660,16 @@ Are you unsatisfied with the style of the pseudocode provided by RapidGPT? You c
                 </code>
               </pre>
             </div>
-            <p>
+            <p className="animateText">
             In this version, I have used more generic syntax and function names to avoide resembling any specfic hardware description language like Verilog. This pseudo-code should be easier to understand and can be easily translated into any programing or hardware language of your choice.
             </p>
-            <p>Let me know if there's anything else I can assist you with!</p>
+            <p className="animateText">Let me know if there's anything else I can assist you with!</p>
             <p className="datetxt">02/09/2023 01:36:38</p>
           </div>
         </div>
       </div>
     </div>
-
+</div>
 </div>
 
 :::
@@ -613,21 +677,30 @@ Are you unsatisfied with the style of the pseudocode provided by RapidGPT? You c
 Lastly, we also ask RapidGPT to update the specification based on the suggested corrections (see next image).
 
 <!-- ![](/img/docs/tutorials/data-latching/interaction-5_700.png) -->
-
-<div className="chat1">
+<div>     
+<div className="chat1" id="chat6">
     <div className="card chat-area-doc">
+    <button type="button" className="btn-rep-c rewrite" onClick={() => {     
+        chatDoc("chat6");        
+        }}>Replay</button>
       <div className="card-body">
         <div className="message">
           <div className="userA cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/user.png" alt="user"/> User
+                  <img
+                  src="/img/user.svg"
+                  width="14px"
+                  height="15px"
+                  alt="User"
+                  className="userChat"
+                /> User
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>
+            <p className="animateText">
               I'm satisfied with this for now. Ionly need you to update the spec to include the counter.
             </p>
             <p className="datetxt">01/09/2023 00:55:07</p>
@@ -635,13 +708,13 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
           <div className="userB cbox">
             <p className="icon-holder">
               <i className="userIcon">
-                  <img width="15" src="/img/robot.png" alt="user"/>  RapidGPT (8.969 seconds)
+                  <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (8.969 seconds)
               </i>
               <i className="trashIcon">
-                <img width="15" src="/img/trash.png" alt="trash"/>
+                <img width="14" height="15" src="/img/delete.svg" alt="trash"/>
               </i>
             </p>
-            <p>Certainly! Here's the updated version of the functional specficitions, including the byte counter:</p>
+            <p className="animateText">Certainly! Here's the updated version of the functional specficitions, including the byte counter:</p>
             <div className="doccbox">
               <pre>
                 <code>
@@ -765,7 +838,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
                 </code>
               </pre>
             </div>
-            <p>
+            <p className="animateText">
             Please note that this is a general outline, and you may need to further refine or add more details based on your specific requirements. Let me know if there's anything else I can assist you with!
             </p>
             <p className="datetxt">01/09/2023 00:55:16</p>
@@ -773,7 +846,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
         </div>
       </div>
     </div>
-
+</div>
 </div>
 
 This iterative process showcases the interactive nature of our conversation where RapidGPT actively listens to our input, incorporates our feedback, and adjusts the specifications accordingly. By doing so, RapidGPT ensures that the specifications accurately reflect the desired behavior of the module and meet our requirements.

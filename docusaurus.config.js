@@ -53,58 +53,45 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: "PrimisAI",
-          src: "/img/RS-white-logo.png",
+          src: "/img/RS-green-logo.svg",
         },
+
         items: [
           {
-            to: "/#aboutus",
+            to: "/aboutPrimis/aboutPrimis",
             label: "About Us",
             position: "right",
             items: [
               {
+                to: "/aboutPrimis/aboutPrimis",
                 label: "About PrimisAI",
-                to: "/#aboutus",
               },
               {
-                label: "Vision",
-                to: "/#vision",
-              },
-              {
+                to: "/Team/team",
                 label: "Team",
-                to: "/#team",
+              },
+              {
+                to: "/RegisterdUser/registerdUser",
+                label: "Registerd User",
               },
             ],
           },
 
           {
-            to: "/#features",
-            label: "Features",
-            position: "right",
-          },
-          {
-            to: "/#pricing",
-            label: "Pricing",
-            position: "right",
-          },
-          {
-            to: "/#faqs",
-            label: "FAQs",
-            position: "right",
-          },
-          {
-            to: "/#resources",
-            label: "Resources",
-            position: "right",
-          },
-          {
-            to: "/news",
+            to: "/News/news",
             label: "News",
             position: "right",
           },
           {
-            href: "https://getrapidgpt.primis.ai/User/SignUp",
-            label: "Sign Up Now",
+            to: "/docs/getting-started",
+            label: "Documents",
             position: "right",
+          },
+          {
+            href: "https://rgptstaging.rapidsilicon.com/",
+            label: "Try Free",
+            position: "right",
+            className: "btn-try",
           },
         ],
       },
