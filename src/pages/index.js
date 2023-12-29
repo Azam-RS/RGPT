@@ -76,7 +76,7 @@ function HomepageHeader() {
                 <div className="hero__title">
                   {showTypingText ? (
                     <TypingText
-                      text={`The Future.... of Hardware Design is Here.`}
+                      text={`The Future of Hardware Design is Here.`}
                     />
                   ) : (
                     ""
