@@ -23,6 +23,7 @@ jobs:
               git config --global user.email "azam@rapidsilicon.com"
               git config --global user.name $GITHUB_ACTOR             
               npm install
+              npm run build
               #yarn deploy
         env:
               GIT_USER: ${{ github.actor }}:${{ secrets.RGPT }}
