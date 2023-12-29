@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Footer from "../../components/Footer/footer";
 import "./team.css";
 
 export default function Team() {
@@ -12,7 +11,7 @@ export default function Team() {
           <div className="team-holder">
             <div className="row">
               <div className="col col--4">
-                <img src="/img/Naveed.png" alt="Naveed Sherwani" />
+                <img src="/img/naveed.png" alt="Naveed Sherwani" />
               </div>
               <div className="col col--8">
                 <h2>Naveed Sherwani</h2>
@@ -76,7 +75,6 @@ export default function Team() {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 }

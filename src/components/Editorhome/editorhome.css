@@ -32,13 +32,15 @@
 }
 
 .editor-holder {
-  padding-top: 25px;
+  padding-top: 45px;
   color: white;
   position: relative;
 }
 .ed-tab .accord-holder {
   min-height: 435px;
   height: 435px;
+  font-size: 15px;
+  overflow: auto;
 }
 .ed-tab ul {
   background: #161b22 !important;
@@ -200,11 +202,7 @@
 .cmntTxt {
   color: #8c8c8c;
   font-style: italic;
-  border-right: 2px solid #fff;
-  white-space: nowrap;
   overflow: hidden;
-  animation: typings 1s steps(24, end), blink-carets 0.5s step-end infinite !important;
-  display: inline-block;
 }
 .cmntsub {
   color: #8c8c8c;
@@ -212,7 +210,7 @@
 }
 .delaytxt {
   color: #fff;
-  animation: delays 2s 2s forwards !important;
+  animation: delays 3s 3s forwards !important;
   max-width: 0;
   visibility: hidden;
 }
@@ -226,14 +224,8 @@
 }
 .srno {
   color: #8c8c8c;
-}
-@keyframes typings {
-  from {
-    max-width: 0;
-  }
-  to {
-    max-width: 100%;
-  }
+  width: 20px;
+  float: left;
 }
 @keyframes delays {
   0% {
@@ -243,13 +235,49 @@
     visibility: visible;
   }
 }
-@keyframes blink-carets {
-  from,
-  to {
-    border-color: transparent;
+/* animation */
+/* scrollbar style */
+.ed-tab ::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: #000;
+}
+.ed-tab ::-webkit-scrollbar-thumb {
+  background: #424242;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+.ed-tab ::-webkit-scrollbar-corner {
+  background: #000;
+}
+.ed-tab .spasing code[class*="language-"] {
+  tab-size: 3 !important;
+}
+.ed-tab .token.number {
+  color: #8c8c8c !important;
+}
+/* scrollbar style */
+
+@media only screen and (min-width: 300px) and (max-width: 575px) {
+  .plr-0 {
+    padding-right: 0px;
+    padding-left: 0px;
   }
-  50% {
-    border-color: #fff;
+  .ed-tab {
+    height: 330px;
+  }
+  .ed-tab .accord-holder {
+    font-size: 12px;
+  }
+  .ed-tab .tabs .tabs__item {
+    font-size: 12px;
+  }
+  .ed-tab .margin-top--md {
+    padding: 35px 10px 0;
+    font-size: 9px;
+  }
+  .ed-tab .chat-area {
+    height: 200px !important;
+    min-height: 200px;
   }
 }
-/* animation */

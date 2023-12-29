@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import "./news.css";
-import Footer from "@site/src/components/Footer/footer";
 
 export default function News() {
   return (
@@ -75,7 +74,6 @@ export default function News() {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 }

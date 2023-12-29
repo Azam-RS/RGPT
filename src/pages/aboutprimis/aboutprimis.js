@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Footer from "../../components/Footer/footer";
 import "./aboutprimis.css";
 
 export default function AboutPrimis() {
@@ -116,7 +115,6 @@ export default function AboutPrimis() {
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 }

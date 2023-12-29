@@ -26,12 +26,43 @@
 .logoContainer {
   margin-bottom: 50px;
 }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+.logo-box{
+  width: 158px;
+  float: left;
+  margin: 15px;
+}
+@media only screen and (min-width: 300px) and (max-width: 575.98px) {
   .user-holder h1 {
     font-size: 36px;
   }
   .logoContainer {
     text-align: center;
+  }
+  .logo-box{
+    width: 22%;
+    margin: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .logo-box{
+    width: 15%;
+    margin: 15px 25px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .user-holder h1 {
+    font-size: 36px;
+  }
+  .logoContainer {
+    text-align: center;
+  }
+  .logo-box{
+    width: 13%;
+    margin: 15px 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .logo-box{
+    width: 11%;
   }
 }

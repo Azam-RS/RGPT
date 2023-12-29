@@ -8,7 +8,6 @@ import AboutUs from "../components/About/Aboutus/aboutus";
 import Features from "../components/Features/Features";
 import Pricing from "../components/Pricing/pricing";
 import Resources from "../components/Resources/Resources";
-import Footer from "../components/Footer/footer";
 import styles from "./index.module.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -77,29 +76,29 @@ function HomepageHeader() {
                 <div className="hero__title">
                   {showTypingText ? (
                     <TypingText
-                      text={`Unleash Potential of AI-Infused\nHardware Designs with Verilog Wizardry!`}
+                      text={`The Future.... of Hardware Design is Here.`}
                     />
                   ) : (
                     ""
                   )}
                 </div>
                 <h2 className="title-txt">
-                  RapidGPT is the industry’s first AI-based pair-designer
-                  tailored for FPGA engineers.{" "}
+                  RapidGPT is the industry's first AI-based pair-designer
+                  tailored for hardware engineers.{" "}
                 </h2>
               </div>
               <div className={styles.buttons}>
                 <Link
-                  className="button button--lg btn-doc"
+                  className="button button--lg btn-doc btn-sp"
                   to="https://rgptstaging.rapidsilicon.com/"
                 >
-                  Get Started
+                  Sign Up
                 </Link>
                 <Link
                   className="button button--lg btn-doc"
                   to="/docs/getting-started"
                 >
-                  Documents
+                  Documentation
                 </Link>
               </div>
             </div>
@@ -138,7 +137,6 @@ export default function Home() {
           <Resources />
         </div>
       </main>
-      <Footer />
     </Layout>
   );
 }

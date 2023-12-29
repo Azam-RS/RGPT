@@ -103,9 +103,9 @@
   );
 }
 
-@media only screen and (min-width: 320px) and (max-width: 575.98px) {
+@media only screen and (min-width: 300px) and (max-width: 575.98px) {
   .logo-holder {
-    width: 280px !important;
+    width: 100% !important;
     background: url(/static/img/logo-resource-mob.svg) no-repeat;
   }
   .g-holder {

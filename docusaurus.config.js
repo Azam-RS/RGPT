@@ -2,8 +2,11 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 /** @type {import('@docusaurus/types').Config} */
+
+import { themes as prismThemes } from "prism-react-renderer";
+
 const config = {
-  title: "PrimisAI",
+  title: "RGPT",
   tagline: "RapidGPT: Your Ultimate HDL Pair-Designer",
   favicon: "/img/favicon.png",
 
@@ -11,7 +14,7 @@ const config = {
   baseUrl: "/",
 
   // GitHub pages deployment config.
-  organizationName: "Azam-RS", // Usually your GitHub org/user name.
+  organizationName: "azam-ai", // Usually your GitHub org/user name.
   projectName: "RGPT", // Usually your repo name.
 
   trailingSlash: false,
@@ -55,7 +58,6 @@ const config = {
           alt: "PrimisAI",
           src: "/img/RS-green-logo.svg",
         },
-
         items: [
           {
             to: "/aboutPrimis/aboutPrimis",
@@ -72,19 +74,23 @@ const config = {
               },
               {
                 to: "/RegisterdUser/registerdUser",
-                label: "Registerd User",
+                label: "Our Userbase",
               },
             ],
           },
-
           {
             to: "/News/news",
             label: "News",
             position: "right",
           },
           {
+            to: "blog",
+            label: "Blog",
+            position: "right",
+          },
+          {
             to: "/docs/getting-started",
-            label: "Documents",
+            label: "Docs",
             position: "right",
           },
           {
@@ -97,7 +103,46 @@ const config = {
       },
       prism: {
         additionalLanguages: ["verilog"],
-        theme: require("prism-react-renderer/themes/nightOwl"),
+        theme: prismThemes.nightOwl,
+      },
+      footer: {
+        links: [
+          {
+            html: `<div class="f-logo-holder">
+            <div class="footer-logo">
+                      <a href="/" target="_blank" rel="noreferrer noopener" aria-label="Logo-Footer">
+                        <img src="/img/RS-white-logo.svg" alt="Logo-Footer" width="178" height="45" />
+                      </a>
+                      </div>
+                 </div>
+                    `,
+          },
+          {
+            label: "Privacy Policy",
+            to: "/docs/legal/privacy-policy",
+            target: "_blank",
+            title: "Privacy Policy",
+          },
+          {
+            label: "Cookie Policy",
+            to: "/docs/legal/cookie-policy",
+            target: "_blank",
+            title: "Cookie Policy",
+          },
+          {
+            label: "Terms and Conditions",
+            to: "/docs/legal/terms-and-conditions",
+            target: "_blank",
+            title: "Terms and Conditions",
+          },
+          {
+            label: "User Agreement",
+            to: "/docs/legal/user-agreement",
+            target: "_blank",
+            title: "User Agreement",
+          },
+        ],
+        copyright: `© ${new Date().getFullYear()} PrimisAI – All Rights Reserved.`,
       },
     }),
   scripts: [

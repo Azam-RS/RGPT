@@ -7,18 +7,12 @@
   padding: 16.8em 0 7em;
 }
 .cht-box {
-  min-height: 550px;
+  /* min-height: 550px; */
   position: relative;
 }
 .c-area {
   width: 100%;
-  min-height: 452px;
-  text-align: left;
   position: relative;
-  border-radius: 20px;
-  border: 15px solid #1d1d1d;
-  background: #2d2d2d;
-  margin-bottom: 20px;
 }
 .cht-box:before {
   content: "";
@@ -46,18 +40,18 @@
   margin-bottom: 0;
   color: #fff;
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   text-transform: capitalize;
-  padding: 15px;
+  padding: 8px 15px 20px;
 }
 .usermsg {
   width: 80%;
   min-height: 56px;
   background: #30414e;
-  margin: 40px 15px 40px 5px;
+  margin: 20px 15px 20px 5px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -66,18 +60,25 @@
 }
 .user_msg1 {
   float: right;
+  background: #444444;
 }
 .user_msg2 {
   float: left;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 10px;
   margin: 40px 5px 40px 15px;
+  background: #05445e;
+}
+.user_msg1 .datetxt,
+.user_msg2 .datetxt {
+  font-size: 12px;
+  float: right;
 }
 .show_msg1 {
-  animation: delays 2s 2s forwards !important;
+  animation: delays 3s 3s forwards !important;
 }
 .show_msg2 {
-  animation: delays 3s 3s forwards !important;
+  animation: delays 5s 5s forwards !important;
 }
 .show_msg3 {
   animation: delays 4s 4s forwards !important;
@@ -101,11 +102,11 @@
   font-family: "Poppins";
   display: inline-block;
   vertical-align: middle;
-
   border-right: 2px solid #fff;
   white-space: nowrap;
   overflow: hidden;
-  animation: typings 2s steps(24, end), blink-carets 0.5s step-end infinite !important;
+  animation: typings 2s steps(24, end), blink-carets 0.5s step-end infinite,
+    hide-and-restart 3s forwards !important;
 }
 .inputchat i {
   width: 25px;
@@ -117,7 +118,7 @@
 }
 .aboutus-holder {
   margin-bottom: 40px;
-  padding: 0 95px 25px;
+  padding: 0 4px 25px 50px;
   text-align: left;
   background: transparent;
 }
@@ -143,43 +144,25 @@
     15px + (18 - 15) * ((100vw - 300px) / (3500 - 300))
   ) !important;
   line-height: calc(
-    22px + (30 - 22) * ((100vw - 300px) / (3500 - 300))
+    20px + (26 - 20) * ((100vw - 300px) / (3500 - 300))
   ) !important;
   font-family: "Poppins";
   margin-bottom: 20px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* animation */
-
-@keyframes typings {
-  from {
-    max-width: 0;
-  }
-  to {
-    max-width: 100%;
-  }
-}
-@keyframes delays {
-  0% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-@keyframes blink-carets {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #fff;
-  }
+.primisbg {
+  background: linear-gradient(
+    90deg,
+    rgba(61, 96, 159, 0.7) 5.65%,
+    rgba(39, 116, 191, 0.3) 79.54%
+  );
+  padding: 89px 45px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 575.98px) {
   .c-area p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .usermsg {
     margin-top: 30px !important;
@@ -190,9 +173,7 @@
     font-size: 12px;
     padding: 2px 12px;
   }
-  .ed-tab .margin-top--md {
-    padding: 30px 20px 0;
-  }
+
   .cht-box:before {
     display: none;
   }
@@ -201,6 +182,9 @@
   }
   .aboutus-holder {
     padding: 50px 0px !important;
+  }
+  .primisbg {
+    padding: 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -219,5 +203,20 @@
 @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
   .usermsg {
     margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1450.95px) {
+  .primisbg {
+    padding: 125px 45px;
+  }
+}
+@media only screen and (min-width: 1455px) and (max-width: 1500.98px) {
+  .primisbg {
+    padding: 55px 45px;
+  }
+}
+@media only screen and (min-width: 1501px) and (max-width: 1599px) {
+  .primisbg {
+    padding: 55px 45px;
   }
 }
