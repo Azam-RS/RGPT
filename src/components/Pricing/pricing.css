@@ -1,3 +1,12 @@
+.price-holder {
+  width: 100%;
+  max-width: 60em;
+}
+.price-holder:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .loginbox .form-area.login-h {
   height: 440px;
 }
@@ -29,13 +38,14 @@
 }
 .plan-box .form-area {
   float: left;
-  width: 25%;
+  width: 33%;
   padding: 0px 15px 0;
   min-height: 450px;
   margin-top: 0px;
   position: relative;
   background: transparent;
   box-sizing: border-box;
+  border-radius: 15px;
 }
 .plan-box .form-area:after {
   content: "";
@@ -43,7 +53,8 @@
   clear: both;
 }
 .form-area .fld-holder {
-  padding: 40px 0px 20px;
+  min-height: 460px;
+  padding: 30px 0px 0px;
   border-radius: 15px;
   background: linear-gradient(
     165deg,
@@ -53,18 +64,32 @@
   backdrop-filter: blur(20px);
   border: 1px solid rgba(250, 250, 250, 1);
 }
-
+.plnfld:hover .fld-holder {
+  border: 3px solid #347ceb;
+  background: #fff url("/static/img/ellipse.png") no-repeat center bottom;
+  height: 420px;
+  min-height: 420px;
+  margin-top: -30px;
+  background-size: contain;
+  border-radius: 15px;
+}
 .pri-sec {
   padding-top: 100px;
   color: white;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 175px;
   background: url("/static/img/bg-lines/sphere.png") no-repeat;
   background-position: center 100px;
 }
 
 .mx-auto {
   margin: 0 auto;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.f-bold {
+  font-weight: bold !important;
 }
 .price-title {
   margin-bottom: 100px;
@@ -91,7 +116,7 @@
   line-height: normal;
 }
 .eb-txt {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #fff;
   padding: 0 5px 0 40px;
   text-transform: uppercase;
@@ -101,6 +126,7 @@
 }
 .plnfld {
   min-height: 430px;
+  border-radius: 15px;
 }
 .plnfld h1 {
   font-weight: 700;
@@ -109,8 +135,8 @@
   padding: 0 5px 0 40px;
   display: inline-block;
   position: relative;
-  font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (3500 - 300)));
-  line-height: calc(26px + (34 - 26) * ((100vw - 300px) / (3500 - 300)));
+  font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (3500 - 300)));
+  line-height: calc(24px + (34 - 24) * ((100vw - 300px) / (3500 - 300)));
 }
 .small-txt {
   font-size: 16px;
@@ -122,24 +148,28 @@
   line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
 }
 .planlist {
-  min-height: 175px;
+  min-height: 230px;
   padding: 0 5px 0 40px;
 }
 .planlist ul {
   margin: 0;
   padding: 0;
 }
+.planlist .prolist {
+  margin-bottom: 28px;
+}
 .planlist ul li {
   list-style: none;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 17px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 .planlist ul li svg {
   color: #67eae9;
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
   background: rgba(103, 234, 233, 0.15);
   border-radius: 30px;
   text-align: center;
@@ -157,17 +187,43 @@
   width: 100%;
   height: 50px;
   display: none;
+  position: absolute;
+  bottom: 0;
 }
 .plandesc {
   min-height: 48px;
   color: white;
   font-weight: bold;
-  padding: 0 5px 0 40px;
+  padding: 0 5px 0 30px;
 }
+.up-plan .plandesc {
+  min-height: auto;
+  padding: 0 5px 0 20px;
+  margin-bottom: 10px;
+}
+.up-plan .eb-txt,
+.up-plan .fplan,
+.up-plan .planlist,
+.up-plan .plnfld h1 {
+  padding-left: 15px;
+}
+.up-plan .planlist {
+  margin-bottom: 12px;
+}
+.planlist .iconchk {
+  float: left;
+  width: 10%;
+}
+.planlist .plan-d {
+  float: left;
+  width: 90%;
+  padding-top: 1px;
+}
+
 .fplan {
   color: white;
   font-weight: bold;
-  min-height: 98px;
+  min-height: 84px;
   padding: 0 5px 0 40px;
 }
 .lgn-container {
@@ -178,19 +234,31 @@
   display: block;
   clear: both;
 }
-.form-area:hover .fld-holder {
-  border: 3px solid #347ceb;
-  background: #fff;
-  height: 383px;
-  margin-top: -30px;
+.plnfld:hover .btnplan {
+  margin-top: 130px;
 }
-.form-area:hover .planlist {
+.up-plan .plnfld:hover .btnplan {
+  margin-top: 74px;
+}
+.stxt {
+  font-size: 13px;
+  font-weight: normal;
+}
+.cp-dis {
+  cursor: auto;
+  pointer-events: none;
+}
+.fld-holder h1 {
+  display: block;
+  margin-bottom: 5px;
+}
+.plnfld:hover .planlist {
   min-height: 131px;
 }
-.form-area:hover .eb-txt,
-.form-area:hover .fplan,
-.form-area:hover .planlist ul li span,
-.form-area:hover h1 {
+.plnfld:hover .eb-txt,
+.plnfld:hover .fplan,
+.plnfld:hover .planlist ul li span,
+.plnfld:hover h1 {
   color: #367bfe !important;
 }
 .plnfld:hover .eb-txt,
@@ -199,19 +267,13 @@
 .plnfld:hover h1 {
   color: #367bfe !important;
 }
-.form-area:hover .elipse-bg {
-  display: block;
-}
-.form-area:hover .btnplan {
-  margin-top: 24px;
-}
-.form-area:hover .planlist ul li svg {
+.plnfld:hover .planlist ul li svg {
   border: 1px solid #367bfe;
 }
-.form-area:hover .planlist ul li {
+.plnfld:hover .planlist ul li {
   text-shadow: none;
 }
-.form-area:hover .plandesc {
+.plnfld:hover .plandesc {
   color: #367bfe !important;
 }
 .button {
@@ -230,38 +292,107 @@
   background: transparent !important;
   color: #fff !important;
   border: 1px solid #fff;
+  margin-bottom: 20px;
 }
 .plnfld .button:hover {
   font-weight: normal !important;
 }
-.form-area:hover .fld-holder .button {
+.plnfld:hover .fld-holder .button {
   background: #fff !important;
   color: #367bfe !important;
 }
-
-@media screen and (max-width: 575px) {
+.d-none {
+  display: none;
+}
+.badgetxt {
+  font-size: 11px;
+  text-transform: uppercase;
+  vertical-align: super;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 1px 6px;
+}
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding-left: 15px;
+  }
+  .plan-box .form-area {
+    margin-bottom: 20px;
+  }
+  .form-area:hover .fld-holder {
+    height: 430px;
+    min-height: 430px;
+    margin-top: 0 !important;
+  }
+  .plnfld {
+    margin-bottom: 90px;
+  }
+  .plan-box .form-area {
+    padding: 0;
+    min-height: 550px;
+  }
+  .form-area:hover .btnplan {
+    margin-top: 158px;
+  }
+  .up-plan:hover .btnplan {
+    margin-top: 115px !important;
+  }
   .plan-box:before {
     display: none;
   }
   .plan-box:after {
     display: none;
   }
+  .pri-sec {
+    padding-bottom: 0px;
+  }
+}
 
+@media only screen and (min-width: 321px) and (max-width: 575.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding-left: 15px;
+  }
+  .plnfld {
+    margin-bottom: 90px;
+  }
+  .form-area:hover .fld-holder {
+    margin-top: 0px !important;
+  }
+  .plan-box .form-area {
+    min-height: 550px;
+  }
+  .form-area:hover .btnplan {
+    margin-top: 158px;
+  }
+  .up-plan:hover .btnplan {
+    margin-top: 115px !important;
+  }
+  .plan-box:before {
+    display: none;
+  }
+  .plan-box:after {
+    display: none;
+  }
   .pri-sec {
     padding: 50px 0 0;
   }
   .outer_circle {
     height: 100% !important;
   }
-  .elipse-bg {
-    background: url("/static/img/ellipse-tab.png") no-repeat !important;
-    background-size: contain !important;
-  }
-  .form-area:hover .fld-holder {
-    height: 365px;
-  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding-left: 15px;
+  }
   .plan-box:after {
     display: none;
   }
@@ -272,25 +403,51 @@
   .res-sec {
     padding-top: 0 !important;
   }
+  .planlist {
+    min-height: 258px;
+  }
+
+  .up-plan .planlist {
+    min-height: 240px;
+  }
   .plan-box .form-area {
     width: 50%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    min-height: 500px;
   }
-  .plan-box .form-area {
-    min-height: 460px;
+  .form-area .fld-holder {
+    min-height: 500px;
+    margin-top: 0 !important;
   }
+  .form-area:hover .fld-holder {
+    height: 430px;
+    min-height: 430px;
+    margin-top: 0px !important;
+  }
+  .form-area:hover .btnplan {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -85%);
+  }
+  .up-plan:hover .btnplan {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+  }
+
   .outer_circle {
     height: 100% !important;
   }
-  .elipse-bg {
-    background: url("/static/img/ellipse-tab.png") no-repeat !important;
-    background-size: contain !important;
-  }
-  .form-area:hover .fld-holder {
-    height: 356px;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .eb-txt,
+  .fplan,
+  .planlist,
+  .plnfld h1 {
+    padding-left: 15px;
+  }
   .plan-box:before {
     background: url("/static/img/bg-lines/lines-tab.png") no-repeat !important;
     top: -320px;
@@ -315,23 +472,32 @@
     padding-left: 70px;
     padding-right: 70px;
   }
-
-  .elipse-bg {
-    background: url("/static/img/ellipse-tab.png") no-repeat !important;
-    background-size: contain !important;
+  .planlist {
+    min-height: 258px;
   }
-  .form-area:hover .planlist {
-    min-height: 129px;
+
+  .up-plan .planlist {
+    min-height: 260px;
+  }
+  .form-area .fld-holder {
+    min-height: 500px;
   }
   .form-area:hover .fld-holder {
-    height: 368px;
+    height: 470px;
+    min-height: 470px;
+    margin-top: 0 !important;
   }
-  .plan-box .form-area {
-    width: 50%;
-    margin-bottom: 50px;
+  .form-area:hover .btnplan {
+    position: absolute;
+    left: 50%;
+    top: 87%;
+    transform: translate(-50%, -87%);
   }
-  .plan-box .form-area {
-    min-height: 460px;
+  .up-plan:hover .btnplan {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
   }
   .outer_circle {
     height: 100% !important;
@@ -358,6 +524,18 @@
   }
   .price-title h1 {
     margin-bottom: 50px;
+  }
+  .form-area:hover .btnplan {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -85%);
+  }
+  .up-plan:hover .btnplan {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {

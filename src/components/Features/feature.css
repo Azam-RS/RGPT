@@ -1,9 +1,9 @@
 .gif-sec {
-  padding: 9em 0 13em 0;
+  padding: 3.5em 0 13em 0;
 }
 .feature-holder {
   color: #000;
-  padding: 100px 85px;
+  padding: 100px 85px 70px;
   text-align: justify;
   background: #fff;
   border-radius: 20px 20px 0 0;
@@ -15,6 +15,26 @@
 }
 .desc-feat .section {
   padding: 52px 100px 0 15px;
+}
+.desc-feat .controlSlide {
+  background: url("/static/img/circles/circles-default.png") no-repeat;
+  width: 76px;
+  height: 14px;
+  margin: 30px auto 40px;
+  padding: 0px 100px 0px 0px;
+}
+
+.desc-feat .slide1 {
+  background: url("/static/img/circles/circles1.png") no-repeat !important;
+}
+.desc-feat .slide2 {
+  background: url("/static/img/circles/circles2.png") no-repeat !important;
+}
+.desc-feat .slide3 {
+  background: url("/static/img/circles/circles3.png") no-repeat !important;
+}
+.desc-feat .slide4 {
+  background: url("/static/img/circles/circles4.png") no-repeat !important;
 }
 .desc-feat h4 {
   font-size: 22px;
@@ -183,7 +203,10 @@
 }
 
 /* feature.css */
-
+.blurtxt {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
 @media screen and (max-width: 575.98px) {
   .gif-sec {
     padding: 0 !important;
@@ -213,6 +236,9 @@
   .plan-box:after {
     display: none;
   }
+  .desc-feat {
+    margin-bottom: 50px;
+  }
   .desc-feat h4 {
     font-size: 19px;
   }
@@ -222,15 +248,44 @@
   }
   .desc-feat .section {
     padding: 52px 0px 0;
+    margin-bottom: 50px;
   }
   .feature-holder p {
-    min-height: 300px !important;
+    min-height: 280px !important;
   }
   .padding-horiz--md {
     padding: 0 !important;
   }
   .bg-p {
     background-position: 50% 0;
+  }
+  .bg-icon {
+    width: 235px;
+  }
+  .imgDiv {
+    width: 110px;
+    left: 70px !important;
+  }
+  .imgDiv2 {
+    top: 60px;
+    left: 64px;
+  }
+  .imgDiv3 {
+    top: 55px;
+    left: 73px;
+  }
+  .imgDiv4 {
+    top: 55px;
+    left: 70px;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 245px;
+  }
+  .desc-feat .controlSlide {
+    margin: 30px auto 80px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {

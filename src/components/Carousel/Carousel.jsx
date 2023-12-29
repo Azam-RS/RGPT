@@ -14,7 +14,7 @@ const Carousel = () => {
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 2000,
     autoplay: true,
     slidesToShow: 6,
@@ -26,7 +26,7 @@ const Carousel = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -39,8 +39,8 @@ const Carousel = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
@@ -49,7 +49,7 @@ const Carousel = () => {
   return (
     <div className="c-holder">
       <h2 className="regtitle" onClick={handleRedirect}>
-        Registered User
+        With Users From:
       </h2>
       <Slider {...settings}>
         <div>
@@ -117,7 +117,7 @@ const Carousel = () => {
         </div>
         <div>
           <img
-            src="img/carousel-logo/blackrock.png"
+            src="img/carousel-logo/more.png"
             alt="logo"
             onClick={handleRedirect}
           />
