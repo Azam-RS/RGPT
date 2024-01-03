@@ -40,10 +40,9 @@
   float: left;
   width: 33%;
   padding: 0px 15px 0;
-  min-height: 450px;
+  min-height: 550px;
   margin-top: 0px;
   position: relative;
-  background: transparent;
   box-sizing: border-box;
   border-radius: 15px;
 }
@@ -53,7 +52,7 @@
   clear: both;
 }
 .form-area .fld-holder {
-  min-height: 460px;
+  height: 500px;
   padding: 30px 0px 0px;
   border-radius: 15px;
   background: linear-gradient(
@@ -63,15 +62,20 @@
   );
   backdrop-filter: blur(20px);
   border: 1px solid rgba(250, 250, 250, 1);
+  top: 50px;
+  position: relative;
 }
-.plnfld:hover .fld-holder {
+.form-area:hover .fld-holder {
+  top: 0px;
+  position: relative;
+  height: 430px;
   border: 3px solid #347ceb;
+  background-size: contain !important;
   background: #fff url("/static/img/ellipse.png") no-repeat center bottom;
-  height: 420px;
-  min-height: 420px;
-  margin-top: -30px;
-  background-size: contain;
-  border-radius: 15px;
+}
+
+.plan-box .form-area:hover .btnplan {
+  margin-top: 58px !important;
 }
 .pri-sec {
   padding-top: 100px;
@@ -118,21 +122,21 @@
 .eb-txt {
   margin-bottom: 10px;
   color: #fff;
-  padding: 0 5px 0 40px;
+  padding: 0 5px 0 35px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)));
   line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
 }
 .plnfld {
-  min-height: 430px;
+  min-height: 550px;
   border-radius: 15px;
 }
 .plnfld h1 {
   font-weight: 700;
   color: #fff;
   font-family: "Poppins-SemiBold";
-  padding: 0 5px 0 40px;
+  padding: 0 5px 0 35px;
   display: inline-block;
   position: relative;
   font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (3500 - 300)));
@@ -148,8 +152,10 @@
   line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
 }
 .planlist {
-  min-height: 230px;
-  padding: 0 5px 0 40px;
+  min-height: 250px;
+  padding: 0 5px 0 35px;
+  /* background: #367bfe; */
+  margin-bottom: 10px;
 }
 .planlist ul {
   margin: 0;
@@ -198,17 +204,8 @@
 }
 .up-plan .plandesc {
   min-height: auto;
-  padding: 0 5px 0 20px;
-  margin-bottom: 10px;
-}
-.up-plan .eb-txt,
-.up-plan .fplan,
-.up-plan .planlist,
-.up-plan .plnfld h1 {
-  padding-left: 15px;
-}
-.up-plan .planlist {
-  margin-bottom: 12px;
+  padding: 0 5px 0 35px;
+  margin-bottom: 23px;
 }
 .planlist .iconchk {
   float: left;
@@ -224,7 +221,7 @@
   color: white;
   font-weight: bold;
   min-height: 84px;
-  padding: 0 5px 0 40px;
+  padding: 0 5px 0 35px;
 }
 .lgn-container {
   overflow: inherit;
@@ -233,12 +230,6 @@
   content: "";
   display: block;
   clear: both;
-}
-.plnfld:hover .btnplan {
-  margin-top: 130px;
-}
-.up-plan .plnfld:hover .btnplan {
-  margin-top: 74px;
 }
 .stxt {
   font-size: 13px;
@@ -252,28 +243,25 @@
   display: block;
   margin-bottom: 5px;
 }
-.plnfld:hover .planlist {
-  min-height: 131px;
-}
-.plnfld:hover .eb-txt,
-.plnfld:hover .fplan,
-.plnfld:hover .planlist ul li span,
-.plnfld:hover h1 {
+.form-area:hover .eb-txt,
+.form-area:hover .fplan,
+.form-area:hover .planlist ul li span,
+.form-area:hover h1 {
   color: #367bfe !important;
 }
-.plnfld:hover .eb-txt,
-.plnfld:hover .fplan,
-.plnfld:hover .planlist ul li span,
-.plnfld:hover h1 {
+.form-area:hover .eb-txt,
+.form-area:hover .fplan,
+.form-area:hover .planlist ul li span,
+.form-area:hover h1 {
   color: #367bfe !important;
 }
-.plnfld:hover .planlist ul li svg {
+.form-area:hover .planlist ul li svg {
   border: 1px solid #367bfe;
 }
-.plnfld:hover .planlist ul li {
+.form-area:hover .planlist ul li {
   text-shadow: none;
 }
-.plnfld:hover .plandesc {
+.form-area:hover .plandesc {
   color: #367bfe !important;
 }
 .button {
@@ -288,16 +276,14 @@
   width: max-contentrgb(199, 224, 224);
   font-weight: normal;
 }
-.plnfld .button {
+.form-area .btnplan .button {
   background: transparent !important;
   color: #fff !important;
   border: 1px solid #fff;
   margin-bottom: 20px;
 }
-.plnfld .button:hover {
+.form-area:hover .btnplan .button {
   font-weight: normal !important;
-}
-.plnfld:hover .fld-holder .button {
   background: #fff !important;
   color: #367bfe !important;
 }
@@ -311,6 +297,9 @@
   border: 1px solid #fff;
   border-radius: 10px;
   padding: 1px 6px;
+}
+.form-area:hover .badgetxt {
+  border: 1px solid #367bfe;
 }
 @media only screen and (min-width: 300px) and (max-width: 320px) {
   .eb-txt,
@@ -424,19 +413,6 @@
     min-height: 430px;
     margin-top: 0px !important;
   }
-  .form-area:hover .btnplan {
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -85%);
-  }
-  .up-plan:hover .btnplan {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -100%);
-  }
-
   .outer_circle {
     height: 100% !important;
   }
@@ -486,18 +462,6 @@
     height: 470px;
     min-height: 470px;
     margin-top: 0 !important;
-  }
-  .form-area:hover .btnplan {
-    position: absolute;
-    left: 50%;
-    top: 87%;
-    transform: translate(-50%, -87%);
-  }
-  .up-plan:hover .btnplan {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -100%);
   }
   .outer_circle {
     height: 100% !important;
