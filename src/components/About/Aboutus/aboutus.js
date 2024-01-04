@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./aboutus.css";
 const AboutUs = () => {
   return (
-    <div className="">
-      <div id="aboutus" className="line-holder">
+    <div>
+      <div id="driving-force"></div>
+      <div className="line-holder">
         <div className="container">
           <div className="row">
             <div className="col col--12">

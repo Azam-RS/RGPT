@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Pricing = () => {
   return (
     <div>
-      <div id="pricing" className="pri-sec">
+      <div id="pricing" className="plan-pricing"></div>
+      <div className="pri-sec">
         <div className="container">
           <div className="row ">
             <div className="col col--9 text--center mx-auto">

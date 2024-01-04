@@ -314,6 +314,9 @@ body {
 .dropdown > .navbar__link:after {
   margin-left: 0.5em;
 }
+.dropdown__link {
+  background: #fff;
+}
 .navbar__items .navbar__logo {
   display: block;
   width: 236px !important;
@@ -789,7 +792,7 @@ code {
   }
   .hero__title,
   .hero__subtitle {
-    min-height: 130px !important;
+    min-height: 120px !important;
   }
   .navbar-sidebar__brand div .clean-btn {
     display: none !important;
@@ -1189,4 +1192,7 @@ code {
     ) !important;
     margin-bottom: 0;
   }
+}
+.hidden-category {
+  display: none !important;
 }
