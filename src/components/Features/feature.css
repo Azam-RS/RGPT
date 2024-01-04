@@ -1,5 +1,6 @@
 .gif-sec {
-  padding: 3.5em 0 13em 0;
+  padding: 4em 0 4em 0;
+  position: relative;
 }
 .feature-holder {
   color: #000;
@@ -40,6 +41,9 @@
   font-size: 22px;
   line-height: 24px;
   font-family: "Poppins";
+}
+.feature-holder input[type="radio"] {
+  cursor: pointer;
 }
 .feature-holder:before {
   content: "";
@@ -206,6 +210,12 @@
 .blurtxt {
   filter: blur(2px);
   -webkit-filter: blur(2px);
+}
+#features {
+  height: 10px;
+  position: absolute;
+  top: 5px;
+  visibility: hidden;
 }
 @media screen and (max-width: 575.98px) {
   .gif-sec {

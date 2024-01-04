@@ -2,6 +2,7 @@
   background: url("/img/bg-sec/bg2.png") no-repeat;
   background-size: cover;
   background-position: 0 110px;
+  position: relative;
 }
 .line-holder {
   padding: 16.8em 0 7em;
@@ -160,6 +161,12 @@
   padding: 89px 45px;
   border-radius: 10px;
 }
+#driving-force {
+  visibility: hidden;
+  height: 10px;
+  position: absolute;
+  top: 70px;
+}
 @media screen and (max-width: 575.98px) {
   .c-area p {
     font-size: 13px;
@@ -185,6 +192,9 @@
   }
   .primisbg {
     padding: 15px;
+  }
+  #driving-force {
+    top: -50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -218,5 +228,8 @@
 @media only screen and (min-width: 1501px) and (max-width: 1599px) {
   .primisbg {
     padding: 55px 45px;
+  }
+  #driving-force {
+    top: 100px;
   }
 }

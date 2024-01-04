@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# RapidGPT User Agreement
+# User Agreement
 
 This User Agreement ("Agreement") is a legally binding agreement between you (referred to as "User" or "you") and PrimisAI (referred to as "PrimisAI," "we," or "us") regarding your use of the RapidGPT software ("RapidGPT"). By signing up and using RapidGPT, you agree to be bound by the terms and conditions of this Agreement.
 

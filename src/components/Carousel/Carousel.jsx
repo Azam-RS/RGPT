@@ -9,12 +9,12 @@ const Carousel = () => {
   const history = useHistory();
   const handleRedirect = () => {
     // Redirect to the desired path
-    history.push("/RegisterdUser/registerdUser");
+    history.push("/registerd-user");
   };
 
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 2000,
     autoplay: true,
     slidesToShow: 6,

@@ -28,6 +28,7 @@ const Features = () => {
   return (
     <div>
       <div className="gif-sec">
+        <div id="features"></div>
         <div className="container">
           <div className="row">
             <div className="col col--12">

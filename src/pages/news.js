@@ -1,15 +1,14 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import "./news.css";
-import Footer from "../components/Footer/footer";
 
 export default function News() {
   return (
     <Layout title="News" description="News Page">
-      <div className="container">
-        <div className="row">
-          <div className="col col--12">
-            <div className="news-holder">
+      <div className="news-holder">
+        <div className="container">
+          <div className="row">
+            <div className="col col--12">
               <h1>
                 PrimisAI Forms to Revolutionize Hardware Design with Leading AI
                 Solutions
@@ -58,21 +57,23 @@ export default function News() {
                 concept to Bitstream/GDSII. What sets PrimisAI apart is its
                 on-premise deployment capabilities and its easily extendable
                 knowledge base, catering to client-specific IPs, ensuring the
-                customer hardware design experience is unparalleled. With PrimisAI, the future and accessibility of hardware design has no
-                limits. For more information, please visit <a href="https://primis.ai" className="n-link">
+                customer hardware design experience is unparalleled. With
+                PrimisAI, the future and accessibility of hardware design has no
+                limits. For more information, please visit{" "}
+                <a href="https://primis.ai" className="n-link">
                   primis.ai
-                </a>.
+                </a>
+                .
               </p>
-              <p className="regds">
-                <h4>Media Contact</h4>
+              <div className="regds">
+                <p>Media Contact</p>
                 <p>Diana Kandah</p>
                 <p>diana@primis.ai</p>
-              </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
     </Layout>
   );
 }

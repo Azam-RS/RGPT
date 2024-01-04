@@ -280,4 +280,7 @@
     height: 200px !important;
     min-height: 200px;
   }
+  .btn-reply {
+    top: 54px;
+  }
 }
