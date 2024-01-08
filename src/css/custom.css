@@ -473,6 +473,13 @@ code {
 .breadcrumbs__item:not(:last-child):after {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 256 256"><g><g><polygon fill="silver" points="79.093,0 48.907,30.187 146.72,128 48.907,225.813 79.093,256 207.093,128"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>');
 }
+.codeLineNumber_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Line-styles-module::before {
+  position: absolute;
+  left: 0;
+}
+.codeBlockLinesWithNumbering_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+  white-space: break-spaces;
+}
 /* Docs Style */
 /* footer */
 .footer {
@@ -551,16 +558,12 @@ code {
   cursor: pointer;
 }
 .language-verilog:first-child code .token-line:first-child .token {
-  border-right: 2px solid #fff;
-  white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(24, end), blink-caret 0.5s step-end infinite;
   color: #fff;
-  display: inline-block;
 }
 .language-verilog:first-child code .token-line:nth-child(n + 2) {
   color: #fff;
-  animation: delay 2s 4s forwards;
+  animation: delay 4s 4s forwards;
   max-width: 0;
   visibility: hidden;
 }
