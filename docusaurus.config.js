@@ -6,15 +6,16 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
 const config = {
+    title: "RGPT",
     tagline: "RapidGPT: Your Ultimate HDL Pair-Designer",
     favicon: "/img/favicon.png",
 
-    url: "https://primis.ai/",
+    url: "https://Azam-RS.github.io/",
     baseUrl: "/",
 
     // GitHub pages deployment config.
-    organizationName: "PrimisAI", // Usually your GitHub org/user name.
-    projectName: "rapidgpt-webapp-frontend", // Usually your repo name.
+    organizationName: "azam-ai", // Usually your GitHub org/user name.
+    projectName: "RGPT", // Usually your repo name.
 
     trailingSlash: false,
 
@@ -33,8 +34,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    editUrl:
-                        "https://github.com/PrimisAI/rapidgpt-webapp-frontend/edit/main",
+                    editUrl: "https://github.com/Azam-RS/RGPT/edit/main",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
