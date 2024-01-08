@@ -31,13 +31,7 @@ RapidGPT is available through a convenient and user-friendly extension for Micro
 
 ### Obtain a Valid API Key
 
-Sign-up on [RapidGPT's website](https://getrapidgpt.primis.ai/) via email/password. Once your account is activated, head over to your [Account Information page](https://getrapidgpt.primis.ai/Home/AccountInformation) and copy the API key.
-
-:::caution
-
-Currently, PrimisAI does not offer paid licenses for RapidGPT. However, a unique RapidGPT API key is still necessary.
-
-:::
+Sign-up on [RapidGPT's website](https://getrapidgpt.primis.ai/) and subscribe to a plan. Once your account is activated, head over to your [Account Information page](https://getrapidgpt.primis.ai/Home/AccountInformation) and copy the API key.
 
 ### Setup Your API Key
 
