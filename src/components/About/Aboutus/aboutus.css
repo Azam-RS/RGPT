@@ -161,7 +161,7 @@
   padding: 89px 45px;
   border-radius: 10px;
 }
-#driving-force {
+#ai-driven-eda {
   visibility: hidden;
   height: 10px;
   position: absolute;
@@ -229,7 +229,7 @@
   .primisbg {
     padding: 55px 45px;
   }
-  #driving-force {
+  #ai-driven-eda {
     top: 100px;
   }
 }

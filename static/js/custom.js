@@ -21,6 +21,7 @@ function reply(divid) {
   const newElement = elementToRefresh.cloneNode(true);
 
   elementToRefresh.parentNode.replaceChild(newElement, elementToRefresh);
+  docTypingAnimation(divid);
 }
 //////////End Reply button function to reload editor animation///////////////////////////
 
@@ -46,20 +47,19 @@ async function chatDoc(divid) {
   divName = "";
 
   try {
-    
     editor1 = document.getElementById(divid);
 
     var childElements = editor1.querySelectorAll(".cbox");
     childElements_ = childElements;
 
-    if(divid !="displayTab3box2" && divid !="displayTab3box1"){
+    if (divid != "displayTab3box2" && divid != "displayTab3box1") {
       childElements_.forEach((childElement) => {
         childElement.style.display = "none";
       });
     }
     divName = divid;
-    if(divid =="displayTab3box1"){
-      editor2childElements_ =[];
+    if (divid == "displayTab3box1") {
+      editor2childElements_ = [];
       var editor2 = document.getElementById("displayTab3box2");
       var editor2childElements = editor2.querySelectorAll(".cbox");
       editor2childElements_ = editor2childElements;
@@ -81,19 +81,19 @@ async function chatDoc(divid) {
     LineNo = 0;
 
     txt = spanids[Arrspan[LineNo]];
-    
-    if(divName =="displayTab3box2"){
+
+    if (divName == "displayTab3box2") {
       if (k < editor2childElements_.length) {
         const childElement = editor2childElements_[k];
         childElement.style.display = "block";
         k++;
       }
-    }else{
+    } else {
       if (k < childElements_.length) {
         const childElement = childElements_[k];
         childElement.style.display = "block";
         k++;
-      }  
+      }
     }
     await typeWriter();
   } catch (error) {
@@ -123,32 +123,30 @@ async function typeWriter() {
     LineNo++;
 
     if (LineNo < Arrspan.length) {
-        txt = spanids[Arrspan[LineNo]];
+      txt = spanids[Arrspan[LineNo]];
 
-        i = 0;
-        if(divName =="displayTab3box2"){
-          if (k < editor2childElements_.length) {
-            const childElement = editor2childElements_[k];
-  
-            childElement.style.display = "block";
-  
-            k++;
-          }
-  
-        }else{
-          if (k < childElements_.length) {
-            const childElement = childElements_[k];
-  
-            childElement.style.display = "block";
-  
-            k++;
-          }
-  
+      i = 0;
+      if (divName == "displayTab3box2") {
+        if (k < editor2childElements_.length) {
+          const childElement = editor2childElements_[k];
+
+          childElement.style.display = "block";
+
+          k++;
         }
+      } else {
+        if (k < childElements_.length) {
+          const childElement = childElements_[k];
 
-        setTimeout(async () => {
-          await typeWriter();
-        }, speed);
+          childElement.style.display = "block";
+
+          k++;
+        }
+      }
+
+      setTimeout(async () => {
+        await typeWriter();
+      }, speed);
     }
   }
 }
@@ -203,3 +201,37 @@ window.addEventListener("scroll", function () {
 });
 
 ////////// End To handle animation on scroll in pages///////////////////////////
+
+function typeText(element, text, speed) {
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      element.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, speed);
+    }
+  }
+
+  type();
+}
+
+function docTypingAnimation(divId) {
+  const elementToRefresh = document.getElementById(divId);
+
+  if (elementToRefresh) {
+    const newTokenElement = elementToRefresh.querySelector(
+      ".language-verilog:first-child code .token-line:first-child .token"
+    );
+
+    if (newTokenElement) {
+      const textContent = newTokenElement.textContent;
+      newTokenElement.textContent = "";
+      var typingSpeed = 20;
+      if (divId == "propmt1") {
+        typingSpeed = 5;
+      }
+      typeText(newTokenElement, textContent, typingSpeed);
+    }
+  }
+}
