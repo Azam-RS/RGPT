@@ -1,94 +1,153 @@
 .bg-sec-3 {
   position: relative;
+  background: url("/static/img/planbg.png") repeat;
+  background-size: cover;
+  padding: 4em 0 3em;
+
 }
 .price-holder {
   width: 100%;
-  max-width: 60em;
 }
 .price-holder:after {
   content: "";
   display: block;
   clear: both;
 }
-.loginbox .form-area.login-h {
-  height: 440px;
-}
-.plan-box {
-  position: relative;
-}
-.plan-box:before {
-  content: "";
-  background: url("/static/img/bg-lines/slice4.png") no-repeat;
-  width: 100%;
-  height: 996px;
-  position: absolute;
-  top: -435px;
-  left: -20px;
-  z-index: -1;
-  background-size: contain;
-  opacity: 0.4;
-}
-.plan-box:after {
-  content: "";
-  background: url("/static/img/bg-lines/slice5.png") no-repeat;
-  width: 409px;
-  height: 504px;
-  position: absolute;
-  top: 380px;
-  left: 4px;
-  z-index: -1;
-  opacity: 0.4;
-}
-.plan-box .form-area {
+/* new plan css */
+.planBox{
   float: left;
-  width: 33%;
-  padding: 0px 15px 0;
-  min-height: 550px;
-  margin-top: 0px;
+  width: calc(25% - 30px);
+  padding: 30px 15px 0;
+  min-height: 565px;
+  margin: 0px 15px 20px;
   position: relative;
   box-sizing: border-box;
   border-radius: 15px;
+  border-radius: 11px;
+  background: rgb(127,167,165);
+  background: radial-gradient(circle, rgba(127,167,165,1) 0%, rgba(13,32,57,1) 100%);
+  border: 1px solid rgba(250, 250, 250, 1);
 }
-.plan-box .form-area:after {
+.planBox:after {
   content: "";
   display: block;
   clear: both;
 }
-.form-area .fld-holder {
-  height: 500px;
-  padding: 30px 0px 0px;
-  border-radius: 15px;
-  background: linear-gradient(
-    165deg,
-    rgba(18, 37, 75, 0.7) 5.65%,
-    rgba(54, 123, 254, 0) 79.54%
-  );
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(250, 250, 250, 1);
-  top: 50px;
+.planBox .p-Header{
+  min-height: 145px;
+}
+.p-Header .eb-txt {
+  margin-bottom: 26px;
+  color: #fff;
+  padding: 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size:24px;
+  line-height: 26px;
+}
+.p-Header .txtsmall_gray{
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1px;
+  margin-left: 0px;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+.p-Header h1 {
+  font-weight: 700;
+  color: #fff;
+  font-family: "Poppins-SemiBold";
+  padding: 0;
   position: relative;
+  font-size: 28px;
+  line-height: 32px;
+  display: block;
+    margin-bottom: 5px;
 }
-.form-area:hover .fld-holder {
-  top: 0px;
-  position: relative;
-  height: 430px;
-  border: 3px solid #347ceb;
-  background-size: contain !important;
-  background: #fff url("/static/img/ellipse.png") no-repeat center bottom;
+.p-Header h1 .small-txt{
+  font-size: 14px;
 }
-
-.plan-box .form-area:hover .btnplan {
-  margin-top: 58px !important;
-}
-.pri-sec {
-  padding-top: 100px;
+.p-Header  .plandesc{
   color: white;
-  position: relative;
-  padding-bottom: 175px;
-  background: url("/static/img/bg-lines/sphere.png") no-repeat;
-  background-position: center 100px;
+  font-weight: bold;
+  padding:0;
+  font-size: 13px;
+  margin-bottom: 0;
 }
-
+.p-Header .txtplus{
+font-weight: normal;
+}
+.p-Header .fplan {
+  color: white;
+  font-weight: bold;
+  padding:0;
+  margin: 0 0 10px 0;
+}
+.planBox .p-Main{
+    min-height: 320px;
+  }
+  .p-Main .pList ul {
+    margin: 0;
+    padding: 0;
+  }
+  .p-Main .pList ul li {
+    list-style: none;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 8px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  .p-Main .pList ul li svg {
+    color: #fff;
+    width: 14px;
+    height: 14px;
+    background: #7FA4A4;
+    border-radius: 30px;
+    border: 1px solid #7FA4A4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .p-Main .pList .iconchk {
+    float: left;
+    width: 20px;
+    border: 1px solid #7FA4A4;
+    border-radius: 50%;
+    height: 20px;
+    position: relative;
+  }
+  .p-Main .pList .plan-d {
+    float: left;
+    width: 85%;
+    padding-left: 6px;
+    box-sizing: border-box;
+  }
+/* 
+  .planBox .p-Footer{
+    background: #ad2da0;
+    } */
+    .planBox .btnplan .button {
+      background: transparent !important;
+      color: #fff !important;
+      border: 1px solid #fff;
+      margin-bottom: 50px;
+      min-width: 150px;
+      padding: 6px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    }
+    .planBox:hover .btnplan .button {
+      font-weight: normal !important;
+      background: #fff !important;
+      color: #367bfe !important;
+    }
+/* new plan css */
 .mx-auto {
   margin: 0 auto;
 }
@@ -102,7 +161,7 @@
   margin-bottom: 30px;
 }
 .price-title h1 {
-  color: #fff;
+  color:#3FC3B6;
   font-weight: 700;
   font-size: calc(
     30px + (60 - 30) * ((100vw - 300px) / (3500 - 300))
@@ -122,177 +181,6 @@
   font-weight: 500;
   line-height: normal;
 }
-.eb-txt {
-  margin-bottom: 10px;
-  color: #fff;
-  padding: 0 5px 0 35px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)));
-  line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
-}
-.plnfld {
-  min-height: 550px;
-  border-radius: 15px;
-}
-.plnfld h1 {
-  font-weight: 700;
-  color: #fff;
-  font-family: "Poppins-SemiBold";
-  padding: 0 5px 0 35px;
-  display: inline-block;
-  position: relative;
-  font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (3500 - 300)));
-  line-height: calc(24px + (34 - 24) * ((100vw - 300px) / (3500 - 300)));
-}
-.small-txt {
-  font-size: 16px;
-}
-.plnfld h2 {
-  font-weight: 500;
-  font-family: "poppins";
-  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)));
-  line-height: calc(22px + (26 - 22) * ((100vw - 300px) / (3500 - 300)));
-}
-.planlist {
-  min-height: 250px;
-  padding: 0 5px 0 35px;
-  /* background: #367bfe; */
-  margin-bottom: 10px;
-}
-.planlist ul {
-  margin: 0;
-  padding: 0;
-}
-.planlist .prolist {
-  margin-bottom: 28px;
-}
-.planlist ul li {
-  list-style: none;
-  font-size: 13px;
-  line-height: 17px;
-  margin-bottom: 3px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-}
-.planlist ul li svg {
-  color: #67eae9;
-  width: 8px;
-  height: 8px;
-  background: rgba(103, 234, 233, 0.15);
-  border-radius: 30px;
-  text-align: center;
-  font-size: 12px;
-  line-height: 14px;
-  margin-right: 10px;
-  padding: 3px;
-  vertical-align: middle;
-  border: 1px solid #67eae9;
-}
-.elipse-bg {
-  background: url("/static/img/ellipse.png") no-repeat;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  width: 100%;
-  height: 50px;
-  display: none;
-  position: absolute;
-  bottom: 0;
-}
-.plandesc {
-  min-height: 48px;
-  color: white;
-  font-weight: bold;
-  padding: 0 5px 0 30px;
-}
-.up-plan .plandesc {
-  min-height: auto;
-  padding: 0 5px 0 35px;
-  margin-bottom: 23px;
-}
-.planlist .iconchk {
-  float: left;
-  width: 10%;
-}
-.planlist .plan-d {
-  float: left;
-  width: 90%;
-  padding-top: 1px;
-}
-
-.fplan {
-  color: white;
-  font-weight: bold;
-  min-height: 84px;
-  padding: 0 5px 0 35px;
-}
-.lgn-container {
-  overflow: inherit;
-}
-.lgn-container:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.stxt {
-  font-size: 13px;
-  font-weight: normal;
-}
-.cp-dis {
-  cursor: auto;
-  pointer-events: none;
-}
-.fld-holder h1 {
-  display: block;
-  margin-bottom: 5px;
-}
-.form-area:hover .eb-txt,
-.form-area:hover .fplan,
-.form-area:hover .planlist ul li span,
-.form-area:hover h1 {
-  color: #367bfe !important;
-}
-.form-area:hover .eb-txt,
-.form-area:hover .fplan,
-.form-area:hover .planlist ul li span,
-.form-area:hover h1 {
-  color: #367bfe !important;
-}
-.form-area:hover .planlist ul li svg {
-  border: 1px solid #367bfe;
-}
-.form-area:hover .planlist ul li {
-  text-shadow: none;
-}
-.form-area:hover .plandesc {
-  color: #367bfe !important;
-}
-.button {
-  background: #57595c;
-  border-radius: 50px;
-  border: none;
-  padding: 10px 25px;
-  font-size: 16px;
-  line-height: 15px;
-  margin-bottom: 15px;
-  outline: none;
-  width: max-contentrgb(199, 224, 224);
-  font-weight: normal;
-}
-.form-area .btnplan .button {
-  background: transparent !important;
-  color: #fff !important;
-  border: 1px solid #fff;
-  margin-bottom: 20px;
-}
-.form-area:hover .btnplan .button {
-  font-weight: normal !important;
-  background: #fff !important;
-  color: #367bfe !important;
-}
-.d-none {
-  display: none;
-}
 .badgetxt {
   font-size: 11px;
   text-transform: uppercase;
@@ -301,258 +189,154 @@
   border-radius: 10px;
   padding: 1px 6px;
 }
-.form-area:hover .badgetxt {
-  border: 1px solid #367bfe;
-}
-.plan-pricing {
-  height: 10px;
-  position: absolute;
-  top: 55px;
-  visibility: hidden;
-}
-@media only screen and (min-width: 300px) and (max-width: 320px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding-left: 15px;
-  }
-  .plan-box .form-area {
-    margin-bottom: 20px;
-  }
-  .form-area:hover .fld-holder {
-    height: 430px;
-    min-height: 430px;
-    margin-top: 0 !important;
-  }
-  .plnfld {
-    margin-bottom: 90px;
-  }
-  .plan-box .form-area {
-    padding: 0;
-    min-height: 550px;
-  }
-  .form-area:hover .btnplan {
-    margin-top: 158px;
-  }
-  .up-plan:hover .btnplan {
-    margin-top: 115px !important;
-  }
-  .plan-box:before {
-    display: none;
-  }
-  .plan-box:after {
-    display: none;
-  }
-  .pri-sec {
-    padding-bottom: 0px;
-  }
+@media  (max-width: 575.98px) {
   .plan-pricing {
     top: 10px;
+  } 
+.planBox{
+  min-height: 523px;
+  padding: 30px 10px 20px;
+  margin: 0px 10px 20px;
+  width: calc(100% - 20px);
   }
+  .planBox .p-Header{
+    min-height: 135px;
+  }
+  .p-Header .eb-txt{
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .p-Header h1 .small-txt {
+    font-size: 13px;
 }
-
-@media only screen and (min-width: 321px) and (max-width: 575.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding-left: 15px;
+  .p-Header .plandesc{
+    font-size: 12px;
   }
-  .plnfld {
-    margin-bottom: 90px;
-  }
-  .form-area:hover .fld-holder {
-    margin-top: 0px !important;
-  }
-  .plan-box .form-area {
-    min-height: 550px;
-  }
-  .form-area:hover .btnplan {
-    margin-top: 158px;
-  }
-  .up-plan:hover .btnplan {
-    margin-top: 115px !important;
-  }
-  .plan-box:before {
-    display: none;
-  }
-  .plan-box:after {
-    display: none;
-  }
-  .pri-sec {
-    padding: 50px 0 0;
-  }
-  .outer_circle {
-    height: 100% !important;
-  }
-  .plan-pricing {
-    top: 10px;
+  .planBox .p-Main {
+    min-height: 310px;
+}
+  .p-Main .pList .plan-d{
+    width: 90%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding-left: 15px;
+  .plan-pricing{
+    top:50px !important;
   }
-  .plan-box:after {
-    display: none;
+.planBox{
+  min-height: 523px;
+  padding: 30px 10px 20px;
+  margin: 0px 10px 20px;
+  width: calc(50% - 20px);
   }
-  .pri-sec {
-    padding-top: 0 !important;
-    padding-bottom: 0px !important;
+  .planBox .p-Header{
+    min-height: 135px;
   }
-  .res-sec {
-    padding-top: 0 !important;
+  .p-Header .eb-txt{
+    font-size: 22px;
+    line-height: 24px;
   }
-  .planlist {
-    min-height: 258px;
+  .p-Header h1 .small-txt {
+    font-size: 13px;
+}
+  .p-Header .plandesc{
+    font-size: 12px;
   }
-
-  .up-plan .planlist {
-    min-height: 240px;
-  }
-  .plan-box .form-area {
-    width: 50%;
-    margin-bottom: 20px;
-    min-height: 500px;
-  }
-  .form-area .fld-holder {
-    min-height: 500px;
-    margin-top: 0 !important;
-  }
-  .form-area:hover .fld-holder {
-    height: 430px;
-    min-height: 430px;
-    margin-top: 0px !important;
-  }
-  .outer_circle {
-    height: 100% !important;
+  .planBox .p-Main {
+    min-height: 310px;
+}
+  .p-Main .pList .plan-d{
+    width: 90%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding-left: 15px;
-  }
-  .plan-box:before {
-    background: url("/static/img/bg-lines/lines-tab.png") no-repeat !important;
-    top: -320px;
-    left: -10px;
-    height: 1430px;
-  }
-  .plan-box:after {
-    display: none;
-  }
-  .pri-sec {
-    padding-top: 0;
-    background: none;
-    padding-bottom: 0px;
-  }
-  .res-sec {
-    padding-top: 0 !important;
-  }
-  .price-title {
-    padding: 0 55px 0;
-  }
-  .e-title {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-  .planlist {
-    min-height: 258px;
+  .plan-pricing{
+    top:50px !important;
   }
 
-  .up-plan .planlist {
-    min-height: 260px;
+.planBox{
+  min-height: 523px;
+  padding: 30px 10px 20px;
+  margin: 0px 10px 20px;
+  width: calc(50% - 20px);
   }
-  .form-area .fld-holder {
-    min-height: 500px;
+  .planBox .p-Header{
+    min-height: 135px;
   }
-  .form-area:hover .fld-holder {
-    height: 470px;
-    min-height: 470px;
-    margin-top: 0 !important;
+  .p-Header .eb-txt{
+    font-size: 22px;
+    line-height: 24px;
   }
-  .outer_circle {
-    height: 100% !important;
+  .p-Header h1 .small-txt {
+    font-size: 13px;
+}
+  .p-Header .plandesc{
+    font-size: 12px;
+  }
+  .planBox .p-Main {
+    min-height: 290px;
+}
+  .p-Main .pList .plan-d{
+    width: 90%;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1023.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding: 0 5px 0 15px;
+.planBox{
+  padding: 30px 10px 20px;
+  margin: 0px 10px 20px;
+  width: calc(25% - 20px);
   }
-  .planlist ul li {
-    font-size: 14px;
+  .planBox .p-Header{
+    min-height: 135px;
   }
-  .plan-box:before {
-    left: 0;
-    top: -542px;
+  .p-Header .eb-txt{
+    font-size: 22px;
+    line-height: 24px;
   }
-  .pri-sec {
-    background: none;
-    padding-top: 50px;
+  .p-Header h1 .small-txt {
+    font-size: 13px;
+}
+  .p-Header .plandesc{
+    font-size: 12px;
   }
-  .price-title h1 {
-    margin-bottom: 50px;
+  .planBox .p-Main {
+    min-height: 350px;
+}
+  .p-Main .pList .iconchk {
+    width: 15px;
+    height: 15px;
   }
-  .form-area:hover .btnplan {
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -85%);
+  .p-Main .pList ul li svg{
+    width: 10px;
+    height: 10px;
   }
-  .up-plan:hover .btnplan {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -100%);
+  .p-Main .pList .plan-d{
+    width: 90%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding: 0 5px 0 15px;
+.planBox{
+  padding: 30px 10px 20px;
+  margin: 0px 10px 20px;
+  width: calc(25% - 20px);
   }
-  .pri-sec {
-    padding-top: 0;
-    background-position: center 20px;
+  .p-Header .eb-txt{
+    font-size: 22px;
+    line-height: 24px;
   }
-  .plan-box:before {
-    left: 0;
-    top: -588px;
+  .p-Header .plandesc{
+    font-size: 12px;
   }
-  .plan-box:after {
-    top: 256px;
-    left: 3px;
+  .p-Main .pList .iconchk {
+    width: 15px;
+    height: 15px;
   }
-  .price-title h1 {
-    margin-bottom: 50px;
+  .p-Main .pList ul li svg{
+    width: 10px;
+    height: 10px;
   }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1365.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding: 0 5px 0 30px;
-  }
-}
-@media only screen and (min-width: 1366px) and (max-width: 1599.98px) {
-  .eb-txt,
-  .fplan,
-  .planlist,
-  .plnfld h1 {
-    padding: 0 5px 0 30px;
+  .p-Main .pList .plan-d{
+    width: 90%;
   }
 }

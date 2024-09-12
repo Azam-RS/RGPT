@@ -1,0 +1,76 @@
+.webinar-holder{
+    background: url("/static/img/waebinars_bg.png") no-repeat;
+    background-size:cover ;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding:9em 0 4em;
+   }
+   .webinar-box{
+    padding: 4em 0px;
+  }
+  .jb-title h1{
+    color:#fff;
+    font-size: calc(
+      30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
+    ) !important;
+    line-height: calc(
+      32px + (52 - 32) * ((100vw - 300px) / (3500 - 300))
+    ) !important;
+    font-family: "Poppins-Bold",sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .webinar-box .desc-area {
+    margin-bottom: 50px;
+  }
+  .webinar-box .desc-area h1{
+    font-size: calc( 20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)) ) !important;
+    line-height: calc( 28px + (36 - 28) * ((100vw - 300px) / (3500 - 300)) ) !important;
+    color: #3b8a8d;
+    margin-bottom: 10px;
+    min-height: 63px;
+  }
+   .wbn-bg{
+    background: url("/static/img/webinar_promotion.png") no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 230px;
+    margin-bottom: 10px;
+   }
+  .new-webinar .btnmore,.new-webinar .btnmore:active,.new-webinar .btnmore:hover{
+    color:#366cc5;
+    background: transparent;
+    border:none;
+    font-size: 15px;
+  }
+  .new-webinar .btnmore:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+    .ytp-cued-thumbnail-overlay-image{
+     background-size: contain !important;
+    -webkit-background-size: contain  !important;
+    -moz-background-size:  contain  !important;
+  }
+  @media only screen and (max-width:575.98px) {
+    .wbn-bg{
+    min-height: 151px;
+    }
+    .webinar-holder {
+        background-position: 50% 0;
+    }
+    .modalVideo iframe{
+        min-height: 300px;
+    }
+  }
+  @media only screen and (min-width:576px) and (max-width:991.98px) {
+    .modalVideo iframe{
+        min-height: 450px;
+    }    
+  }
+  @media only screen and (min-width:992px) and (max-width:1366px) {
+    .wbn-bg{
+        min-height: 170px;
+    }
+  }

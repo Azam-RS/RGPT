@@ -1,0 +1,60 @@
+.event-holder{
+    background: url("/static/img/events_bg.jpg") no-repeat;
+    background-size:cover ;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding:9em 0 4em;
+   }
+   .event-box{
+    padding: 4em 0px;
+  }
+  .jb-title h1{
+    color:#fff;
+    font-size: calc(
+      30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
+    ) !important;
+    line-height: calc(
+      32px + (52 - 32) * ((100vw - 300px) / (3500 - 300))
+    ) !important;
+    font-family: "Poppins-Bold",sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .event-box .desc-area {
+    margin-bottom: 50px;
+  }
+  .event-box .desc-area h1{
+    font-size: calc( 20px + (24 - 20) * ((100vw - 300px) / (3500 - 300)) ) !important;
+    line-height: calc( 28px + (36 - 28) * ((100vw - 300px) / (3500 - 300)) ) !important;
+    color: #3b8a8d;
+    margin-bottom: 10px;
+  }
+   .conf-bg{
+    background: url("/static/img/new-event.jpg") no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 230px;
+    margin-bottom: 10px;
+   }
+  .new-event .btnmore,.new-event .btnmore:active,.new-event .btnmore:hover{
+    color:#366cc5;
+    background: transparent;
+    border:none;
+    font-size: 15px;
+  }
+  .new-event .btnmore:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @media only screen and (max-width:575.98px) {
+    .conf-bg{
+    min-height: 151px;
+    }
+  }
+  @media only screen and (min-width:992px) and (max-width:1366px) {
+    .conf-bg{
+        min-height: 170px;
+    }
+  }

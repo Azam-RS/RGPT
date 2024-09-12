@@ -1,37 +1,140 @@
 .teamSection {
-  background: #f6f9fe;
-  color: rgba(24, 50, 101, 1);
-  padding: 100px 15px;
+  background: url("/static/img/teambg.png") no-repeat;
+  background-size:cover ;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 .teamSection h1 {
-  color: rgba(24, 50, 101, 1);
+  font-size: calc(
+    30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    32px + (52 - 32) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
   font-family: "Poppins-Bold";
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 69px;
+  font-weight: 700;
   text-align: left;
-  margin-bottom: 50px;
-  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
 }
-.teamSection h2 {
-  font-family: "Poppins-semiBold";
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 45px;
+.tm-holder {
+  position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
 }
-.teamSection .desg {
-  text-transform: uppercase;
-  margin-bottom: 50px;
+.tm-holder h1 {
+  font-size: calc(
+    30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    32px + (52 - 32) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 768px) {
-  .teamSection {
-    padding: 60px 15px;
+.tm-holder p {
+  font-size: calc(
+    16px + (22 - 16) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    18px + (22 - 18) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  
+  font-size: 22px !important;
+  line-height: 28px !important;
+  max-width: 29em;
+  width: 100%;
+}
+.team-box{
+  padding: 4em 0;
   }
-  .teamSection h2 {
-    font-size: 28px;
+  .team-box h1{
+    color:#3FC3B6;
+    font-size: calc(
+      30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
+    ) !important;
+    line-height: calc(
+      32px + (52 - 32) * ((100vw - 300px) / (3500 - 300))
+    ) !important;
+    font-family: "Poppins-Bold";
+    font-weight: 700;
+    margin-bottom: 30px;
   }
-  .teamSection h1 {
-    text-align: center;
+  .bio-holder{
+    max-width: 22em;
+    margin: 0 auto 40px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-align: left;
+  }
+  .bio-holder:focus,.bio-holder:hover,.bio-holder:active{
+     outline: none;
+    box-shadow: none;
+    border: none;
+  }
+.bioimg{
+  background: #000;
+  margin-bottom: 10px;
+}
+.bioimg img{
+  display: block;
+  margin: auto;
+}
+.bio-holder h2{
+  color: #3FC3B6;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.bio-holder p{
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 576px) {
+  .teamSection{
+    background-position: 30% 0px;
+  }
+  .tm-holder {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 15px;
+  }
+  .bio-holder{
+    margin-bottom: 50px;
+  }
+  .bioimg{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 578px) and (max-width: 767.99px) {
+  .tm-holder {
+    left: 30%;
+    transform: translate(-30%, -50%);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199.99px) {
+  .tm-holder {
+    left: 30%;
+    transform: translate(-30%, -50%);
   }
 }

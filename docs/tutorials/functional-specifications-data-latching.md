@@ -28,7 +28,7 @@ In hardware design, it is crucial to define clear functional specifications for 
 
 ### Step 1: Create a new Project
 
-In order to maintain a comprehensive chat history and enable seamless continuation of development, we recommended to [create a new blank project](your-first-project.md).
+In order to maintain a comprehensive chat history and enable seamless continuation of development, we recommended to **[create a new blank project](/docs/tutorials/your-first-project/your-first-project.md)**.
 
 ### Step 2: Introduce the context to RapidGPT
 
@@ -55,12 +55,12 @@ Once the project is created, open the chat panel and write a prompt that outline
               <i className="userIcon"><img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (4.848 seconds)</i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">Of course! I can assist You inelaborating functional specifications for your system. Please provide me with the necessary details and requirements, and I will help you create the specifications.</p>
+            <p className="animateText">Of course! I can assist you in elaborating functional specifications for your system. Please provide me with the necessary details and requirements, and I will help you create the specifications.</p>
             <p className="datetxt">01/09/2023 00:10:11</p>
           </div>
           <div className="userA cbox">
             <p className="icon-holder"><i className="userIcon"><img src="/img/user.svg" width="14px" height="15px" alt="User" className="userChat"/> User</i> <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i></p>
-            <p className="animateText">These are my partial specifications for my module: (1) it takes a 32-bit bus as input that container data to be latched at every rising edge of a clock signal named "clik", (2) it must have a 8-bit ouput that latches the byte recived by the input at every 100 bytes, What else am I missing?</p>
+            <p className="animateText">These are my partial specifications for my module: (1) it takes a 32-bit bus as input that contains data to be latched at every rising edge of a clock signal named "clk", (2) it must have a 8-bit output that latches the byte received by the input at every 100 bytes. What else am I missing?</p>
             <p className="datetxt">01/09/2023 00:18:06</p>
           </div>
           <div className="userB cbox">
@@ -68,14 +68,14 @@ Once the project is created, open the chat panel and write a prompt that outline
               <i className="userIcon"> <img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (4.848 seconds) </i>
               <i className="trashIcon"> <img width="14" height="15" src="/img/delete.svg" alt="trash"/> </i>
             </p>
-              <p className="animateText">Based on the partial specfications you provided, here are some additional details you may want to consider including in your module's functional specifications:</p>
+              <p className="animateText">Based on the partial specifications you provided, here are some additional details you may want to consider including in your module's functional specifications:</p>
               <p className="animateText">1. Reset functionality: Specify whether the module should have a reset input signal and define its behavior. For example, you could specify that when the reset signal is asserted, the module should reset its internal state and output.</p>
-              <p className="animateText">2. Clock domain crossing: If the input bus is coming from a different clock domain than the "clk" signal. you may need to speify how the module handles the synchronization of the input data.</p>
-              <p className="animateText">3. Output behavior: Clarify what the ouput should do when it is not latching a new byte. Should it hols the previous latched byte or be a definied state?</p>
-              <p className="animateText">4. Error handling: Define how the module should handling any errors or invalid input conditions. For example, if the input bus contains invalid data, should the module ignore it or raise an error signal?</p>
+              <p className="animateText">2. Clock domain crossing: If the input bus is coming from a different clock domain than the "clk" signal, you may need to specify how the module handles the synchronization of the input data.</p>
+              <p className="animateText">3. Output behavior: Clarify what the output should do when it is not latching a new byte. Should it hols the previous latched byte or be a defined state?</p>
+              <p className="animateText">4. Error handling: Define how the module should handle any errors or invalid input conditions. For example, if the input bus contains invalid data, should the module ignore it or raise an error signal?</p>
               <p className="animateText">5. Timing requirements: Specify any timing constraints or requirements for the module, such as setup and hold items for the input and output signals.</p>
               <p className="animateText">6. Power and area constraints: if there are specific power or area constraints for the module, make sure to include them in the specifications.</p>
-              <p className="animateText">Remember to provide clear and consice descriptions for each specification to ensure a complete and accurate understanding  of the module's functionality.</p>
+              <p className="animateText">Remember to provide clear and concise descriptions for each specification to ensure a complete and accurate understanding  of the module's functionality.</p>
             <p className="datetxt">01/09/2023 00:18:14</p>
           </div>
         </div>
@@ -110,7 +110,7 @@ In the next iteration of our conversation (see image below), we provide feedback
               <i className="userIcon"><img src="/img/user.svg" width="14px" height="15px" alt="User" className="userChat" /> User</i> 
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">Thanks! Indeed i need to have a reset signal as well. If asserted, the module should simply reset its current state. For the output behavior, when the module is not latching, it should hold the previous latched byte. Finally, for incoming invalid data the module should simply ignore it. For now, let's ignore points 2,5 and 6 in the list above. Please update the functional specifications.</p>
+            <p className="animateText">Thanks! Indeed I need to have a reset signal as well. If asserted, the module should simply reset its current state. For the output behavior, when the module is not latching, it should hold the previous latched byte. Finally, for incoming invalid data the module should simply ignore it. For now, let's ignore points 2, 5 and 6 in the list above. Please update the functional specifications.</p>
             <p className="datetxt">01/09/2023 00:29:04</p>
           </div>
           <div className="userB cbox">
@@ -118,9 +118,9 @@ In the next iteration of our conversation (see image below), we provide feedback
               <i className="userIcon"><img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (4.848 seconds)</i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">Certainly! Based on the additional inforamtion you provided, here is an update version of the functional specifications for your module:</p>
+            <p className="animateText">Certainly! Based on the additional information you provided, here is an update version of the functional specifications for your module:</p>
             <div className="doccbox ">
-              <pre cbox>
+              <pre className="cbox">
                 <code>
                   <span className="delaytxt">
                   <p className="btnchat">
@@ -150,7 +150,7 @@ In the next iteration of our conversation (see image below), we provide feedback
                     <span className="cmnt">&#41;:</span>
                     <span className="txt-black">Reset Signal </span>
                     <span className="txt-blue">for </span>
-                    <span className="txt-black">restting the</span>
+                    <span className="txt-black">resetting the</span>
                     <span className="txt-blue"> module's </span>
                     <span className="txt-black">internal state. </span><br/>
                     <span className="txt-orange"><b>•</b> </span>
@@ -201,7 +201,7 @@ In the next iteration of our conversation (see image below), we provide feedback
                     <span className="txt-blue">byte </span>
                     <span className="txt-black">should be </span>
                     <span className="txt-blue">output </span>
-                    <span className="txt-black">on the data_out signal. </span><br/>
+                    <span className="txt-black">on the data_out signal. </span><br/><br/>
                     <span className="txt-pink">5. </span>
                     <span className="txt-black">Invalid Data Handling: </span><br/>
                     <span className="txt-orange"><b>•</b> </span>
@@ -248,7 +248,7 @@ In response, RapidGPT provides a first version of the functional specifications 
               <i className="userIcon"><img src="/img/user.svg" width="14px" height="15px" alt="User" className="userChat" /> User</i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">Great Now could please provide me the pseudo-code of my module based on the specifications above?</p>
+            <p className="animateText">Great. Now could please provide me the pseudo-code of my module based on the specifications above?</p>
             <p className="datetxt">01/09/2023 00:34:17</p>
           </div>
           <div className="userB cbox">
@@ -287,7 +287,7 @@ In response, RapidGPT provides a first version of the functional specifications 
                     <span className="txt-black">{"     "}byte_count </span>
                     <span className="txt-orange"> &#60;= </span>
                     <span className="txt-pink">0 </span> <br />
-                    <span className="txt-black">{"     "}previouse_byte </span>
+                    <span className="txt-black">{"     "}previous_byte </span>
                     <span className="txt-orange">&#60;= </span>
                     <span className="txt-pink">0 </span> <br />
                     <span className="txt-blue">{"   "}end else begin</span> <br />
@@ -326,7 +326,7 @@ In response, RapidGPT provides a first version of the functional specifications 
                 </code>
               </pre>
             </div>
-            <p className="animateText">Please note that this is pseudo-code and note actual Verilog code. It provides a high-level representation of the module's behavior based on the specifications. You will nedd to convert it to actual Verilog code to use it in your design.</p>
+            <p className="animateText">Please note that this is pseudo-code and note actual Verilog code. It provides a high-level representation of the module's behavior based on the specifications. You will need to convert it to actual Verilog code to use it in your design.</p>
             <p className="datetxt">01/09/2023 00:34:25</p>
           </div>
         </div>
@@ -354,7 +354,7 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
               <i className="userIcon"> <img src="/img/user.svg" width="14px" height="15px" alt="User" className="userChat" /> User</i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">Based on the pseudo-code, I belive the byte_counter is not correctly specified. If the input bus is 32 bits, then we have 4 bytes at each clock cycle, not one. What do you think?</p>
+            <p className="animateText">Based on the pseudo-code, I believe the byte_counter is not correctly specified. If the input bus is 32 bits, then we have 4 bytes at each clock cycle, not one. What do you think?</p>
             <p className="datetxt">01/09/2023 00:44:10</p>
           </div>
           <div className="userB cbox">
@@ -362,7 +362,7 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
               <i className="userIcon"><img width="20" height="20" src="/img/robot.svg" alt="user"/> RapidGPT (6.598 seconds)</i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">You are correct, I apologize for the oversight. Since the input bus is 32 bits, it represents 4 bytes at each clock cycle. Therefore , the byte counter should be incremented by 4 insted of1. here's the corrected version of the pseudo-code:</p>
+            <p className="animateText">You are correct, I apologize for the oversight. Since the input bus is 32 bits, it represents 4 bytes at each clock cycle. Therefore , the byte counter should be incremented by 4 instead of 1. Here's the corrected version of the pseudo-code:</p>
             <div className="doccbox">
               <pre className="cbox">
                 <code>
@@ -393,7 +393,7 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
                     <span className="txt-black">{"     "}byte_count </span>
                     <span className="txt-orange"> &#60;= </span>
                     <span className="txt-pink">0 </span> <br />
-                    <span className="txt-black">{"     "}previouse_byte </span>
+                    <span className="txt-black">{"     "}previous_byte </span>
                     <span className="txt-orange">&#60;= </span>
                     <span className="txt-pink">0 </span> <br />
                     <span className="txt-blue">{"   "}end else begin</span> <br />
@@ -432,7 +432,7 @@ Based on its previous response, RapidGPT appears to have overlooked a specific a
                 </code>
               </pre>
             </div>
-            <p className="animateText">I apologize for any confusion caused. Please let me know if you have any further questions or if there's anything else i can assist you with!</p>
+            <p className="animateText">I apologize for any confusion caused. Please let me know if you have any further questions or if there's anything else I can assist you with!</p>
             <p className="datetxt">01/09/2023 00:44:17</p>
           </div>
         </div>
@@ -513,7 +513,7 @@ Are you unsatisfied with the style of the pseudocode provided by RapidGPT? You c
                     <span className="cmnt">{"     "} //Latch the input byte</span><br />
                     <span className="txt-black">{"     "} previous_byte </span>
                     <span className="txt-orange">&#60;= </span>
-                    <span className="txt-pink">extractLowesByte </span>
+                    <span className="txt-pink">extractLowerByte </span>
                     <span className="cmnt">&#40; </span>
                     <span className="txt-black">data_in</span>
                     <span className="cmnt">&#41; </span><br/>
@@ -540,7 +540,7 @@ Are you unsatisfied with the style of the pseudocode provided by RapidGPT? You c
                 </code>
               </pre>
             </div>
-            <p className="animateText">In this version, I have used more generic syntax and function names to avoide resembling any specfic hardware description language like Verilog. This pseudo-code should be easier to understand and can be easily translated into any programing or hardware language of your choice.</p>
+            <p className="animateText">In this version, I have used more generic syntax and function names to avoid resembling any specific hardware description language like Verilog. This pseudo-code should be easier to understand and can be easily translated into any programming or hardware language of your choice.</p>
             <p className="animateText">Let me know if there's anything else I can assist you with!</p>
             <p className="datetxt">02/09/2023 01:36:38</p>
           </div>
@@ -568,7 +568,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
               <i className="userIcon"><img src="/img/user.svg" width="14px" height="15px" alt="User" className="userChat" /> User </i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">I'm satisfied with this for now. Ionly need you to update the spec to include the counter</p>
+            <p className="animateText">I'm satisfied with this for now. I only need you to update the spec to include the counter</p>
             <p className="datetxt">01/09/2023 00:55:07</p>
           </div>
           <div className="userB cbox">
@@ -576,7 +576,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
               <i className="userIcon"><img width="20" height="20" src="/img/robot.svg" alt="user"/>  RapidGPT (8.969 seconds)</i>
               <i className="trashIcon"><img width="14" height="15" src="/img/delete.svg" alt="trash"/></i>
             </p>
-            <p className="animateText">Certainly! Here's the updated version of the functional specficitions, including the byte counter:</p>
+            <p className="animateText">Certainly! Here's the updated version of the functional specifications, including the byte counter:</p>
             <div className="doccbox">
               <pre>
                 <code>
@@ -608,7 +608,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
                     <span className="cmnt">&#41;:</span>
                     <span className="txt-black">Reset Signal </span>
                     <span className="txt-blue">for </span>
-                    <span className="txt-black">restting the</span>
+                    <span className="txt-black">resetting the</span>
                     <span className="txt-blue"> module's </span>
                     <span className="txt-black">internal state. </span><br/>
                     <span className="txt-orange"><b>•</b> </span>
@@ -641,7 +641,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
                     <span className="cmnt">&#40;</span>
                     <span className="txt-blue">integer</span>
                     <span className="cmnt">&#41;: </span>
-                    <span className="txt-black">Counter to keep track of the number of bytes recived. </span>
+                    <span className="txt-black">Counter to keep track of the number of bytes received. </span><br/><br/>
                     <span className="txt-pink">4. </span>
                     <span className="txt-black">Reset Functionality: </span><br/>
                     <span className="txt-orange"><b>•</b> </span>
@@ -667,7 +667,7 @@ Lastly, we also ask RapidGPT to update the specification based on the suggested 
                     <span className="txt-blue">byte </span>
                     <span className="txt-black">should be </span>
                     <span className="txt-blue">output </span>
-                    <span className="txt-black">on the data_out signal. </span><br/>
+                    <span className="txt-black">on the data_out signal. </span><br/><br/>
                     <span className="txt-pink">6. </span>
                     <span className="txt-black">Byte Counting:</span><br/>
                     <span className="txt-orange"><b>•</b> </span>

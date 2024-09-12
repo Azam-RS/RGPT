@@ -9,12 +9,6 @@ slug: /
 
 RapidGPT is the industry’s first AI-based pair-designer tailored for FPGA engineers. This powerful tool aims to revolutionize the hardware design process by providing contextual suggestions and unparalleled language-to-HDL capabilities.
 
-:::warning Warning
-
-RapidGPT's AI models are currently in the pre-production phase. While we strive for accuracy, please note that the answers provided may contain errors. We recommend double-checking the information for your specific needs and requirements.
-
-:::
-
 ## RapidGPT at a Glance
 
 - **Intelligent Code Assistant**: RapidGPT leverages AI algorithms to provide accurate and context-aware code suggestions, allowing FPGA engineers to write Verilog code more efficiently. RapidGPT understands your intent and converts it into complete HDL code. Simply write a comment or describe your desired functionality, and RapidGPT will provide you with the corresponding code. This powerful feature saves you time and effort by eliminating the need to manually translate your ideas into code. Just focus on expressing your design intent, and RapidGPT will take care of the rest.

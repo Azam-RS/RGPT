@@ -1,17 +1,17 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+vtenace:
+  name: Valerio Tenace
+  title: Chief Technology Officer, PrimisAI
+  image_url: /img/valerio.png
+  url: https://www.linkedin.com/in/tenace/
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+hbouwmeester:
+  name: Hans Bouwmeester
+  title: President and Chief Operating Officer, PrimisAI
+  image_url: /img/hans.png
+  url: https://www.linkedin.com/in/hans-bouwmeester-7633a4
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+nsherwani:
+  name: Naveed Sherwani
+  title: Chairman and Chief Executive Officer, PrimisAI
+  image_url: /img/naveed.png
+  url: https://www.linkedin.com/in/naveed-sherwani-2a789

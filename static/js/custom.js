@@ -11,13 +11,44 @@ var Arrspan = [];
 var buttons;
 var k = 0;
 var running = false;
+var runningSnippet = false;
 var divName = "";
 var alredyrun = {};
+var chat1 = false;
+var c1 = false;
+var c2 = false;
+var c3 = false;
+var uart1 = false;
+var uart2 = false;
+var uart3 = false;
+var uart4 = false;
+var uart5 = false;
+var uart6 = false;
+var chat2 = false;
+var chat3 = false;
+var chat4 = false;
+var chat5 = false;
+var chat6 = false;
 
 //////////Start Reply button function to reload editor animation///////////////////////////
 
 function reply(divid) {
   const elementToRefresh = document.getElementById(divid);
+
+  if (elementToRefresh.parentElement.classList.contains('dontAnimateSnippet')) {
+    return;
+  }
+  if (runningSnippet == true) {
+    return;
+  }
+  runningSnippet = true;
+  
+  buttons = Array.from(document.querySelectorAll(".rewrite"));
+
+  buttons.forEach(function (button) {
+    button.style.display = "none";
+  });
+
   const newElement = elementToRefresh.cloneNode(true);
 
   elementToRefresh.parentNode.replaceChild(newElement, elementToRefresh);
@@ -30,9 +61,7 @@ function reply(divid) {
 async function chatDoc(divid) {
   buttons = Array.from(document.querySelectorAll(".rewrite"));
 
-  buttons.forEach(function (button) {
-    button.style.display = "none";
-  });
+ 
 
   txt = "";
   i = 0;
@@ -48,7 +77,9 @@ async function chatDoc(divid) {
 
   try {
     editor1 = document.getElementById(divid);
-
+    buttons.forEach(function (button) {
+      button.style.display = "none";
+    });
     var childElements = editor1.querySelectorAll(".cbox");
     childElements_ = childElements;
 
@@ -179,24 +210,98 @@ window.addEventListener("scroll", function () {
   ) {
     var scrollPosition = window.scrollY || window.pageYOffset;
 
-    if (running == false && scrollPosition >= 1200 && scrollPosition < 1300) {
+    if (running == false && scrollPosition >= 1200 && scrollPosition < 1300 && chat1 == false) {
       handleScroll(1300, "chat1");
+      chat1 = true;
     }
-    if (running == false && scrollPosition >= 3000 && scrollPosition < 3200) {
+    if (running == false && scrollPosition >= 3000 && scrollPosition < 3200 && chat2 == false) {
       handleScroll(3000, "chat2");
+      chat2 = true;
+
     }
-    if (running == false && scrollPosition >= 4200 && scrollPosition < 4400) {
+    if (running == false && scrollPosition >= 4200 && scrollPosition < 4400  && chat3 == false) {
       handleScroll(4200, "chat3");
+      chat3 = true;
     }
-    if (running == false && scrollPosition >= 5400 && scrollPosition < 5600) {
+    if (running == false && scrollPosition >= 5400 && scrollPosition < 5600 && chat4 == false) {
       handleScroll(5400, "chat4");
+      chat4 = true;
     }
-    if (running == false && scrollPosition >= 6500 && scrollPosition < 6700) {
+    if (running == false && scrollPosition >= 6500 && scrollPosition < 6700 && chat5 == false) {
       handleScroll(6500, "chat5");
+      chat5 = true;
     }
-    if (running == false && scrollPosition >= 7600 && scrollPosition < 7800) {
+    if (running == false && scrollPosition >= 7600 && scrollPosition < 7800 && chat6 == false) {
       handleScroll(7600, "chat6");
+      chat6 = true;
     }
+  }else if (
+    window.location.href.includes("code-assistant")
+  ){
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (runningSnippet === false && scrollPosition >= 480 && scrollPosition < 600 && c1 == false) {
+      reply("c1");
+      c1 = true;
+    }
+    if (runningSnippet === false && scrollPosition >= 680 && scrollPosition < 800 && c2 == false) {
+      reply("c2");
+      c2 = true;
+      // document.getElementById("cc1").style.backgroundColor = "green";
+    }
+  }
+  else if (
+    window.location.href.includes("ip-catalog")
+  ){
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (runningSnippet === false && scrollPosition >= 2000 && scrollPosition < 2200 && c3 == false) {
+      reply("c3");
+      c3 = true;
+    }
+  }
+  else if (
+    window.location.href.includes("uart-controller")
+  ){
+    var scrollPosition = window.scrollY || window.pageYOffset;
+  // console.log(scrollPosition);
+    if (runningSnippet === false && scrollPosition >= 3500 && scrollPosition < 4200 && uart1 == false) {
+      reply("uart1");
+      uart1 = true;
+    }
+    if (runningSnippet === false && scrollPosition >= 5000 && scrollPosition < 5200 && uart2 == false) {
+      reply("uart2");
+      uart2 = true;
+    }
+    if (runningSnippet === false && scrollPosition >= 6700 && scrollPosition < 6900 && uart3 == false) {
+      reply("uart3");
+      uart3 = true;
+    }
+    if (runningSnippet === false && scrollPosition >= 8200 && scrollPosition < 8400 && uart4 == false) {
+      reply("uart4");
+      uart4 = true;
+    }
+    if (runningSnippet === false && scrollPosition >= 9900 && scrollPosition < 10000 && uart5 == false) {
+      reply("uart5");
+      uart5 = true;
+    }    
+    if (runningSnippet === false && scrollPosition >= 11100 && scrollPosition < 11200 && uart6 == false) {
+      reply("uart6");
+      uart6 = true;
+    }
+
+  }
+  else{
+    var scrollPosition = window.scrollY || window.pageYOffset;
+    if (scrollPosition > 65){
+      const navElement = document.querySelector('.navbar');
+      navElement.style.backgroundColor = '#161B22';
+    }else if (scrollPosition < 65){
+      const navElement = document.querySelector('.navbar');
+      navElement.style.backgroundColor = 'transparent';
+    } 
+
+    chat1 = chat2 = chat3 = chat4 = chat5 = chat6 = c1 = c2 = false;
   }
 });
 
@@ -210,6 +315,14 @@ function typeText(element, text, speed) {
       element.textContent += text.charAt(index);
       index++;
       setTimeout(type, speed);
+    }
+    else{
+      buttons = Array.from(document.querySelectorAll(".rewrite"));
+
+      buttons.forEach(function (button) {
+        button.style.display = "block";
+      });
+      runningSnippet = false;
     }
   }
 
@@ -230,6 +343,10 @@ function docTypingAnimation(divId) {
       var typingSpeed = 20;
       if (divId == "propmt1") {
         typingSpeed = 5;
+      }
+      //for ip-catalog
+      if (divId == "c3") {
+        typingSpeed = 2;
       }
       typeText(newTokenElement, textContent, typingSpeed);
     }

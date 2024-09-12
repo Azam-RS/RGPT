@@ -8,8 +8,8 @@ import "./Carousel.css";
 const Carousel = () => {
   const history = useHistory();
   const handleRedirect = () => {
-    // Redirect to the desired path
-    history.push("/registerd-user");
+    // Redirect to  path
+    history.push("/about-us/our-userbase");
   };
 
   const settings = {
@@ -111,13 +111,6 @@ const Carousel = () => {
         <div>
           <img
             src="img/carousel-logo/valcomelton.png"
-            alt="logo"
-            onClick={handleRedirect}
-          />
-        </div>
-        <div>
-          <img
-            src="img/carousel-logo/more.png"
             alt="logo"
             onClick={handleRedirect}
           />

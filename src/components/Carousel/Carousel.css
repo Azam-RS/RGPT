@@ -1,27 +1,29 @@
 .c-holder {
   width: 100%;
   max-width: 78em;
-  margin: 30px auto;
+  margin: 6px auto;
+  text-align: left;
 }
 .slick-slider {
-  background: rgba(18, 37, 75, 0.4);
+  background: rgb(6,18,32);
+  background: linear-gradient(0deg, rgba(6,18,32,1) 0%, rgba(5,14,24,1) 100%);
   padding: 10px;
   cursor: pointer;
 }
 .c-holder h2 {
   font-family: "Poppins-SemiBold";
   font-size: calc(
-    26px + (30 - 26) * ((100vw - 300px) / (3500 - 300))
+    18px + (30 - 18) * ((100vw - 300px) / (3500 - 300))
   ) !important;
   line-height: calc(
-    28px + (46 - 28) * ((100vw - 300px) / (3500 - 300))
+    20px + (46 - 20) * ((100vw - 300px) / (3500 - 300))
   ) !important;
   letter-spacing: 0em;
   text-align: left;
   cursor: pointer;
   display: inline-block;
+  margin-bottom: 5px;
 }
-
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .c-holder {
     width: 100%;
@@ -49,5 +51,6 @@
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
   .c-holder {
     max-width: 59em;
+    margin-bottom: 30px;
   }
 }

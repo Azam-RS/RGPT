@@ -16,19 +16,19 @@ This demonstration shows the process of designing a simple UART controller using
 
 ## Step-by-Step Solution
 
-There are two primary methods for utilizing RapidGPT: as an [advanced HDL autocompletion](../user-guide/code-assistant) tool or as a [chat assistant](../user-guide/interactive-chat). To use the autocomplete functionality, simply write a comment describing the desired module and press the tab key.
+There are two primary methods for utilizing RapidGPT: as an [advanced HDL autocompletion](../user-guide/rapidgpt-vscode/code-assistant) tool or as a [chat assistant](../user-guide/rapidgpt-vscode/interactive-chat). To use the autocomplete functionality, simply write a comment describing the desired module and press the tab key.
 
 <video controls width="100%">
   <source src="/videos/docs/tutorials/uart-controller/autocomplete_uart_rx_and_tx.mp4"/>
 </video>
 
-Autocomplete is very simple and convenient, but the results may need more manual adjustment compared to a result generated from a detailed chat prompt that adheres to the [prompt engineering guidelines](../user-guide/prompt-engineering-guidelines). This tutorial was written using results from the chat assistant, but the workflow is very similar between the two methods. To get started with the chat assistant, write a request in the chat window. The chat assistant can generate verilog, answer questions, and explain code, among other things. If the user's prompt does not contain the necessary details to generate an implementation, as below, it will prompt the user for clarification.
+Autocomplete is very simple and convenient, but the results may need more manual adjustment compared to a result generated from a detailed chat prompt that adheres to the [prompt engineering guidelines](../user-guide/rapidgpt-vscode/prompt-engineering-guidelines). This tutorial was written using results from the chat assistant, but the workflow is very similar between the two methods. To get started with the chat assistant, write a request in the chat window. The chat assistant can generate verilog, answer questions, and explain code, among other things. If the user's prompt does not contain the necessary details to generate an implementation, as below, it will prompt the user for clarification.
 
 <video controls width="100%">
   <source src="/videos/docs/tutorials/uart-controller/initial_prompt_feedback.mp4"/>
 </video>
 
-It is always best to provide a detailed prompt that follows the [prompt engineering guidelines](../user-guide/prompt-engineering-guidelines). Here is the prompt used in the video below for reference.
+It is always best to provide a detailed prompt that follows the [prompt engineering guidelines](../user-guide/rapidgpt-vscode/prompt-engineering-guidelines). Here is the prompt used in the video below for reference.
 
 ```
 Generate an RS232 UART controller consisting of 4 modules: 1) a baud rate generator that operates at 9600 baud with three inputs: clk, reset, and sync, and one output: baud_tick. When reset is high, it should reset the baud counter immediately. When sync is high, it should wait half a period and then reset.  2) a uart_transmitter with 5 inputs: clk, baud_tick, reset, enable, and an 8 bit wide data_in bus. It should have 2 outputs, tx, and complete. When enable is high, it should send data on the tx wire at the rate set by the baud_tick input. Data will be transmitted in the following format: 1 start bit, 8 bits of data, no parity bit, and 1 stop bit.  3) a uart_receiver with 5 inputs: clk, baud_tick, reset, enable, and rx. It should have 3 outputs: an 8 bit data_out bus, an rx_ready signal to indicate when data_out is ready for reading, and a sync signal which will be set high for one clk cycle when the start bit is received. 4) a top module with inputs clk, reset, and an 8 bit data_in bus as well as an 8 bit data_out output bus and a single rx_tx wire of type inout. The top module will instantiate the other 3 modules and will manage uart_transmitter and uart_receiver's access to the rx_tx inout wire as follows: By default rx_tx will be an input allowing the receiver to listen for data.  However, if data_in at the top level is not 0 and the complete signal from the uart_transmitter is 0, it will switch to transmit mode until the data in data_in has been sent, and then revert to receiver mode.
@@ -124,7 +124,7 @@ endmodule
 
 There are several issues that the designer needs to address. In particular, the value of the start bit is reversed, the outputs should be registered, and the complete bit requires initialization. Additionally, states 3 and 4 can be combined, and it would be beneficial to assign meaningful names to the states for improved readability. Although all of that can be accomplished by iteration using the chat agent, as shown above, when the designer has small, specific changes in mind, it is often more efficient to directly edit the code instead of writing a prompt for each change and potentially iterating further on the new result. Here is the transmitter design with the manual modifications:
 
-<div className="e-holder">
+<div className="e-holder dontAnimateSnippet">
     <button type="button" className="btn-rep rewrite" onClick={() => {     
         reply("uart2");        
         }}>Replay</button>
@@ -202,7 +202,7 @@ endmodule
 
 The process is very similar for the receiver module. Here is the receiver module generated with the initial prompt:
 
-<div className="e-holder">
+<div className="e-holder dontAnimateSnippet">
     <button type="button" className="btn-rep rewrite" onClick={() => {     
         reply("uart3");        
         }}>Replay</button>
@@ -273,7 +273,7 @@ endmodule
 
 This module is very nearly ready to use as generated, but several small changes are still required from the designer. As on the transmit module, states should be named and outputs registered. Handling for the sync signal, which ensures the receiver is reading from the center of each transmitted bit, also needs to be added as it was not included in the original generated output. The always block is also slightly reworked so that the enable signal does not need to remain high while receiving data. As before, these changes are made manually, although any of them could also be addressed using the chat assistant.
 
-<div className="e-holder">
+<div className="e-holder dontAnimateSnippet">
     <button type="button" className="btn-rep rewrite" onClick={() => {     
         reply("uart4");        
         }}>Replay</button>
@@ -356,7 +356,7 @@ endmodule
 
 Last is the top module. Because the designer has made modifications to the other modules, some iteration or manual modification will certainly be needed. Here is the top module as generated by the initial prompt:
 
-<div className="e-holder">
+<div className="e-holder dontAnimateSnippet">
     <button type="button" className="btn-rep rewrite" onClick={() => {     
         reply("uart5");        
         }}>Replay</button>
@@ -416,7 +416,7 @@ endmodule
 
 The prompt specified that this design shares a single wire for Rx and Tx at the top level. That was done just to make the example a bit more interesting. The generated code does not handle the inout wire correctly, however, because the prompt was not explicit about the need to use a tristate, and so the designer will need to make some adjustments. There is always some trade off between time spent developing a prompt and time spent tweaking the output from the model; in this case it is simple to fix.
 
-<div className="e-holder">
+<div className="e-holder dontAnimateSnippet">
     <button type="button" className="btn-rep rewrite" onClick={() => {     
         reply("uart6");        
         }}>Replay</button>
@@ -507,4 +507,4 @@ The testbench generated by RapidGPT was able to be ingested by iverilog without 
 
 ## Conclusions
 
-Because of the nondeterministic nature of the algorithms underlying RapidGPT, new users cannot expect to reproduce exactly the code in this demonstration, even when using the same prompts. However, by following the general workflow presented here, crafting a detailed prompt using the [prompt engineering guidelines](../user-guide/prompt-engineering-guidelines), refining the output by iteratively improving the prompt, and making manual changes when appropriate, designers can accelerate their workflow and spend more time solving design problems and less time writing verilog.
+Because of the nondeterministic nature of the algorithms underlying RapidGPT, new users cannot expect to reproduce exactly the code in this demonstration, even when using the same prompts. However, by following the general workflow presented here, crafting a detailed prompt using the [prompt engineering guidelines](../user-guide/rapidgpt-vscode/prompt-engineering-guidelines), refining the output by iteratively improving the prompt, and making manual changes when appropriate, designers can accelerate their workflow and spend more time solving design problems and less time writing verilog.

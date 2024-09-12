@@ -1,8 +1,8 @@
 {
-  "label": "Legal",
-  "position": 7,
-  "link": {
-    "type": "generated-index"
-  },
-  "className": "hidden-category"
+    "label": "Legal",
+    "position": 7,
+    "link": {
+        "type": "generated-index"
+    },
+    "className": "hidden-category"
 }

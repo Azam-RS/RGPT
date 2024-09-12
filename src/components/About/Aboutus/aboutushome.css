@@ -1,0 +1,275 @@
+.bg-sec-01 {
+  background: #161b22;
+  background-size: cover;
+  background-position: 0 180px;
+  position: relative;
+}
+.line-holder {
+  padding: 5em 0 2em;
+}
+.cht-box {
+  position: relative;
+}
+.c-area {
+  width: 100%;
+  position: relative;
+}
+.c-area p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 8px 15px 20px;
+}
+.usermsg {
+  width: 80%;
+  min-height: 56px;
+  background: #30414e;
+  margin: 20px 15px 20px 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  animation: delays 1s 1s forwards !important;
+  visibility: hidden;
+}
+.user_msg1 {
+  float: right;
+  background: #444444;
+}
+.user_msg2 {
+  float: left;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  margin: 40px 5px 40px 15px;
+  background: #05445e;
+}
+.user_msg1 .datetxt,
+.user_msg2 .datetxt {
+  font-size: 12px;
+  float: right;
+}
+.show_msg1 {
+  animation: delays 3s 3s forwards !important;
+}
+.show_msg2 {
+  animation: delays 5s 5s forwards !important;
+}
+.show_msg3 {
+  animation: delays 4s 4s forwards !important;
+}
+.inputchat {
+  background: #333;
+  width: 100%;
+  text-align: left;
+  min-height: 50px;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.inputchat .typemsg {
+  color: #fff;
+  font-size: calc(
+    13px + (28 - 13) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    24px + (34 - 24) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins";
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typings 2s steps(24, end), blink-carets 0.5s step-end infinite,
+    hide-and-restart 3s forwards !important;
+}
+.inputchat i {
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+}
+.aboutus-holder {
+  margin-bottom: 40px;
+  text-align: left;
+  background: transparent;
+}
+
+.aboutus-holder h3 {
+  color: #3FC3B6;
+  font-family: "Poppins-Bold";
+  text-transform: capitalize;
+  font-size: calc(
+    25px + (45 - 25) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    27px + (47 - 27) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  position: relative;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.aboutus-holder p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Poppins";
+  margin-bottom: 20px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+.abt-s-holder {
+  margin: 70px 0;
+  padding: 0;
+}
+.abt-s-holder h1 {
+  font-size: calc(
+    30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    38px + (52 - 38) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.primisbg {
+  background: rgb(113 153 153 / 10%);
+  padding: 15px 40px;
+  border-radius: 10px;
+}
+#ai-driven-eda {
+  visibility: hidden;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+}
+.statsno{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.statsno .intrnc, .statsno .tuser{
+  background: #418085;
+  width: 100%;
+  max-width: 20em;
+  border-radius: 36px;
+  padding:15px 20px;
+  min-height: 172px;
+}
+.statsno .intrnc{
+  margin-right: 30px;
+  padding-top: 46px;
+}
+.statsno .tuser{
+  margin-left: 30px;
+  }
+.statsno .intrnc h1, .statsno .tuser h1 {
+  font-size: calc(
+    40px + (70 - 40) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    42px + (72 - 42) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.statsno .intrnc h2, .statsno .tuser h2 {
+  font-size: calc(
+    25px + (40 - 25) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  line-height: calc(
+    27px + (42 - 27) * ((100vw - 300px) / (3500 - 300))
+  ) !important;
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0px;
+}
+  .statsno .tuser p{
+    margin-bottom: 5px;
+    }
+@media screen and (max-width: 575.98px) {
+  .statsno .intrnc, .statsno .tuser{
+    margin: 0 auto 20px !important;
+  }
+  .c-area p {
+    font-size: 13px;
+  }
+  .usermsg {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .btn-reply {
+    top: 44px;
+    font-size: 12px;
+    padding: 2px 12px;
+  }
+  .cht-box:before {
+    display: none;
+  }
+  .c-area:after {
+    display: none;
+  }
+  .aboutus-holder {
+    padding: 50px 0px !important;
+  }
+  .primisbg {
+    padding: 15px;
+  }
+  #ai-driven-eda {
+    top: -50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .cht-box:before {
+    display: none;
+  }
+  .aboutus-holder {
+    padding: 100px 0px 0px !important;
+  }
+  #ai-driven-eda {
+    top: -20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .aboutus-holder {
+    padding: 100px 0px 0px !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+  .usermsg {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1450.95px) {
+  .primisbg {
+    padding: 55px 45px;
+  }
+}
+@media only screen and (min-width: 1455px) and (max-width: 1500.98px) {
+  .primisbg {
+    padding: 55px 45px;
+  }
+}
+@media only screen and (min-width: 1501px) and (max-width: 1599px) {
+  .primisbg {
+    padding: 55px 45px;
+  }
+  #ai-driven-eda {
+    top: 100px;
+  }
+}

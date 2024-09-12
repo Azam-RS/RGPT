@@ -1,0 +1,55 @@
+.bg-sec-6{
+padding: 3em 0 0;
+}
+.formbox{
+    position: relative;
+}
+.formbox a{
+    position: absolute;
+    color: #fff;
+    background: #4695e3;
+    font-family: 'Poppins-bold';
+    padding: 9px 13px;
+    border-radius: 13px;
+    bottom: 47px;
+    left: 142px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.formbox a:hover{
+    color:#4695e3;
+    background: #fff;
+}
+.folm-holder{
+    width: 100%;
+    max-width: 70em;
+    margin: 0 auto;
+}
+.cformHolder{
+    padding: 30px 22px 30px 30px;
+    min-height: 250px;
+}
+.ctxt .price-title p{
+    text-align: left;
+    font-size: 20px;
+    padding-right: 61px;
+}
+.ctxt .price-title p+p{
+    text-align: left;
+    font-size: 16px;
+}
+@media only screen and (max-width:767px) {
+    .txtlink {
+        float: left;
+    }
+    .s-lbl a {
+        float: left;
+        text-align: left;
+    }
+    .ctxt .price-title p{
+        padding-right: 0;
+    }
+    .cformHolder{
+        padding:30px 7px 30px 15px;
+    }
+}
