@@ -17,7 +17,7 @@ jobs:
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v3.7.0
         with:
-          node-version: 18.16.0
+          node-version: 18
       - name: npm install
         run: |
               git config --global user.email "azam@rapidsilicon.com"
