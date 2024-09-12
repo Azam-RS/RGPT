@@ -7,7 +7,7 @@ export default function NewsRoomPrimis() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://primis.ai/newsroom/rss.xml');
+        const response = await fetch('/newsroom/rss.xml');
         const xmlData = await response.text();
 
         const parser = new DOMParser();
