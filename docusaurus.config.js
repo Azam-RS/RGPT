@@ -35,7 +35,7 @@ const config = {
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
                     editUrl:
-                        "https://github.com/PrimisAI/rapidgpt-webapp-frontend/edit/main",
+                        "https://github.com/azam-ai/TestPrimis/edit/main",
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css"),
@@ -143,6 +143,10 @@ const config = {
                             {
                                 to: "/events",
                                 label: "Events",
+                            },
+                            {
+                                to: "/papers",
+                                label: "Papers",
                             },
                             {
                                 to: "/webinar",
