@@ -54,13 +54,6 @@ const Carousel = () => {
       <Slider {...settings}>
         <div>
           <img
-            src="img/carousel-logo/sony.png"
-            alt="logo"
-            onClick={handleRedirect}
-          />
-        </div>
-        <div>
-          <img
             src="img/carousel-logo/enclustra.png"
             alt="logo"
             onClick={handleRedirect}

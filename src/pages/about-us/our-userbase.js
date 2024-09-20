@@ -17,9 +17,6 @@ export default function Team() {
                 <img src="/img/users-logo/intel.png" alt="intel" />
               </div>
               <div className="logo-box">
-                <img src="/img/users-logo/sony.png" alt="sony" />
-              </div>
-              <div className="logo-box">
                 <img src="/img/users-logo/verific.png" alt="verific" />
               </div>
               <div className="logo-box">

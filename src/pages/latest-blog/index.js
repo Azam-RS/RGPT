@@ -8,7 +8,7 @@ export default function BlogPrimis() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/blog/feed.json');
+        const response = await fetch('https://primis.ai/blog/feed.json');
         const data = await response.json();
         if (data) {
           const blogPosts = data.items;

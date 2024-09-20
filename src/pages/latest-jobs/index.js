@@ -7,7 +7,7 @@ export default function JobPostPrimis() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/careers/rss.xml');
+        const response = await fetch('https://primis.ai/careers/rss.xml');
         const xmlData = await response.text();
 
         const parser = new DOMParser();
