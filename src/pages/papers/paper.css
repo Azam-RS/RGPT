@@ -41,7 +41,8 @@
     font-size: 20px;
   }
   .paper-box .desc-area .paper-desc p{
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
+    
     margin-bottom: 30px;
   }
   .paper-box .desc-area h1{
@@ -93,8 +94,17 @@
     z-index: 1000;
     backdrop-filter: blur(5px);
   }
-  
- 
+  .modal-overlay  dialog{
+    background: #fff;
+    max-width: 60em;
+    width: 100%;
+    min-height: 300px;
+    padding: 60px 45px 20px;
+    color: #000;
+    position: relative;
+    border-radius: 20px;
+    border:none;
+  }
   .modal-close {
     position: absolute;
     top: 10px;
@@ -103,15 +113,13 @@
     font-weight: bold;
     color: #333;
     cursor: pointer;
+    background: transparent;
+    border:none;
+    outline: none;
   }
-  
   .modal-close:hover {
     color: #ff0000;
   }
-
-  
-
-
   @media only screen and (max-width:575.98px) {
     .paper-box .desc-area p{
         margin-bottom: 15px;
