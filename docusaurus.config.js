@@ -145,6 +145,10 @@ const config = {
                                 label: "Events",
                             },
                             {
+                                to: "/papers",
+                                label: "Papers",
+                            },
+                            {
                                 to: "/webinar",
                                 label: "On-Demand Webinars",
                             },
