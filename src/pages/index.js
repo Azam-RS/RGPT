@@ -89,7 +89,7 @@ function HomepageHeader() {
                                 </Link>
                             </div>
                                 <h2 className="title-txt">
-                                    PrimisAI redefines the hardware landscape with its revolutionary RapidGPT. Explore our technology and unlock the future of advanced hardware design
+                                    PrimisAI. redefines the hardware landscape with its revolutionary RapidGPT. Explore our technology and unlock the future of advanced hardware design
                                 </h2>
                             </div>
                         </div>
