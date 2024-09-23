@@ -3,52 +3,10 @@ import Layout from "@theme/Layout";
 import "./paper.css";
 
 export default function Papers() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const dialogRef = useRef(null); // Create a ref for the dialog
 
-  const handleDownloadClick = () => {
-    setIsModalOpen(true); // Open modal when download button is clicked
+  const handleRedirect = (url) => {
+    window.open("https://arxiv.org/abs/2409.11411", '_blank');
   };
-
-  const closeModal = () => {
-    setIsModalOpen(false); // Close modal
-    if (dialogRef.current) {
-      dialogRef.current.close(); // Close the dialog
-    }
-  };
-
-  const handleOverlayClick = (e) => {
-    // Close the modal if the user clicks on the overlay (not the modal box itself)
-    if (e.target.classList.contains("modal-overlay")) {
-      closeModal();
-    }
-  };
-
-  useEffect(() => {
-    if (isModalOpen) {
-      // Load HubSpot form when modal is open
-      const script = document.createElement("script");
-      script.src = "//js.hsforms.net/forms/embed/v2.js";
-      script.async = true;
-      script.onload = () => {
-        if (window.hbspt) {
-          window.hbspt.forms.create({
-            region: "na1",
-            portalId: "43857519",
-            formId: "9597a35a-51ea-4a95-a9ee-a7f7c5341ac2",
-            target: "#hubspotForm",
-          });
-        }
-      };
-      document.body.appendChild(script);
-
-      // Show the dialog after the script is added
-      if (dialogRef.current) {
-        dialogRef.current.showModal(); // Show the dialog
-      }
-    }
-  }, [isModalOpen]);
-
   return (
     <Layout title="Papers">
       <div className="paper-holder">
@@ -80,25 +38,13 @@ export default function Papers() {
                   <p>To address these challenges, this paper introduces AIVRIL, an advanced framework designed to enhance the accuracy and reliability of RTL-aware LLMs. AIVRIL employs a multi-agent, LLM- agnostic system for automatic syntax correction and functional verification, significantly reduc- ing—and in many cases, completely eliminating—instances of erroneous code generation. Experi- mental results conducted on the VerilogEval-Human dataset show that our framework improves code quality by nearly 2× when compared to previous works, while achieving an 88.46% success rate in meeting verification objectives. This represents a critical step toward automating and optimizing hardware design workflows, offering a more dependable methodology for AI-driven RTL design.</p>
                 </div>
                 <div className="dwn-btn">
-                  <button className="btn-more" onClick={handleDownloadClick}>Download</button>
+                  <button className="btn-more" title="Read More" onClick={handleRedirect}>Read More</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {isModalOpen && (
-        <div className="modal-overlay" onClick={handleOverlayClick} aria-hidden="true">
-          <dialog ref={dialogRef} className="modal-box" aria-labelledby="modal-title">
-            <button className="modal-close" onClick={closeModal} title="Close">
-              <i className="fa fa-times" aria-hidden="true"></i> &times;
-            </button>
-            <div className="formHolder">
-              <div id="hubspotForm" className="formHolder"></div> {/* Target div for HubSpot form */}
-            </div>
-          </dialog>
-        </div>
-      )}
     </Layout>
   );
 }
