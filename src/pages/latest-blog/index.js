@@ -5,6 +5,23 @@ import "./blognew.css";
 export default function BlogPrimis() {
   const [blogData, setBlogData] = useState([]);
 
+  const authorImages = {
+    Valerio: "/img/blog/valerio.png",
+    Hans: "/img/blog/hans.png",
+    Naveed: "/img/blog/naveed.png",
+    Pierre: "/img/blog/pierre.png",
+    Asav: "/img/blog/asav.png",
+  };
+  
+  const getAuthorImage = (author) => {
+    for (const key in authorImages) {
+      if (author.includes(key)) {
+        return authorImages[key];
+      }
+    }
+    return "/img/blog/blog_default.png"; // Default image if no match is found
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -59,7 +76,7 @@ export default function BlogPrimis() {
                 </div>
                 <div className="col col--6">
                   <div className="imgbox minh">
-                  <img
+                  {/* <img
                     src={
                       topLatestPost.author.includes("Valerio")
                         ? "/img/blog/valerio.png"
@@ -74,6 +91,12 @@ export default function BlogPrimis() {
                         : "/img/blog/blog_default.png"
                     }
                     alt="img" className="img-reasponsive"
+                  /> */}
+
+                  <img
+                    src={getAuthorImage(topLatestPost.author)}
+                    alt="img"
+                    className="img-responsive"
                   />
                   </div>
                 </div>
