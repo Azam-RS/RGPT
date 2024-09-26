@@ -76,23 +76,6 @@ export default function BlogPrimis() {
                 </div>
                 <div className="col col--6">
                   <div className="imgbox minh">
-                  {/* <img
-                    src={
-                      topLatestPost.author.includes("Valerio")
-                        ? "/img/blog/valerio.png"
-                        : topLatestPost.author.includes("Hans")
-                        ? "/img/blog/hans.png"
-                        : topLatestPost.author.includes("Naveed")
-                        ? "/img/blog/naveed.png"
-                        : topLatestPost.author.includes("Pierre")
-                        ? "/img/blog/pierre.png"
-                        : topLatestPost.author.includes("Asav")
-                        ? "/img/blog/asav.png"
-                        : "/img/blog/blog_default.png"
-                    }
-                    alt="img" className="img-reasponsive"
-                  /> */}
-
                   <img
                     src={getAuthorImage(topLatestPost.author)}
                     alt="img"

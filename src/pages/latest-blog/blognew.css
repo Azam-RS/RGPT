@@ -59,12 +59,17 @@
 .imgbox{
     background:#161b22;
     overflow: hidden;
+    position: relative;
 }
 .imgbox img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    float: right;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
   }
 .blg-post{
     padding: 4em 0px;
@@ -132,18 +137,12 @@
 }
 @media only screen and (min-width:997px) and (max-width:1399.98px){
   .minh{
-    min-height: 660px;
+    min-height: 540px;
   }
   .img-thumb {
     min-height: 170px;
 }
   .imgbox {
     position: relative;
-}
-.imgbox img{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: block;
 }
 }
