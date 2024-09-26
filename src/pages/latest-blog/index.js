@@ -69,6 +69,8 @@ export default function BlogPrimis() {
                         ? "/img/blog/naveed.png"
                         : topLatestPost.author.includes("Pierre")
                         ? "/img/blog/pierre.png"
+                        : topLatestPost.author.includes("Asav")
+                        ? "/img/blog/asav.png"
                         : "/img/blog/blog_default.png"
                     }
                     alt="img" className="img-reasponsive"

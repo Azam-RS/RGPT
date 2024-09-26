@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import Layout from "@theme/Layout";
 import "./paper.css";
 
 export default function Papers() {
 
   const handleRedirect = (url) => {
-    window.open("https://arxiv.org/abs/2409.11411", '_blank');
+    window.open("https://arxiv.org/abs/2409.11411", '_blank', 'noopener');
   };
   return (
     <Layout title="Papers">
