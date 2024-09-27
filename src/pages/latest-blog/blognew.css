@@ -24,6 +24,9 @@
   margin-bottom: 15px;
   cursor: pointer;
 }
+.newb a ,.newb a:active,.newb a:hover{
+  text-decoration: none;
+}
 .newb h2{
     color: #3FC3B6;
 }
@@ -115,6 +118,9 @@
     font-family: "Poppins-Bold";
     font-weight: 700;
     margin-bottom: 30px;
+  }
+  .desc-blg .desc-box a,  .desc-blg .desc-box a:active .desc-blg .desc-box a:hover{
+    text-decoration: none;
   }
 .desc-holder{
     padding: 10px 16px;
