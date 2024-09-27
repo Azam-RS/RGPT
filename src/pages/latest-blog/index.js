@@ -68,7 +68,7 @@ export default function BlogPrimis() {
               <>
                 <div className="col col--6">
                   <div className="newb minh">
-                  <h1>{topLatestPost.title}</h1>
+                  <h1 onClick={() => handleRedirect(topLatestPost.url)}> {topLatestPost.title}</h1>
                   <h2>{topLatestPost.author || "Anonymous"}</h2>
                   <p>{topLatestPost.summary || "No description provided."}</p>
                     <button className="btn-more" onClick={() => handleRedirect(topLatestPost.url)}>Read More</button>
@@ -104,7 +104,7 @@ export default function BlogPrimis() {
                   </div>
                   <div className="desc-holder">
                     <div className="desc-box">
-                    <h1>{blog.title}</h1>
+                    <h1 onClick={() => handleRedirect(blog.url)}>{blog.title}</h1>
                       <p>{blog.summary || "No description available."}</p>
                     </div>
                     <button className="btn-more" onClick={() => handleRedirect(blog.url)}>Read More</button>

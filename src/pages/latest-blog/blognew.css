@@ -22,6 +22,7 @@
   text-align: left;
   color: #fff;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .newb h2{
     color: #3FC3B6;
@@ -88,6 +89,7 @@
     font-weight: 700;
     font-family: "poppins-Bold";
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .desc-blg p{
     font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (3500 - 300)) ) !important;

@@ -670,6 +670,7 @@ text-align: left;
 }
 .avatar__photo {
   border: 1px solid #fff;
+  padding: 8px !important;
 }
 .docs-wrapper  #__docusaurus aside  .theme-doc-sidebar-menu{
   padding-top: 4em !important;
@@ -983,9 +984,6 @@ padding-top: 4em !important;
 }
 .blog-wrapper #__docusaurus .sidebarItemList_Yudw .sidebarItemLinkActive_I1ZP{
   color:#fff !important;
-}
-.avatar__photo{
-  padding: 8px !important;
 }
 @media only screen and (min-width: 300px) and (max-width: 3360px) {
   .menu_SIkG {
