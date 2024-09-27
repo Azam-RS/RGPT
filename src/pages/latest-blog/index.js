@@ -69,13 +69,17 @@ export default function BlogPrimis() {
                 <div className="col col--6">
                   <div className="newb minh">
                   {/* <h1 onClick={() => handleRedirect(topLatestPost.url)}> {topLatestPost.title}</h1> */}
-                  <h1  role="button" tabIndex={0} onClick={() => handleRedirect(topLatestPost.url)}
+                  <a href={topLatestPost.url}>
+                    <h1>{topLatestPost.title}</h1>
+                  </a>
+
+                  {/* <h1  role="button" tabIndex={0} onClick={() => handleRedirect(topLatestPost.url)}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter') handleRedirect(topLatestPost.url);
                     }}
                   >
                     {topLatestPost.title}
-                  </h1>
+                  </h1> */}
                   <h2>{topLatestPost.author || "Anonymous"}</h2>
                   <p>{topLatestPost.summary || "No description provided."}</p>
                     <button className="btn-more" onClick={() => handleRedirect(topLatestPost.url)}>Read More</button>
@@ -113,13 +117,16 @@ export default function BlogPrimis() {
                     <div className="desc-box">
                     {/* <h1 onClick={() => handleRedirect(blog.url)}>{blog.title}</h1> */}
 
-                    <h1 role="button" tabIndex={0} onClick={() => handleRedirect(blog.url)}
+                    {/* <h1 role="button" tabIndex={0} onClick={() => handleRedirect(blog.url)}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter') handleRedirect(blog.url);
                     }}
                   >
                     {blog.title}
-                  </h1>
+                  </h1> */}
+                  <a href={blog.url}>
+                    <h1>{blog.title}</h1>
+                  </a>
                       <p>{blog.summary || "No description available."}</p>
                     </div>
                     <button className="btn-more" onClick={() => handleRedirect(blog.url)}>Read More</button>
