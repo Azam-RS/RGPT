@@ -9,6 +9,7 @@
    .newb{
     background: #161b22;
     padding: 20px;
+    min-height: 550px;
 }
 .newb h1 {
   font-size: calc(
