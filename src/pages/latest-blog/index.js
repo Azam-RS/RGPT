@@ -5,22 +5,16 @@ import "./blognew.css";
 export default function BlogPrimis() {
   const [blogData, setBlogData] = useState([]);
 
-  const authorImages = {
-    Valerio: "/img/blog/valerio.png",
-    Hans: "/img/blog/hans.png",
-    Naveed: "/img/blog/naveed.png",
-    Pierre: "/img/blog/pierre.png",
-    Asav: "/img/blog/asav.png",
+  const getAuthorClass = (author) => {
+    const authorName = author.split(' ')[0].toLowerCase(); // Extract the first name
+    return `author-${authorName}`; 
   };
-  
-  const getAuthorImage = (author) => {
-    for (const key in authorImages) {
-      if (author.includes(key)) {
-        return authorImages[key];
-      }
-    }
-    return "/img/blog/blog_default.png"; // Default image if no match is found
+
+  const stripHtmlTags = (html) => {
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || "";
   };
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,6 +34,7 @@ export default function BlogPrimis() {
               author: item.author.name,
               summary: item.summary,
               title: item.title,
+              extraContent: item.content_html,
           };
         });
           setBlogData(latestBlogData);  
@@ -57,7 +52,7 @@ export default function BlogPrimis() {
   };
 
   const topLatestPost =  blogData[0];
-  const latestPosts = blogData.slice(0, 6);
+  const latestPosts = blogData.slice(0, 10); //Number of post
 
   return (
     <Layout>
@@ -68,30 +63,23 @@ export default function BlogPrimis() {
               <>
                 <div className="col col--6">
                   <div className="newb minh">
-                  {/* <h1 onClick={() => handleRedirect(topLatestPost.url)}> {topLatestPost.title}</h1> */}
                   <a href={topLatestPost.url}>
                     <h1>{topLatestPost.title}</h1>
                   </a>
-
-                  {/* <h1  role="button" tabIndex={0} onClick={() => handleRedirect(topLatestPost.url)}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') handleRedirect(topLatestPost.url);
-                    }}
-                  >
-                    {topLatestPost.title}
-                  </h1> */}
                   <h2>{topLatestPost.author || "Anonymous"}</h2>
-                  <p>{topLatestPost.summary || "No description provided."}</p>
+                  <p>{topLatestPost.summary  || "No description provided."}</p>
+                    {topLatestPost.author === "Asav Gandhi" && topLatestPost.extraContent && 
+                        topLatestPost.extraContent.split('\n').length > 4 && (
+                          <p>
+                            {stripHtmlTags(topLatestPost.extraContent.split('\n')[4])} {/* Retrieves the 5th paragraph (index 4) */}
+                          </p>
+                      )}
                     <button className="btn-more" onClick={() => handleRedirect(topLatestPost.url)}>Read More</button>
                   </div>
                 </div>
                 <div className="col col--6">
                   <div className="imgbox minh">
-                  <img
-                    src={getAuthorImage(topLatestPost.author)}
-                    alt="img"
-                    className="img-responsive"
-                  />
+                  <div className={`author-img ${getAuthorClass(topLatestPost.author)}`}></div>
                   </div>
                 </div>
               </>
@@ -115,18 +103,9 @@ export default function BlogPrimis() {
                   </div>
                   <div className="desc-holder">
                     <div className="desc-box">
-                    {/* <h1 onClick={() => handleRedirect(blog.url)}>{blog.title}</h1> */}
-
-                    {/* <h1 role="button" tabIndex={0} onClick={() => handleRedirect(blog.url)}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') handleRedirect(blog.url);
-                    }}
-                  >
-                    {blog.title}
-                  </h1> */}
-                  <a href={blog.url}>
-                    <h1>{blog.title}</h1>
-                  </a>
+                      <a href={blog.url}>
+                        <h1>{blog.title}</h1>
+                      </a>
                       <p>{blog.summary || "No description available."}</p>
                     </div>
                     <button className="btn-more" onClick={() => handleRedirect(blog.url)}>Read More</button>

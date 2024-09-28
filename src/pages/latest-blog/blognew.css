@@ -36,6 +36,12 @@
     font-family: "Poppins-Regular";
     font-weight: 400;
     margin-bottom: 30px;
+}.newb p+p{
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .btn-more{
     background: transparent;
@@ -55,26 +61,11 @@
     cursor: pointer;
     border: 1px solid #fff;
 }
-.minh{
-    min-height: 560px;
-    background: #161b22;
-    margin-bottom: 30px;
-}
 .imgbox{
     background:#161b22;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.imgbox img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-  left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  }
 .blg-post{
     padding: 4em 0px;
 }
@@ -132,25 +123,64 @@
 .img-thumb img{
     width: 100%;
 }
-.img-reasponsive{
-  display: block;
+.author-img{
+  background: url('/img/blog/blog_default.png') no-repeat 50% 100%;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
 }
-@media only screen and (max-width:767.98px){
-  .minh{
-    min-height: 235px;
-  }
+.author-valerio {
+  background-image: url('/img/blog/valerio.png');
+}
+.author-hans {
+  background-image: url('/img/blog/hans.png');
+}
+.author-naveed {
+  background-image: url('/img/blog/naveed.png');
+}
+.author-pierre {
+  background-image: url('/img/blog/pierre.png');
+}
+.author-asav {
+  background-image: url('/img/blog/asav.png');
+}
+.author-default {
+  background-image: url('/img/blog/blog_default.png');
+}
+@media only screen and (max-width:576px){
+  .imgbox {
+    height: 470px;
+    margin-top: 30px;
+}
+  .author-img{
+    background-position: 50% 100% !important;
+    background-size: cover;
+}
   .img-thumb {
     min-height: 170px;
+}
+}
+@media only screen and (min-width:577px) and (max-width:767.98px){
+  .imgbox {
+    height: 250px;
+    margin-top: 30px;
+  }
+    .author-img{
+      background-position: 100% 100%;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+  .imgbox {
+    height: 500px;
+    margin-top: 30px;
+}
+  .author-img{
+    background-position: 100% 100%;
 }
 }
 @media only screen and (min-width:997px) and (max-width:1399.98px){
-  .minh{
-    min-height: 540px;
-  }
   .img-thumb {
     min-height: 170px;
-}
-  .imgbox {
-    position: relative;
-}
+  }
 }
