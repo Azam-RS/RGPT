@@ -24,6 +24,7 @@
   color: #fff;
   margin-bottom: 15px;
   cursor: pointer;
+  display: inline-block;
 }
 .newb a ,.newb a:active,.newb a:hover{
   text-decoration: none;
@@ -85,6 +86,7 @@
     font-family: "poppins-Bold";
     margin-bottom: 10px;
     cursor: pointer;
+    display: inline-block;
 }
 .desc-blg p{
     font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (3500 - 300)) ) !important;
