@@ -7,6 +7,9 @@ export default function Papers() {
   const handleRedirect = (url) => {
     window.open("https://arxiv.org/abs/2409.11411", '_blank', 'noopener');
   };
+  const openPdf = (url) => { 
+    window.open(url, '_blank', 'noopener');
+  };
   return (
     <Layout title="Papers">
       <div className="paper-holder">
@@ -23,6 +26,7 @@ export default function Papers() {
                 <h1>Our Papers</h1>
               </div>
             </div>
+            {/* paper AIVRIL */}
             <div className="col col--12">
               <div className="desc-area">
                 <div className="paper-title">
@@ -39,6 +43,33 @@ export default function Papers() {
                 </div>
                 <div className="dwn-btn">
                   <button className="btn-more" title="Read More" onClick={handleRedirect}>Read More</button>
+                </div>
+              </div>
+            </div>
+
+            {/* Fully Automating Chip Design */}
+            <div className="col col--12">
+              <div className="desc-area">
+                <div className="paper-title">
+                  <h1>Fully Automating Chip Design</h1>
+                  <p>Hans Bouwmeester</p>
+                  <p>PrimisAI, COO</p>
+                  <div className="chipdesign-bg"></div>
+                </div>
+                <div className="paper-desc">
+                  <h4>Summary:</h4>
+                  <p>Twenty-five years ago, SEMATECH first alerted the world to a concern known as the design productivity gap: the observation that
+the ability to manufacture complex chips had started outpacing the capability of designers to create them by more than a factor
+of two. This concern was subsequently reiterated in the ITRS report of 1999 and discussed and reported on in many articles during
+the past two decades.</p>
+<p>In recent years, generative AI in general and natural language processing more specifically have taken the world by storm,
+opening-up a wealth of possible applications, including chip design. </p>
+<p>But will it be enough to finally start closing the productivity gap, where continuous improvements in EDA and the application of IP-
+reuse have done nothing more than decelerate its growth somewhat? This article presents a comprehensive overview, showing
+that generative AI will indeed finally close the design productivity gap and even enable us to fully automate hardware design.</p>
+                </div>
+                <div className="dwn-btn">
+                  <button className="btn-more" title="Read More"onClick={() => openPdf('/img/pdf/fully-automating-chip-design.pdf')}>Read More</button>
                 </div>
               </div>
             </div>
