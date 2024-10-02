@@ -149,6 +149,10 @@ const config = {
                                 label: "Papers",
                             },
                             {
+                                to: "/articles",
+                                label: "Articles",
+                            },
+                            {
                                 to: "/webinar",
                                 label: "On-Demand Webinars",
                             },

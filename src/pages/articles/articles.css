@@ -1,15 +1,15 @@
-.paper-holder{
-    background: url("/static/img/papers_bg.jpg") no-repeat;
+.article-holder{
+    background: url("/static/img/articles_bg.png") no-repeat;
     background-size:cover ;
     width: 100%;
     min-height: 100vh;
     position: relative;
     padding:9em 0 4em;
    }
-   .paper-box{
+   .article-box{
     padding: 4em 0px;
   }
-  .jb-title h1{
+  .article-title h1{
     color:#fff;
     font-size: calc(
       30px + (50 - 30) * ((100vw - 300px) / (3500 - 300))
@@ -21,68 +21,69 @@
     font-weight: 700;
     margin-bottom: 30px;
   }
-  .paper-box .desc-area {
-    padding: 20px 25px;
+  .article-box .desc-area {
+    padding: 30px 25px 20px;
     margin-bottom: 50px;
     background: #020816 !important;
   }
-  .paper-box .desc-area .paper-title{
+  .article-box .desc-area .article-title{
     text-align: center;
     margin-bottom: 20px;
   }
-  .paper-box .desc-area p {
+  .article-box .desc-area p {
      display: block;
      font-size: 18px !important;
      line-height: 26px !important;
   }
-  .paper-box .desc-area .paper-desc h4{
+  .article-box .desc-area .article-desc h4{
     margin-bottom: 0px;
     font-weight: bold;
     font-size: 20px;
   }
-  .paper-box .desc-area .paper-desc p{
+  .article-box .desc-area .article-desc p{
     font-family: "Poppins", sans-serif;
     margin-bottom: 30px;
   }
-  .paper-box .desc-area h1{
+  .article-box .desc-area h1{
     font-size: calc( 20px + (26 - 20) * ((100vw - 300px) / (3500 - 300)) ) !important;
     line-height: calc( 28px + (38 - 28) * ((100vw - 300px) / (3500 - 300)) ) !important;
     color: #3b8a8d;
     margin-bottom: 10px;
   }
-   .conf-bg{
-    background: url("/static/img/report_picture.jpg") no-repeat 50% 0;
+   .chipdesign-bg{
+    background: url("/static/img/fully-automating-chip-design.jpg") no-repeat 50% 0;
     background-size: contain;
     width: 100%;
     min-height: 350px;
     margin: 40px 0;
    }
-   .dwn-btn{
+   .read-btn{
     text-align: center;
     margin-bottom: 10px;
    }
-   .dwn-btn .btn-more{
+   .read-btn .btn-more{
     min-width: 140px;
     color: #3b8a8d;
     border: 1px solid  #3b8a8d;
    }
-   .dwn-btn .btn-more:hover{
+   .read-btn .btn-more:hover{
     color: #fff;
     border-color: #fff;
    }
+
   @media only screen and (max-width:575.98px) {
-    .paper-box .desc-area p{
+    .article-box .desc-area p{
         margin-bottom: 15px;
     }
-    .conf-bg{
-        min-height: 120px;
-    }
+    .chipdesign-bg{
+      min-height: 100px;
+     }
   }
   @media only screen and (min-width:576px) and (max-width:767.98px) {
-    .paper-box .desc-area p{
+    .article-box .desc-area p{
         margin-bottom: 15px;
     }
-    .conf-bg{
-        min-height: 120px;
-    }
+    .chipdesign-bg{
+      min-height: 200px;
+     }
   }
