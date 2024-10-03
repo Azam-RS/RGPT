@@ -97,14 +97,6 @@ const Pricing = () => {
                                         <div className="p-Main">
                                             <div className="pList">
                                                 <ul className="prolist">
-                                                <li>
-                                                        <span className="iconchk">
-                                                            <FontAwesomeIcon icon="check" />
-                                                        </span>
-                                                        <span className="plan-d">
-                                                            14-day trial period
-                                                        </span>
-                                                    </li>
                                                     <li>
                                                         <span className="iconchk">
                                                             <FontAwesomeIcon icon="check" />
@@ -155,6 +147,14 @@ const Pricing = () => {
                                                             <FontAwesomeIcon icon="check" />
                                                         </span>
                                                         <span className="plan-d">Priority support</span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="iconchk">
+                                                            <FontAwesomeIcon icon="check" />
+                                                        </span>
+                                                        <span className="plan-d">
+                                                            14-day trial period
+                                                        </span>
                                                     </li>
                                                 </ul>
                                             </div>
