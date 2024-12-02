@@ -25,7 +25,7 @@ export default function BlogPrimis() {
           const blogPosts = data.items;
           console.log(blogPosts);
           const latestBlogData = blogPosts.map(item => {
-            const formattedTitle = item.title.replace(/ /g, "_");
+            const formattedTitle = item.title.replace(/ /g, "_").replace(/:/g, "").replace(/'/g, "").replace(/[<>:"/\\|?*]/g, "");
             return{
               id: item.id,
               url: item.url,

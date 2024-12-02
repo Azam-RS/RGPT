@@ -152,10 +152,6 @@ const config = {
                                 to: "/articles",
                                 label: "Articles",
                             },
-                            {
-                                to: "/webinar",
-                                label: "On-Demand Webinars",
-                            },
                         ],
                     },
                     {
