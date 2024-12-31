@@ -30,12 +30,13 @@
     color: #3b8a8d;
     margin-bottom: 10px;
   }
-   .conf-bg{
-    background: url("/static/img/new-event.jpg") no-repeat;
+   .event-bg{
+    background: url("/static/img/workshop.png") no-repeat;
     background-size: contain;
     width: 100%;
-    min-height: 230px;
+    min-height: 700px;
     margin-bottom: 10px;
+    background-position: center;
    }
   .new-event .btnmore,.new-event .btnmore:active,.new-event .btnmore:hover{
     color:#366cc5;
@@ -49,12 +50,12 @@
   }
 
   @media only screen and (max-width:575.98px) {
-    .conf-bg{
-    min-height: 151px;
+    .event-bg{
+    min-height: 700px;
     }
   }
   @media only screen and (min-width:992px) and (max-width:1366px) {
-    .conf-bg{
-        min-height: 170px;
+    .event-bg{
+        min-height: 700px;
     }
   }

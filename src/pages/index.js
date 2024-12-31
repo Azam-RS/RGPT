@@ -83,7 +83,7 @@ function HomepageHeader() {
                                 </Link>
                                 <Link
                                     className="button button--lg btn-doc"
-                                    to="/docs/getting-started"
+                                    to="https://docs.primis.ai"
                                 >
                                     Documentation
                                 </Link>

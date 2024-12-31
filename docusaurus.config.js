@@ -155,7 +155,7 @@ const config = {
                         ],
                     },
                     {
-                        to: "/docs/getting-started",
+                        to: "https://docs.primis.ai",
                         label: "Docs",
                         position: "right",
                     },
