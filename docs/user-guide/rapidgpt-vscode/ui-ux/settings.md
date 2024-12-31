@@ -41,7 +41,7 @@ Specify an optional path to save the chat history. By default, RapidGPT manages 
 
 ## AutoReview Max Iterations
 
-This setting enables users to define a custom iteration limit within [AutoReview](/docs/user-guide/rapidgpt-vscode/autoreview), effectively reducing the incidence of `429` errors. While increasing the iteration count can enhance the likelihood of RapidGPT finding a solution, it is important to note that execution times may extend proportionally.
+This setting enables users to define a custom iteration limit within [AutoReview](https://docs.primis.ai/user-guide/rapidgpt-vscode/autoreview), effectively reducing the incidence of `429` errors. While increasing the iteration count can enhance the likelihood of RapidGPT finding a solution, it is important to note that execution times may extend proportionally.
 
 ## Debug Code
 

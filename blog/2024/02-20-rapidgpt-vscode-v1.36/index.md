@@ -74,7 +74,7 @@ The updated chat panel now displays users' full names alongside their messages, 
 
 ### Improved Self-Awareness
 
-With the latest release, RapidGPT has been upgraded to possess a deeper understanding of its functionalities, ensuring you receive more comprehensive and accurate responses. Now, you can directly inquire about RapidGPT's key features within the chat panel. Curious about how to operate [AutoDoc](/docs/user-guide/rapidgpt-vscode/autodoc)? Just ask RapidGPT, and it will seamlessly guide you through the process.
+With the latest release, RapidGPT has been upgraded to possess a deeper understanding of its functionalities, ensuring you receive more comprehensive and accurate responses. Now, you can directly inquire about RapidGPT's key features within the chat panel. Curious about how to operate [AutoDoc](https://docs.primis.ai/user-guide/rapidgpt-vscode/autodoc)? Just ask RapidGPT, and it will seamlessly guide you through the process.
 
 ![](./img/autodoc-explanation-example.png)
 
@@ -83,4 +83,4 @@ With the latest release, RapidGPT has been upgraded to possess a deeper understa
 This release introduces a series of bug fixes and improvements, including:
 
 - **Dynamic input box adjustments**: The prompt input box now dynamically adjusts vertically to accommodate more content, enhancing readability and comfort during text entry.
-- **Customizable iteration cap for AutoReview**: With the new `Autoreview Max Iterations` setting, users can now set a custom iteration limit in [AutoReview](/docs/user-guide/rapidgpt-vscode/autoreview), specifically addressing and mitigating the occurrence of `429` errors.
+- **Customizable iteration cap for AutoReview**: With the new `Autoreview Max Iterations` setting, users can now set a custom iteration limit in [AutoReview](https://docs.primis.ai/user-guide/rapidgpt-vscode/autoreview), specifically addressing and mitigating the occurrence of `429` errors.

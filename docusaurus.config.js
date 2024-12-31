@@ -202,22 +202,22 @@ const config = {
                     },
                     {
                         label: "Privacy Policy",
-                        to: "/docs/legal/privacy-policy",
+                        to: "https://docs.primis.ai/legal/privacy-policy",
                         title: "Privacy Policy",
                     },
                     {
                         label: "Cookie Policy",
-                        to: "/docs/legal/cookie-policy",
+                        to: "https://docs.primis.ai/legal/cookie-policy",
                         title: "Cookie Policy",
                     },
                     {
                         label: "Terms and Conditions",
-                        to: "/docs/legal/terms-and-conditions",
+                        to: "https://docs.primis.ai/legal/terms-and-conditions",
                         title: "Terms and Conditions",
                     },
                     {
                         label: "User Agreement",
-                        to: "/docs/legal/user-agreement",
+                        to: "https://docs.primis.ai/legal/user-agreement",
                         title: "User Agreement",
                     },
                 ],

@@ -41,5 +41,5 @@ Now you're ready to start interacting with RapidGPT! You can ask questions, requ
 
 Once RapidGPT is installed, you can begin leveraging its power to enhance your hardware design process. Check out the following resources to get started:
 
-- [FAQs](/docs/faq): Find answers to commonly asked questions about RapidGPT.
-- [Support](/docs/support): If you encounter any issues or need assistance, our support team is here to help.
+- [FAQs](https://docs.primis.ai/faq): Find answers to commonly asked questions about RapidGPT.
+- [Support](https://docs.primis.ai/support): If you encounter any issues or need assistance, our support team is here to help.

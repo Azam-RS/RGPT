@@ -36,7 +36,7 @@ AutoReview offers numerous advantages, making it an indispensable tool for devel
 Integrating AutoReview into your development process is straightforward and efficient:
 
 ### 1. Open a Verilog File
-Open a verilog file in VS-Code. For this tutorial, we'll be opening the file "**ram.v**" as created **[Your First Project](/docs/tutorials/your-first-project/your-first-project.md)** tutorial.
+Open a verilog file in VS-Code. For this tutorial, we'll be opening the file "**ram.v**" as created **[Your First Project](https://docs.primis.ai/tutorials/your-first-project/your-first-project.md)** tutorial.
 
 ![Open Verilog File](/img/docs/autoreview-images/Step1.png)
 
